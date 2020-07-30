@@ -20,7 +20,6 @@
 		9E967EB7DCE2557E221A0D7A /* HomeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC44D9760EE822D3869E88 /* HomeRouterInput.swift */; };
 		B1BB9A8F4EE15E6534576B63 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A15580C6E79FC45F5665F4 /* HomeRouter.swift */; };
 		BC9B3A53F5C207459F33EE44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B313EAE6291D258DF194471B /* HomeViewController.swift */; };
-		BE9F5C1AE6C55844AC339657 /* HomeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD920A51E0F564CA701DB40 /* HomeInitializer.swift */; };
 		DA942183AB84A8E20D08903C /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A022594F09B6EE5BA9D19D /* HomePresenterTests.swift */; };
 		E70E8068CB082C472FB3A56E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */; };
 		F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */; };
@@ -32,7 +31,6 @@
 		F56B7B7C24D0AB7000C4F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */; };
 		F56B7B8724D0AB7000C4F946 /* EasyNotiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B8624D0AB7000C4F946 /* EasyNotiTests.swift */; };
 		F56B7B9224D0AB7000C4F946 /* EasyNotiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B9124D0AB7000C4F946 /* EasyNotiUITests.swift */; };
-		F583732724D37E2200C00A98 /* Home in Resources */ = {isa = PBXBuildFile; fileRef = F583732624D37E2200C00A98 /* Home */; };
 		FD0C1062244075DBEF709E49 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4E6D0D1E2271D083A9E3B /* HomeInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +53,6 @@
 
 /* Begin PBXFileReference section */
 		035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
-		1AD920A51E0F564CA701DB40 /* HomeInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInitializer.swift; sourceTree = "<group>"; };
 		1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
 		1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
 		21A15580C6E79FC45F5665F4 /* HomeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -85,7 +82,6 @@
 		F56B7B8D24D0AB7000C4F946 /* EasyNotiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyNotiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56B7B9124D0AB7000C4F946 /* EasyNotiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyNotiUITests.swift; sourceTree = "<group>"; };
 		F56B7B9324D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F583732624D37E2200C00A98 /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Home; sourceTree = "<group>"; };
 		F852496133F6FE709129BC13 /* HomeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
 		FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		FCB998CB77A0C1808CF6D01A /* Pods_EasyNoti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyNoti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				A68401CE486AD8C5AE74D96C /* HomeConfigurator.swift */,
-				1AD920A51E0F564CA701DB40 /* HomeInitializer.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -304,7 +299,6 @@
 		F583730524D37C0700C00A98 /* Cases */ = {
 			isa = PBXGroup;
 			children = (
-				F583732624D37E2200C00A98 /* Home */,
 				43C0DAF883FD7955F2DBF239 /* Home */,
 			);
 			path = Cases;
@@ -433,7 +427,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F583732724D37E2200C00A98 /* Home in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +501,6 @@
 				9E967EB7DCE2557E221A0D7A /* HomeRouterInput.swift in Sources */,
 				B1BB9A8F4EE15E6534576B63 /* HomeRouter.swift in Sources */,
 				42A41DD78F4428088193AC8F /* HomeConfigurator.swift in Sources */,
-				BE9F5C1AE6C55844AC339657 /* HomeInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

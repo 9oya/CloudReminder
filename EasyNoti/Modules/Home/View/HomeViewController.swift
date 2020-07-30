@@ -10,9 +10,16 @@ import UIKit
 
 class HomeViewController: UIViewController, HomeViewInput {
 
+    let configurator = HomeModuleConfigurator()
     var output: HomeViewOutput!
 
     // MARK: Life cycle
+    override func loadView() {
+        super.loadView()
+        configurator.configureModuleForViewInput(viewInput: self)
+        output.viewIsReady()
+    }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
@@ -21,5 +28,16 @@ class HomeViewController: UIViewController, HomeViewInput {
 
     // MARK: HomeViewInput
     func setupInitialState() {
+        setupLayout()
+    }
+}
+
+extension HomeViewController {
+    private func setupLayout() {
+        // MARK: Setup super-view
+        
+        // MARK: Setup sub-view properties
+        
+        // MARK: Setup UI Hierarchy
     }
 }

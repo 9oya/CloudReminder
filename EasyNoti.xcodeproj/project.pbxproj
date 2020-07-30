@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0755A5C74355ED2E7D34BB94 /* HomeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559DAEB7FEF3C713CA61E24 /* HomeModuleInput.swift */; };
+		153231A1A07B6E2BAD82E1FC /* HomeConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB084CEFF87ECEC8FFF166AE /* HomeConfiguratorTests.swift */; };
+		39C951C3981C1EC8768692A2 /* HomeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */; };
+		3DD69D853ACC3A73452B8241 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D490102880C42565A940F /* HomeViewTests.swift */; };
+		42A41DD78F4428088193AC8F /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68401CE486AD8C5AE74D96C /* HomeConfigurator.swift */; };
+		598AEF46648A329D339E8831 /* HomeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F4C31482C5E1411AABC28 /* HomeViewInput.swift */; };
 		6F5C2124E459FDA9C72F3EC8 /* Pods_EasyNoti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB998CB77A0C1808CF6D01A /* Pods_EasyNoti.framework */; };
+		82CF0019283B524080C8F295 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA6412157B4F451851624 /* HomePresenter.swift */; };
+		90E270B5D8BE34A3B97F66E9 /* HomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */; };
+		9CD090010FF3A9D7265DB994 /* HomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852496133F6FE709129BC13 /* HomeInteractorInput.swift */; };
+		9E967EB7DCE2557E221A0D7A /* HomeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC44D9760EE822D3869E88 /* HomeRouterInput.swift */; };
+		B1BB9A8F4EE15E6534576B63 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A15580C6E79FC45F5665F4 /* HomeRouter.swift */; };
+		BC9B3A53F5C207459F33EE44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B313EAE6291D258DF194471B /* HomeViewController.swift */; };
+		BE9F5C1AE6C55844AC339657 /* HomeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD920A51E0F564CA701DB40 /* HomeInitializer.swift */; };
+		DA942183AB84A8E20D08903C /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A022594F09B6EE5BA9D19D /* HomePresenterTests.swift */; };
+		E70E8068CB082C472FB3A56E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */; };
+		F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */; };
 		F56B7B6D24D0AB6D00C4F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */; };
 		F56B7B6F24D0AB6D00C4F946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */; };
 		F56B7B7124D0AB6D00C4F946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B7024D0AB6D00C4F946 /* ViewController.swift */; };
@@ -16,6 +32,8 @@
 		F56B7B7C24D0AB7000C4F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */; };
 		F56B7B8724D0AB7000C4F946 /* EasyNotiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B8624D0AB7000C4F946 /* EasyNotiTests.swift */; };
 		F56B7B9224D0AB7000C4F946 /* EasyNotiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B9124D0AB7000C4F946 /* EasyNotiUITests.swift */; };
+		F583732724D37E2200C00A98 /* Home in Resources */ = {isa = PBXBuildFile; fileRef = F583732624D37E2200C00A98 /* Home */; };
+		FD0C1062244075DBEF709E49 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4E6D0D1E2271D083A9E3B /* HomeInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +54,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
+		1AD920A51E0F564CA701DB40 /* HomeInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInitializer.swift; sourceTree = "<group>"; };
+		1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
+		1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
+		21A15580C6E79FC45F5665F4 /* HomeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2559DAEB7FEF3C713CA61E24 /* HomeModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeModuleInput.swift; sourceTree = "<group>"; };
 		2B9C9CA793F2540944125ADE /* Pods-EasyNoti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNoti.debug.xcconfig"; path = "Target Support Files/Pods-EasyNoti/Pods-EasyNoti.debug.xcconfig"; sourceTree = "<group>"; };
+		501D490102880C42565A940F /* HomeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
+		6DE4E6D0D1E2271D083A9E3B /* HomeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		876F4C31482C5E1411AABC28 /* HomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewInput.swift; sourceTree = "<group>"; };
+		A68401CE486AD8C5AE74D96C /* HomeConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		ACDC44D9760EE822D3869E88 /* HomeRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterInput.swift; sourceTree = "<group>"; };
+		AD3EA6412157B4F451851624 /* HomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		B2A3E8B2B9EDF4004577C8DC /* Pods-EasyNoti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNoti.release.xcconfig"; path = "Target Support Files/Pods-EasyNoti/Pods-EasyNoti.release.xcconfig"; sourceTree = "<group>"; };
+		B313EAE6291D258DF194471B /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C7A022594F09B6EE5BA9D19D /* HomePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		DB084CEFF87ECEC8FFF166AE /* HomeConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeConfiguratorTests.swift; sourceTree = "<group>"; };
 		F56B7B6924D0AB6D00C4F946 /* EasyNoti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNoti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +85,9 @@
 		F56B7B8D24D0AB7000C4F946 /* EasyNotiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyNotiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56B7B9124D0AB7000C4F946 /* EasyNotiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyNotiUITests.swift; sourceTree = "<group>"; };
 		F56B7B9324D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F583732624D37E2200C00A98 /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Home; sourceTree = "<group>"; };
+		F852496133F6FE709129BC13 /* HomeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
+		FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		FCB998CB77A0C1808CF6D01A /* Pods_EasyNoti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyNoti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2D5E4E02EA44D9A796D29C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		1791B49EDC3C7CB592E56A85 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +132,101 @@
 				B2A3E8B2B9EDF4004577C8DC /* Pods-EasyNoti.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		264301717B7534C2AC2ED5F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				501D490102880C42565A940F /* HomeViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28B324E4DE3E2B115BA9616C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4E6D0D1E2271D083A9E3B /* HomeInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		39165B78DDE95B41A43B3C22 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F852496133F6FE709129BC13 /* HomeInteractorInput.swift */,
+				1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */,
+				FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3FDB2B36D4D88E8C234098BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC5C484245CCE659D6BD32 /* View */,
+				BA3D938AED9FD4B778891854 /* Presenter */,
+				39165B78DDE95B41A43B3C22 /* Interactor */,
+				7778B66FA8F98E6834DE6D1C /* Router */,
+				88E7F377612DFA2062A34A68 /* Configurator */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		43C0DAF883FD7955F2DBF239 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				92DBB9DC13D85F4B541BBC7F /* Configurator */,
+				264301717B7534C2AC2ED5F9 /* View */,
+				28B324E4DE3E2B115BA9616C /* Interactor */,
+				F629D173043C6F2FFCDE3EDA /* Presenter */,
+				0A2D5E4E02EA44D9A796D29C /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7778B66FA8F98E6834DE6D1C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC44D9760EE822D3869E88 /* HomeRouterInput.swift */,
+				21A15580C6E79FC45F5665F4 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88E7F377612DFA2062A34A68 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A68401CE486AD8C5AE74D96C /* HomeConfigurator.swift */,
+				1AD920A51E0F564CA701DB40 /* HomeInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		92DBB9DC13D85F4B541BBC7F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DB084CEFF87ECEC8FFF166AE /* HomeConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		BA3D938AED9FD4B778891854 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2559DAEB7FEF3C713CA61E24 /* HomeModuleInput.swift */,
+				AD3EA6412157B4F451851624 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D4EC5C484245CCE659D6BD32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				876F4C31482C5E1411AABC28 /* HomeViewInput.swift */,
+				1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */,
+				B313EAE6291D258DF194471B /* HomeViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F42C07DA2FB5CAD80BCCC65F /* Frameworks */ = {
@@ -123,6 +262,7 @@
 		F56B7B6B24D0AB6D00C4F946 /* EasyNoti */ = {
 			isa = PBXGroup;
 			children = (
+				F583730424D37BFB00C00A98 /* Modules */,
 				F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */,
 				F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */,
 				F56B7B7024D0AB6D00C4F946 /* ViewController.swift */,
@@ -137,6 +277,7 @@
 		F56B7B8524D0AB7000C4F946 /* EasyNotiTests */ = {
 			isa = PBXGroup;
 			children = (
+				F583730524D37C0700C00A98 /* Cases */,
 				F56B7B8624D0AB7000C4F946 /* EasyNotiTests.swift */,
 				F56B7B8824D0AB7000C4F946 /* Info.plist */,
 			);
@@ -150,6 +291,31 @@
 				F56B7B9324D0AB7000C4F946 /* Info.plist */,
 			);
 			path = EasyNotiUITests;
+			sourceTree = "<group>";
+		};
+		F583730424D37BFB00C00A98 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3FDB2B36D4D88E8C234098BE /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F583730524D37C0700C00A98 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				F583732624D37E2200C00A98 /* Home */,
+				43C0DAF883FD7955F2DBF239 /* Home */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		F629D173043C6F2FFCDE3EDA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C7A022594F09B6EE5BA9D19D /* HomePresenterTests.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F583732724D37E2200C00A98 /* Home in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +497,18 @@
 				F56B7B7724D0AB6D00C4F946 /* EasyNoti.xcdatamodeld in Sources */,
 				F56B7B6D24D0AB6D00C4F946 /* AppDelegate.swift in Sources */,
 				F56B7B6F24D0AB6D00C4F946 /* SceneDelegate.swift in Sources */,
+				598AEF46648A329D339E8831 /* HomeViewInput.swift in Sources */,
+				39C951C3981C1EC8768692A2 /* HomeViewOutput.swift in Sources */,
+				BC9B3A53F5C207459F33EE44 /* HomeViewController.swift in Sources */,
+				0755A5C74355ED2E7D34BB94 /* HomeModuleInput.swift in Sources */,
+				82CF0019283B524080C8F295 /* HomePresenter.swift in Sources */,
+				9CD090010FF3A9D7265DB994 /* HomeInteractorInput.swift in Sources */,
+				90E270B5D8BE34A3B97F66E9 /* HomeInteractorOutput.swift in Sources */,
+				E70E8068CB082C472FB3A56E /* HomeInteractor.swift in Sources */,
+				9E967EB7DCE2557E221A0D7A /* HomeRouterInput.swift in Sources */,
+				B1BB9A8F4EE15E6534576B63 /* HomeRouter.swift in Sources */,
+				42A41DD78F4428088193AC8F /* HomeConfigurator.swift in Sources */,
+				BE9F5C1AE6C55844AC339657 /* HomeInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +517,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56B7B8724D0AB7000C4F946 /* EasyNotiTests.swift in Sources */,
+				153231A1A07B6E2BAD82E1FC /* HomeConfiguratorTests.swift in Sources */,
+				3DD69D853ACC3A73452B8241 /* HomeViewTests.swift in Sources */,
+				FD0C1062244075DBEF709E49 /* HomeInteractorTests.swift in Sources */,
+				DA942183AB84A8E20D08903C /* HomePresenterTests.swift in Sources */,
+				F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

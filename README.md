@@ -20,7 +20,7 @@ The reminder application.
 ### Remote Data Persistence:
   - CloudKit
 ### Source Control
-  - Gitflow workflow
+  - Gitflow Workflow
 ### Features:
   - Local Notification
   - Push Notification

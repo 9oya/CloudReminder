@@ -5,6 +5,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:Rambafile">
+   </FileRef>
+   <FileRef
       location = "group:EasyNoti.xcodeproj">
    </FileRef>
    <FileRef

@@ -17,6 +17,9 @@ class HomeViewController: UIViewController, HomeViewInput {
     // UITableView
     var notiTableView: UITableView!
     
+    // UIButton
+    var addButton: UIButton!
+    
     // Delegates
     var output: HomeViewOutput!
     
@@ -34,7 +37,11 @@ class HomeViewController: UIViewController, HomeViewInput {
         super.viewDidLoad()
         output.viewIsReady()
     }
-
+    
+    // MARK: Actions
+    @objc func addButtonTapped() {
+        
+    }
 
     // MARK: HomeViewInput
     func setupInitialState() {
@@ -112,6 +119,17 @@ extension HomeViewController {
             tableView.translatesAutoresizingMaskIntoConstraints = false
             return tableView
         }()
+        
+        addButton = {
+            let button = UIButton()
+            button.setTitle("+알림추가", for: .normal)
+            button.setTitleColor(.systemTeal, for: .normal)
+            button.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
+            button.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            return button
+        }()
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: addButton)]
         
         // MARK: Setup UI Hierarchy
         view.addSubview(notiTableView)

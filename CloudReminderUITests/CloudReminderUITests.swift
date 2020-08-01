@@ -1,6 +1,6 @@
 //
-//  EasyNotiUITests.swift
-//  EasyNotiUITests
+//  CloudReminderUITests.swift
+//  CloudReminderUITests
 //
 //  Created by Eido Goya on 2020/07/29.
 //  Copyright © 2020 Dymm. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class EasyNotiUITests: XCTestCase {
+class CloudReminderUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

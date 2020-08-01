@@ -2,28 +2,28 @@
 company: Dymm
 
 ### Xcode project settings
-project_name: easy-noti
-xcodeproj_path: EasyNoti.xcodeproj
+project_name: CloudReminder
+xcodeproj_path: CloudReminder.xcodeproj
 
 ### Code generation settings section
 # The main project target name
-project_target: EasyNoti
+project_target: CloudReminder
 
 # The file path for new modules
-project_file_path: /EasyNoti/Modules
+project_file_path: /CloudReminder/Modules
 
 # The Xcode group path to new modules
-project_group_path: /EasyNoti/Modules
+project_group_path: /CloudReminder/Modules
 
 ### Tests generation settings section
 # The tests target name
-test_target: EasyNotiTests
+test_target: CloudReminderTests
 
 # The file path for new tests
-test_file_path: /EasyNotiTests/Cases
+test_file_path: /CloudReminderTests/Cases
 
 # The Xcode group path to new tests
-test_group_path: /EasyNotiTests/Cases
+test_group_path: /CloudReminderTests/Cases
 
 ### Dependencies settings section
 podfile_path: Podfile

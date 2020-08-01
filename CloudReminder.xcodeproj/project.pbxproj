@@ -65,7 +65,6 @@
 		699F1238FD95CFC6590FEBB4 /* NotiTimeConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510AC86032E8D44E327A2CA /* NotiTimeConfiguratorTests.swift */; };
 		6B12C34A8138361B92D2B12B /* NotiWeekPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BCB248CE187FA499477B8A /* NotiWeekPresenterTests.swift */; };
 		6D78E0E1F1EE31A78BD8BE09 /* NotiWeekViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC880DB04C3881735A181379 /* NotiWeekViewOutput.swift */; };
-		6F5C2124E459FDA9C72F3EC8 /* Pods_EasyNoti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB998CB77A0C1808CF6D01A /* Pods_EasyNoti.framework */; };
 		6FEB0C214CF42845C29C5EEF /* NotiBodyModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8695697387979B6E325F10E9 /* NotiBodyModuleInput.swift */; };
 		7009D39F53D80125199E3AD2 /* NotiWeekRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BA7D2F8E4CF4F378B93BD2 /* NotiWeekRouterTests.swift */; };
 		711D673BAEB477C6E6028CE8 /* NotiBodyConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B4A4DA0E2DE232FDD0BD8 /* NotiBodyConfiguratorTests.swift */; };
@@ -100,6 +99,7 @@
 		DA942183AB84A8E20D08903C /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A022594F09B6EE5BA9D19D /* HomePresenterTests.swift */; };
 		DAB1744A4E1A0B93B38E4589 /* NotiWeekPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A839B2C2E552368E4B7A6B5 /* NotiWeekPresenter.swift */; };
 		E0A340F897482C3BF7600CD4 /* NotiWeekViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8D36D92EDAA80FBAA5445 /* NotiWeekViewInput.swift */; };
+		E3AC06F14B5134240065151E /* Pods_CloudReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942623058921022AB9CDE4FD /* Pods_CloudReminder.framework */; };
 		E70E8068CB082C472FB3A56E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */; };
 		E7B12B2BC377CAC7E93C7EE6 /* NotiTimeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B834BFCC185678E2B011A72 /* NotiTimeInteractorInput.swift */; };
 		EAE26EB5D1FF2F8367F5C124 /* NotiDetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3472FE6E6F9EE49DA48CD39 /* NotiDetailViewInput.swift */; };
@@ -109,11 +109,10 @@
 		F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */; };
 		F56B7B6D24D0AB6D00C4F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */; };
 		F56B7B6F24D0AB6D00C4F946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */; };
-		F56B7B7724D0AB6D00C4F946 /* EasyNoti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B7524D0AB6D00C4F946 /* EasyNoti.xcdatamodeld */; };
+		F56B7B7724D0AB6D00C4F946 /* CloudReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */; };
 		F56B7B7924D0AB7000C4F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7824D0AB7000C4F946 /* Assets.xcassets */; };
 		F56B7B7C24D0AB7000C4F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */; };
-		F56B7B8724D0AB7000C4F946 /* EasyNotiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B8624D0AB7000C4F946 /* EasyNotiTests.swift */; };
-		F56B7B9224D0AB7000C4F946 /* EasyNotiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B9124D0AB7000C4F946 /* EasyNotiUITests.swift */; };
+		F56B7B9224D0AB7000C4F946 /* CloudReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B9124D0AB7000C4F946 /* CloudReminderUITests.swift */; };
 		F6E741D18E6463809001C544 /* NotiBodyViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDB04D032B9CA076BF96D5 /* NotiBodyViewOutput.swift */; };
 		FD0C1062244075DBEF709E49 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4E6D0D1E2271D083A9E3B /* HomeInteractorTests.swift */; };
 /* End PBXBuildFile section */
@@ -151,7 +150,7 @@
 		1ECAA0B0D7130AEADF3EA125 /* NotiDetailRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailRouterInput.swift; sourceTree = "<group>"; };
 		1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
 		1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
-		20957C3A24D54EF500AED580 /* EasyNoti.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyNoti.entitlements; sourceTree = "<group>"; };
+		20957C3A24D54EF500AED580 /* CloudReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudReminder.entitlements; sourceTree = "<group>"; };
 		20957C3B24D54F0A00AED580 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		20E1A70524D5266C002020B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		20E1A70724D53014002020B0 /* NotiTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableCell.swift; sourceTree = "<group>"; };
@@ -186,6 +185,7 @@
 		38FD3F1E67C054961EF450D1 /* NotiTimeConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeConfigurator.swift; sourceTree = "<group>"; };
 		3B7DDAFDFEBBFE85B4EF2A3D /* NotiWeekViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekViewTests.swift; sourceTree = "<group>"; };
 		3CF9DF8845D23C330C405A6B /* NotiBodyRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyRouter.swift; sourceTree = "<group>"; };
+		3EBFA3E86239EA3B51942115 /* Pods-CloudReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudReminder.debug.xcconfig"; path = "Target Support Files/Pods-CloudReminder/Pods-CloudReminder.debug.xcconfig"; sourceTree = "<group>"; };
 		4A839B2C2E552368E4B7A6B5 /* NotiWeekPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekPresenter.swift; sourceTree = "<group>"; };
 		501D490102880C42565A940F /* HomeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 		521CEEE962055CBFBDF6D53F /* NotiTimeModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeModuleInput.swift; sourceTree = "<group>"; };
@@ -201,10 +201,12 @@
 		8695697387979B6E325F10E9 /* NotiBodyModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyModuleInput.swift; sourceTree = "<group>"; };
 		876F4C31482C5E1411AABC28 /* HomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewInput.swift; sourceTree = "<group>"; };
 		878315972FCF44C6C9E07AC5 /* NotiBodyRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyRouterTests.swift; sourceTree = "<group>"; };
+		8830106D5E157B9DEB0B1725 /* Pods-CloudReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudReminder.release.xcconfig"; path = "Target Support Files/Pods-CloudReminder/Pods-CloudReminder.release.xcconfig"; sourceTree = "<group>"; };
 		8C76D4B8F85E86AAB0D395C9 /* NotiBodyViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyViewInput.swift; sourceTree = "<group>"; };
 		8D1B8C8F0C0CAAD09344B2ED /* NotiDetailConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailConfigurator.swift; sourceTree = "<group>"; };
 		8E81D58392C5961D511B7A53 /* NotiTimeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeRouter.swift; sourceTree = "<group>"; };
 		90421B6B6E09EADC147134CD /* NotiDetailRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailRouterTests.swift; sourceTree = "<group>"; };
+		942623058921022AB9CDE4FD /* Pods_CloudReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9715DA74A4D9A5E2D647B2AE /* NotiDetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailPresenter.swift; sourceTree = "<group>"; };
 		9973989DC8C5777892CC2F3D /* NotiBodyPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyPresenter.swift; sourceTree = "<group>"; };
 		A40C67BF4C16C62ADA3FB17E /* NotiTimeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeInteractor.swift; sourceTree = "<group>"; };
@@ -235,24 +237,22 @@
 		EAB0EEF521F801305F953B6C /* NotiTimeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeInteractorTests.swift; sourceTree = "<group>"; };
 		EC880DB04C3881735A181379 /* NotiWeekViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekViewOutput.swift; sourceTree = "<group>"; };
 		F0BDAE55C07CB7185F8925CF /* NotiTimeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeViewOutput.swift; sourceTree = "<group>"; };
-		F56B7B6924D0AB6D00C4F946 /* EasyNoti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNoti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B7B6924D0AB6D00C4F946 /* CloudReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyNoti.xcdatamodel; sourceTree = "<group>"; };
 		F56B7B7824D0AB7000C4F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56B7B7B24D0AB7000C4F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56B7B7D24D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F56B7B8224D0AB7000C4F946 /* EasyNotiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyNotiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F56B7B8624D0AB7000C4F946 /* EasyNotiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyNotiTests.swift; sourceTree = "<group>"; };
+		F56B7B8224D0AB7000C4F946 /* CloudReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56B7B8824D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F56B7B8D24D0AB7000C4F946 /* EasyNotiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyNotiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F56B7B9124D0AB7000C4F946 /* EasyNotiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyNotiUITests.swift; sourceTree = "<group>"; };
+		F56B7B8D24D0AB7000C4F946 /* CloudReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B7B9124D0AB7000C4F946 /* CloudReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudReminderUITests.swift; sourceTree = "<group>"; };
 		F56B7B9324D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F56F376B1666B250DD3DA59A /* NotiWeekRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekRouter.swift; sourceTree = "<group>"; };
 		F852496133F6FE709129BC13 /* HomeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
 		F9CD2D690D9B48109B263F44 /* NotiDetailInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailInteractorInput.swift; sourceTree = "<group>"; };
 		FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		FCB998CB77A0C1808CF6D01A /* Pods_EasyNoti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyNoti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE862E607B47F7A4F96A9562 /* NotiDetailInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,8 +261,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F5C2124E459FDA9C72F3EC8 /* Pods_EasyNoti.framework in Frameworks */,
 				20957C3C24D54F0A00AED580 /* CloudKit.framework in Frameworks */,
+				E3AC06F14B5134240065151E /* Pods_CloudReminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +328,8 @@
 			children = (
 				2B9C9CA793F2540944125ADE /* Pods-EasyNoti.debug.xcconfig */,
 				B2A3E8B2B9EDF4004577C8DC /* Pods-EasyNoti.release.xcconfig */,
+				3EBFA3E86239EA3B51942115 /* Pods-CloudReminder.debug.xcconfig */,
+				8830106D5E157B9DEB0B1725 /* Pods-CloudReminder.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -385,7 +387,7 @@
 			children = (
 				F56B7B7824D0AB7000C4F946 /* Assets.xcassets */,
 				F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */,
-				F56B7B7524D0AB6D00C4F946 /* EasyNoti.xcdatamodeld */,
+				F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -901,7 +903,7 @@
 			isa = PBXGroup;
 			children = (
 				20957C3B24D54F0A00AED580 /* CloudKit.framework */,
-				FCB998CB77A0C1808CF6D01A /* Pods_EasyNoti.framework */,
+				942623058921022AB9CDE4FD /* Pods_CloudReminder.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -927,9 +929,9 @@
 		F56B7B6024D0AB6D00C4F946 = {
 			isa = PBXGroup;
 			children = (
-				F56B7B6B24D0AB6D00C4F946 /* EasyNoti */,
-				F56B7B8524D0AB7000C4F946 /* EasyNotiTests */,
-				F56B7B9024D0AB7000C4F946 /* EasyNotiUITests */,
+				F56B7B6B24D0AB6D00C4F946 /* CloudReminder */,
+				F56B7B8524D0AB7000C4F946 /* CloudReminderTests */,
+				F56B7B9024D0AB7000C4F946 /* CloudReminderUITests */,
 				F56B7B6A24D0AB6D00C4F946 /* Products */,
 				1791B49EDC3C7CB592E56A85 /* Pods */,
 				F42C07DA2FB5CAD80BCCC65F /* Frameworks */,
@@ -939,17 +941,17 @@
 		F56B7B6A24D0AB6D00C4F946 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F56B7B6924D0AB6D00C4F946 /* EasyNoti.app */,
-				F56B7B8224D0AB7000C4F946 /* EasyNotiTests.xctest */,
-				F56B7B8D24D0AB7000C4F946 /* EasyNotiUITests.xctest */,
+				F56B7B6924D0AB6D00C4F946 /* CloudReminder.app */,
+				F56B7B8224D0AB7000C4F946 /* CloudReminderTests.xctest */,
+				F56B7B8D24D0AB7000C4F946 /* CloudReminderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F56B7B6B24D0AB6D00C4F946 /* EasyNoti */ = {
+		F56B7B6B24D0AB6D00C4F946 /* CloudReminder */ = {
 			isa = PBXGroup;
 			children = (
-				20957C3A24D54EF500AED580 /* EasyNoti.entitlements */,
+				20957C3A24D54EF500AED580 /* CloudReminder.entitlements */,
 				F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */,
 				F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */,
 				F56B7B7D24D0AB7000C4F946 /* Info.plist */,
@@ -964,27 +966,26 @@
 				20E1A6FF24D523D6002020B0 /* Utilities */,
 				F583730424D37BFB00C00A98 /* Modules */,
 			);
-			path = EasyNoti;
+			path = CloudReminder;
 			sourceTree = "<group>";
 		};
-		F56B7B8524D0AB7000C4F946 /* EasyNotiTests */ = {
+		F56B7B8524D0AB7000C4F946 /* CloudReminderTests */ = {
 			isa = PBXGroup;
 			children = (
 				20E1A71324D53B98002020B0 /* MOServices */,
 				F583730524D37C0700C00A98 /* Cases */,
-				F56B7B8624D0AB7000C4F946 /* EasyNotiTests.swift */,
 				F56B7B8824D0AB7000C4F946 /* Info.plist */,
 			);
-			path = EasyNotiTests;
+			path = CloudReminderTests;
 			sourceTree = "<group>";
 		};
-		F56B7B9024D0AB7000C4F946 /* EasyNotiUITests */ = {
+		F56B7B9024D0AB7000C4F946 /* CloudReminderUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F56B7B9124D0AB7000C4F946 /* EasyNotiUITests.swift */,
+				F56B7B9124D0AB7000C4F946 /* CloudReminderUITests.swift */,
 				F56B7B9324D0AB7000C4F946 /* Info.plist */,
 			);
-			path = EasyNotiUITests;
+			path = CloudReminderUITests;
 			sourceTree = "<group>";
 		};
 		F583730424D37BFB00C00A98 /* Modules */ = {
@@ -1034,9 +1035,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F56B7B6824D0AB6D00C4F946 /* EasyNoti */ = {
+		F56B7B6824D0AB6D00C4F946 /* CloudReminder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F56B7B9624D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "EasyNoti" */;
+			buildConfigurationList = F56B7B9624D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminder" */;
 			buildPhases = (
 				7FC417CF71B69EAC24C37159 /* [CP] Check Pods Manifest.lock */,
 				F56B7B6524D0AB6D00C4F946 /* Sources */,
@@ -1048,14 +1049,14 @@
 			);
 			dependencies = (
 			);
-			name = EasyNoti;
+			name = CloudReminder;
 			productName = EasyNoti;
-			productReference = F56B7B6924D0AB6D00C4F946 /* EasyNoti.app */;
+			productReference = F56B7B6924D0AB6D00C4F946 /* CloudReminder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F56B7B8124D0AB7000C4F946 /* EasyNotiTests */ = {
+		F56B7B8124D0AB7000C4F946 /* CloudReminderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F56B7B9924D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "EasyNotiTests" */;
+			buildConfigurationList = F56B7B9924D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminderTests" */;
 			buildPhases = (
 				F56B7B7E24D0AB7000C4F946 /* Sources */,
 				F56B7B7F24D0AB7000C4F946 /* Frameworks */,
@@ -1066,14 +1067,14 @@
 			dependencies = (
 				F56B7B8424D0AB7000C4F946 /* PBXTargetDependency */,
 			);
-			name = EasyNotiTests;
+			name = CloudReminderTests;
 			productName = EasyNotiTests;
-			productReference = F56B7B8224D0AB7000C4F946 /* EasyNotiTests.xctest */;
+			productReference = F56B7B8224D0AB7000C4F946 /* CloudReminderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F56B7B8C24D0AB7000C4F946 /* EasyNotiUITests */ = {
+		F56B7B8C24D0AB7000C4F946 /* CloudReminderUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F56B7B9C24D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "EasyNotiUITests" */;
+			buildConfigurationList = F56B7B9C24D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminderUITests" */;
 			buildPhases = (
 				F56B7B8924D0AB7000C4F946 /* Sources */,
 				F56B7B8A24D0AB7000C4F946 /* Frameworks */,
@@ -1084,9 +1085,9 @@
 			dependencies = (
 				F56B7B8F24D0AB7000C4F946 /* PBXTargetDependency */,
 			);
-			name = EasyNotiUITests;
+			name = CloudReminderUITests;
 			productName = EasyNotiUITests;
-			productReference = F56B7B8D24D0AB7000C4F946 /* EasyNotiUITests.xctest */;
+			productReference = F56B7B8D24D0AB7000C4F946 /* CloudReminderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -1112,7 +1113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F56B7B6424D0AB6D00C4F946 /* Build configuration list for PBXProject "EasyNoti" */;
+			buildConfigurationList = F56B7B6424D0AB6D00C4F946 /* Build configuration list for PBXProject "CloudReminder" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1125,9 +1126,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F56B7B6824D0AB6D00C4F946 /* EasyNoti */,
-				F56B7B8124D0AB7000C4F946 /* EasyNotiTests */,
-				F56B7B8C24D0AB7000C4F946 /* EasyNotiUITests */,
+				F56B7B6824D0AB6D00C4F946 /* CloudReminder */,
+				F56B7B8124D0AB7000C4F946 /* CloudReminderTests */,
+				F56B7B8C24D0AB7000C4F946 /* CloudReminderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1174,7 +1175,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EasyNoti-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CloudReminder-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1187,15 +1188,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyNoti/Pods-EasyNoti-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CloudReminder/Pods-CloudReminder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyNoti/Pods-EasyNoti-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CloudReminder/Pods-CloudReminder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyNoti/Pods-EasyNoti-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloudReminder/Pods-CloudReminder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1206,7 +1207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E1A73024D54331002020B0 /* NotiMO+CoreDataProperties.swift in Sources */,
-				F56B7B7724D0AB6D00C4F946 /* EasyNoti.xcdatamodeld in Sources */,
+				F56B7B7724D0AB6D00C4F946 /* CloudReminder.xcdatamodeld in Sources */,
 				20E1A72F24D54331002020B0 /* NotiMO+CoreDataClass.swift in Sources */,
 				20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */,
 				20E1A70C24D533ED002020B0 /* LocalNotiManager.swift in Sources */,
@@ -1287,7 +1288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56B7B8724D0AB7000C4F946 /* EasyNotiTests.swift in Sources */,
 				20E1A71524D53BB6002020B0 /* TestCoreDataStack.swift in Sources */,
 				153231A1A07B6E2BAD82E1FC /* HomeConfiguratorTests.swift in Sources */,
 				20E1A71924D53CAC002020B0 /* NotiGroupMOServiceTests.swift in Sources */,
@@ -1323,7 +1323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56B7B9224D0AB7000C4F946 /* EasyNotiUITests.swift in Sources */,
+				F56B7B9224D0AB7000C4F946 /* CloudReminderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1332,12 +1332,12 @@
 /* Begin PBXTargetDependency section */
 		F56B7B8424D0AB7000C4F946 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F56B7B6824D0AB6D00C4F946 /* EasyNoti */;
+			target = F56B7B6824D0AB6D00C4F946 /* CloudReminder */;
 			targetProxy = F56B7B8324D0AB7000C4F946 /* PBXContainerItemProxy */;
 		};
 		F56B7B8F24D0AB7000C4F946 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F56B7B6824D0AB6D00C4F946 /* EasyNoti */;
+			target = F56B7B6824D0AB6D00C4F946 /* CloudReminder */;
 			targetProxy = F56B7B8E24D0AB7000C4F946 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1470,20 +1470,20 @@
 		};
 		F56B7B9724D0AB7000C4F946 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B9C9CA793F2540944125ADE /* Pods-EasyNoti.debug.xcconfig */;
+			baseConfigurationReference = 3EBFA3E86239EA3B51942115 /* Pods-CloudReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = EasyNoti/EasyNoti.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CloudReminder/CloudReminder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G99VW8TP32;
-				INFOPLIST_FILE = EasyNoti/Info.plist;
+				INFOPLIST_FILE = CloudReminder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.EasyNoti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.CloudReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1492,20 +1492,20 @@
 		};
 		F56B7B9824D0AB7000C4F946 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2A3E8B2B9EDF4004577C8DC /* Pods-EasyNoti.release.xcconfig */;
+			baseConfigurationReference = 8830106D5E157B9DEB0B1725 /* Pods-CloudReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = EasyNoti/EasyNoti.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CloudReminder/CloudReminder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G99VW8TP32;
-				INFOPLIST_FILE = EasyNoti/Info.plist;
+				INFOPLIST_FILE = CloudReminder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.EasyNoti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.CloudReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1530,7 +1530,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyNoti.app/EasyNoti";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudReminder.app/CloudReminder";
 			};
 			name = Debug;
 		};
@@ -1552,7 +1552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyNoti.app/EasyNoti";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudReminder.app/CloudReminder";
 			};
 			name = Release;
 		};
@@ -1599,7 +1599,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F56B7B6424D0AB6D00C4F946 /* Build configuration list for PBXProject "EasyNoti" */ = {
+		F56B7B6424D0AB6D00C4F946 /* Build configuration list for PBXProject "CloudReminder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F56B7B9424D0AB7000C4F946 /* Debug */,
@@ -1608,7 +1608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F56B7B9624D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "EasyNoti" */ = {
+		F56B7B9624D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F56B7B9724D0AB7000C4F946 /* Debug */,
@@ -1617,7 +1617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F56B7B9924D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "EasyNotiTests" */ = {
+		F56B7B9924D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F56B7B9A24D0AB7000C4F946 /* Debug */,
@@ -1626,7 +1626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F56B7B9C24D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "EasyNotiUITests" */ = {
+		F56B7B9C24D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminderUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F56B7B9D24D0AB7000C4F946 /* Debug */,
@@ -1638,13 +1638,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F56B7B7524D0AB6D00C4F946 /* EasyNoti.xcdatamodeld */ = {
+		F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */,
 			);
 			currentVersion = F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */;
-			path = EasyNoti.xcdatamodeld;
+			path = CloudReminder.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

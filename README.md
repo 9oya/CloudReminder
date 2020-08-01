@@ -1,5 +1,5 @@
-# Easy-noti
-The reminder application.
+# CloudReminder
+A simple reminder app that syncs user data through Apple ID to iCloud without registering.
 
 # Product Specification
 ### Architecture:
@@ -17,6 +17,10 @@ The reminder application.
   - Core Data (SQLite)
   - Key Chain
   - UserDefaults
+### Remote Data Persistence:
+  - CloudKit
+### Source Control
+  - Gitflow Workflow
 ### Features:
   - Local Notification
   - Push Notification

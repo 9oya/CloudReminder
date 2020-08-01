@@ -1,0 +1,1654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B4E0FC1B2CC4A96F6046F7 /* NotiTimeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40C67BF4C16C62ADA3FB17E /* NotiTimeInteractor.swift */; };
+		010DD116243D435D5E75A155 /* NotiDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B8C8F0C0CAAD09344B2ED /* NotiDetailConfigurator.swift */; };
+		04E2EE30B9B8D60B15D008A3 /* NotiDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F433008E4F92AF3B261F8C /* NotiDetailRouter.swift */; };
+		0755A5C74355ED2E7D34BB94 /* HomeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559DAEB7FEF3C713CA61E24 /* HomeModuleInput.swift */; };
+		0BC9A04F187F0554DBE400F4 /* NotiTimeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EA9C5201E44DC4CCE8593 /* NotiTimeRouterInput.swift */; };
+		1117B2DE6CA435D316AA1912 /* NotiDetailModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27C2C52A38F03C043AC081 /* NotiDetailModuleInput.swift */; };
+		139F40879D2783CAD42B4262 /* NotiBodyInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C8C33F45243D3B862D97A3 /* NotiBodyInteractorInput.swift */; };
+		153231A1A07B6E2BAD82E1FC /* HomeConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB084CEFF87ECEC8FFF166AE /* HomeConfiguratorTests.swift */; };
+		197627A20832169240173310 /* NotiBodyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51A6FC8715A98B0F739661 /* NotiBodyViewTests.swift */; };
+		1B0BC0529FF6E28F67887184 /* NotiWeekInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F6BE4FC4B9400F7D67904C /* NotiWeekInteractorTests.swift */; };
+		1D20FCFD0D8D855E5AE2FED2 /* NotiDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D6D19845AA06F6DADAA3B7 /* NotiDetailInteractorOutput.swift */; };
+		20957C3C24D54F0A00AED580 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20957C3B24D54F0A00AED580 /* CloudKit.framework */; };
+		20E1A70624D5266C002020B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70524D5266C002020B0 /* CustomTabBarController.swift */; };
+		20E1A70824D53014002020B0 /* NotiTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70724D53014002020B0 /* NotiTableCell.swift */; };
+		20E1A70C24D533ED002020B0 /* LocalNotiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */; };
+		20E1A70E24D533F7002020B0 /* LocalNotiManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */; };
+		20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70F24D534A5002020B0 /* NotiModel.swift */; };
+		20E1A71224D537E9002020B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71124D537E9002020B0 /* CoreDataStack.swift */; };
+		20E1A71524D53BB6002020B0 /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */; };
+		20E1A71724D53C9B002020B0 /* NotiMOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */; };
+		20E1A71924D53CAC002020B0 /* NotiGroupMOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */; };
+		20E1A71C24D54153002020B0 /* NotiMOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71B24D54153002020B0 /* NotiMOService.swift */; };
+		20E1A71E24D5415C002020B0 /* NotiMOServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71D24D5415C002020B0 /* NotiMOServiceProtocol.swift */; };
+		20E1A72024D54167002020B0 /* NotiGroupMOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71F24D54167002020B0 /* NotiGroupMOService.swift */; };
+		20E1A72224D54171002020B0 /* NotiGroupMOServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72124D54171002020B0 /* NotiGroupMOServiceProtocol.swift */; };
+		20E1A72424D541B9002020B0 /* NotiGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72324D541B9002020B0 /* NotiGroupViewModel.swift */; };
+		20E1A72624D5424E002020B0 /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72524D5424E002020B0 /* UIColor+Helpers.swift */; };
+		20E1A72824D54271002020B0 /* UIView+LayerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72724D54271002020B0 /* UIView+LayerHelpers.swift */; };
+		20E1A72D24D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72924D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift */; };
+		20E1A72E24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72A24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift */; };
+		20E1A72F24D54331002020B0 /* NotiMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72B24D54331002020B0 /* NotiMO+CoreDataClass.swift */; };
+		20E1A73024D54331002020B0 /* NotiMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72C24D54331002020B0 /* NotiMO+CoreDataProperties.swift */; };
+		257CC68925D311CC050761E7 /* NotiBodyInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2246BFC5387BFA0A69699BC9 /* NotiBodyInteractorOutput.swift */; };
+		28DAB6D99C6EAC22AEB87A21 /* NotiDetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CD2D690D9B48109B263F44 /* NotiDetailInteractorInput.swift */; };
+		2B50C119559C8A3EB9898ACA /* NotiTimeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7007B9D5FFAF598459CA4AF /* NotiTimeInteractorOutput.swift */; };
+		2DB8B992E6B807170CB255A1 /* NotiTimeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CEEE962055CBFBDF6D53F /* NotiTimeModuleInput.swift */; };
+		36C8E255140848C53D6D373A /* NotiTimeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD3F1E67C054961EF450D1 /* NotiTimeConfigurator.swift */; };
+		39B9F9925D62834813C54BA0 /* NotiDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C3DECF63A9C520C3D20F4 /* NotiDetailPresenterTests.swift */; };
+		39C951C3981C1EC8768692A2 /* HomeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */; };
+		3DD69D853ACC3A73452B8241 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D490102880C42565A940F /* HomeViewTests.swift */; };
+		3EFF7D5A6EDC88A19FC80E9E /* NotiWeekRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5900DF6DB97570434B2ADD5 /* NotiWeekRouterInput.swift */; };
+		41FA11AC1A11E76193E0A203 /* NotiDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE862E607B47F7A4F96A9562 /* NotiDetailInteractorTests.swift */; };
+		42A41DD78F4428088193AC8F /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68401CE486AD8C5AE74D96C /* HomeConfigurator.swift */; };
+		44A0A7A5E8F2DBF4AB522D66 /* NotiBodyPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498C26BA76A8BE53C13B265 /* NotiBodyPresenterTests.swift */; };
+		46E405E73F9A5BB8EE1E6CFE /* NotiBodyViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76D4B8F85E86AAB0D395C9 /* NotiBodyViewInput.swift */; };
+		4738A89F3B56C42762EEDFF0 /* NotiWeekViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DDAFDFEBBFE85B4EF2A3D /* NotiWeekViewTests.swift */; };
+		52394344D8839C10210521AE /* NotiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C860363C199BF4EB6292C /* NotiDetailViewController.swift */; };
+		5444B858814086BC58DE6655 /* NotiBodyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973989DC8C5777892CC2F3D /* NotiBodyPresenter.swift */; };
+		55E6C2648A001EFD8183F646 /* NotiTimeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BD6A8ED612D53384C94EB /* NotiTimeRouterTests.swift */; };
+		598AEF46648A329D339E8831 /* HomeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F4C31482C5E1411AABC28 /* HomeViewInput.swift */; };
+		59F04C673FC2CCC56F4312D0 /* NotiWeekInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A673EF70AE6EC18372A025A /* NotiWeekInteractorOutput.swift */; };
+		633409CCC569B1BC81041048 /* NotiTimeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BDAE55C07CB7185F8925CF /* NotiTimeViewOutput.swift */; };
+		6656083E9D836D8F0E365BEB /* NotiBodyRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F035E7F5B4EF933767D24 /* NotiBodyRouterInput.swift */; };
+		66C21A367E9E6CBE15875DC6 /* NotiBodyRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878315972FCF44C6C9E07AC5 /* NotiBodyRouterTests.swift */; };
+		686376A0F33F6ECBBA02D54B /* NotiBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7D47AE4CE57F7D18B0E79 /* NotiBodyViewController.swift */; };
+		699F1238FD95CFC6590FEBB4 /* NotiTimeConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510AC86032E8D44E327A2CA /* NotiTimeConfiguratorTests.swift */; };
+		6B12C34A8138361B92D2B12B /* NotiWeekPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BCB248CE187FA499477B8A /* NotiWeekPresenterTests.swift */; };
+		6D78E0E1F1EE31A78BD8BE09 /* NotiWeekViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC880DB04C3881735A181379 /* NotiWeekViewOutput.swift */; };
+		6FEB0C214CF42845C29C5EEF /* NotiBodyModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8695697387979B6E325F10E9 /* NotiBodyModuleInput.swift */; };
+		7009D39F53D80125199E3AD2 /* NotiWeekRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BA7D2F8E4CF4F378B93BD2 /* NotiWeekRouterTests.swift */; };
+		711D673BAEB477C6E6028CE8 /* NotiBodyConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B4A4DA0E2DE232FDD0BD8 /* NotiBodyConfiguratorTests.swift */; };
+		734DC6E87E49202EB0FD517B /* NotiWeekConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428CBE47F926D6340329F80 /* NotiWeekConfiguratorTests.swift */; };
+		777EA8D9FF7FF431AF269B61 /* NotiBodyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569074B846CA648C86DE961C /* NotiBodyConfigurator.swift */; };
+		78BAC6C52D392AB2F5869618 /* NotiDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07711C6B06EDC95C46DCA9E6 /* NotiDetailInteractor.swift */; };
+		821BB6967B7429BDF68DC237 /* NotiTimeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C14BD1389E964E9ACA124F /* NotiTimeViewInput.swift */; };
+		82CF0019283B524080C8F295 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA6412157B4F451851624 /* HomePresenter.swift */; };
+		882E4E4D65A83149A4C3308B /* NotiTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21A1A59FE595E74F77E49E9 /* NotiTimeViewController.swift */; };
+		90E270B5D8BE34A3B97F66E9 /* HomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */; };
+		987CEC52369EAA31DE1BD490 /* NotiDetailRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90421B6B6E09EADC147134CD /* NotiDetailRouterTests.swift */; };
+		9AEC0AD83016F14001592E3E /* NotiDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D94849E6AB2B21707AC31EB /* NotiDetailViewTests.swift */; };
+		9BBD620BB3B820017E99E2C0 /* NotiTimeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07A544E16E37E78E94B8432 /* NotiTimeViewTests.swift */; };
+		9CD090010FF3A9D7265DB994 /* HomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852496133F6FE709129BC13 /* HomeInteractorInput.swift */; };
+		9E967EB7DCE2557E221A0D7A /* HomeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC44D9760EE822D3869E88 /* HomeRouterInput.swift */; };
+		A0A3811C3DE056C311EA48C4 /* NotiBodyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B0A2361AD245CC2AFCA0E /* NotiBodyInteractorTests.swift */; };
+		A43A87E10A4E0D7407D69363 /* NotiWeekRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F376B1666B250DD3DA59A /* NotiWeekRouter.swift */; };
+		A440671B1A26C580EB5D2605 /* NotiWeekInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B56FFF745451CC51CF6B0 /* NotiWeekInteractor.swift */; };
+		AA1BDAEEB88B58B8534EF758 /* NotiDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D5CD190741FBEAA22AA3C /* NotiDetailViewOutput.swift */; };
+		B1BB9A8F4EE15E6534576B63 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A15580C6E79FC45F5665F4 /* HomeRouter.swift */; };
+		B5AF30ADEA101FA95D2A321C /* NotiBodyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9DF8845D23C330C405A6B /* NotiBodyRouter.swift */; };
+		B8D3029CC5AEBAA821097457 /* NotiTimePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3DBCF41834E8802FDB9A4 /* NotiTimePresenter.swift */; };
+		BB1E4FA38813DA18A180E31A /* NotiDetailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAA0B0D7130AEADF3EA125 /* NotiDetailRouterInput.swift */; };
+		BC9B3A53F5C207459F33EE44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B313EAE6291D258DF194471B /* HomeViewController.swift */; };
+		C0763B41EFD4C61AED13C432 /* NotiTimeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81D58392C5961D511B7A53 /* NotiTimeRouter.swift */; };
+		C47C02852E8A7FCADD063B95 /* NotiDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715DA74A4D9A5E2D647B2AE /* NotiDetailPresenter.swift */; };
+		C5310B87158DA16E0CEABFB9 /* NotiWeekInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A79255B12E8CFAFE3023E /* NotiWeekInteractorInput.swift */; };
+		C94072541777927BBD80E642 /* NotiDetailConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC483C522ABF4250D84079 /* NotiDetailConfiguratorTests.swift */; };
+		D23D2DA64C0CA8EB7A3947E1 /* NotiWeekConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA8272AAB4CDE54189BDDB /* NotiWeekConfigurator.swift */; };
+		D6B371893E06AF0490EFA18D /* NotiBodyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363A5D9C72249CD883DF3352 /* NotiBodyInteractor.swift */; };
+		D6DDCD4C047A4557FA4F90B5 /* NotiWeekModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85AF5BE05D5B71236E3D23A /* NotiWeekModuleInput.swift */; };
+		DA942183AB84A8E20D08903C /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A022594F09B6EE5BA9D19D /* HomePresenterTests.swift */; };
+		DAB1744A4E1A0B93B38E4589 /* NotiWeekPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A839B2C2E552368E4B7A6B5 /* NotiWeekPresenter.swift */; };
+		E0A340F897482C3BF7600CD4 /* NotiWeekViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8D36D92EDAA80FBAA5445 /* NotiWeekViewInput.swift */; };
+		E3AC06F14B5134240065151E /* Pods_CloudReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942623058921022AB9CDE4FD /* Pods_CloudReminder.framework */; };
+		E70E8068CB082C472FB3A56E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */; };
+		E7B12B2BC377CAC7E93C7EE6 /* NotiTimeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B834BFCC185678E2B011A72 /* NotiTimeInteractorInput.swift */; };
+		EAE26EB5D1FF2F8367F5C124 /* NotiDetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3472FE6E6F9EE49DA48CD39 /* NotiDetailViewInput.swift */; };
+		ED2B93E1D37210C13238812D /* NotiWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84AAF747248E2816F4A546F /* NotiWeekViewController.swift */; };
+		EE9430FC1B711EC56439C65C /* NotiTimePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27B76333F4136054ED3E058 /* NotiTimePresenterTests.swift */; };
+		F2B75EC2D7BABD2B0CD834F4 /* NotiTimeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0EEF521F801305F953B6C /* NotiTimeInteractorTests.swift */; };
+		F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */; };
+		F56B7B6D24D0AB6D00C4F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */; };
+		F56B7B6F24D0AB6D00C4F946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */; };
+		F56B7B7724D0AB6D00C4F946 /* CloudReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */; };
+		F56B7B7924D0AB7000C4F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7824D0AB7000C4F946 /* Assets.xcassets */; };
+		F56B7B7C24D0AB7000C4F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */; };
+		F56B7B9224D0AB7000C4F946 /* CloudReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B9124D0AB7000C4F946 /* CloudReminderUITests.swift */; };
+		F6E741D18E6463809001C544 /* NotiBodyViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDB04D032B9CA076BF96D5 /* NotiBodyViewOutput.swift */; };
+		FD0C1062244075DBEF709E49 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4E6D0D1E2271D083A9E3B /* HomeInteractorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F56B7B8324D0AB7000C4F946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56B7B6124D0AB6D00C4F946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56B7B6824D0AB6D00C4F946;
+			remoteInfo = EasyNoti;
+		};
+		F56B7B8E24D0AB7000C4F946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56B7B6124D0AB6D00C4F946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56B7B6824D0AB6D00C4F946;
+			remoteInfo = EasyNoti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022C3DECF63A9C520C3D20F4 /* NotiDetailPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailPresenterTests.swift; sourceTree = "<group>"; };
+		035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
+		0428CBE47F926D6340329F80 /* NotiWeekConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekConfiguratorTests.swift; sourceTree = "<group>"; };
+		07711C6B06EDC95C46DCA9E6 /* NotiDetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailInteractor.swift; sourceTree = "<group>"; };
+		0B834BFCC185678E2B011A72 /* NotiTimeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeInteractorInput.swift; sourceTree = "<group>"; };
+		0C8BD6A8ED612D53384C94EB /* NotiTimeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeRouterTests.swift; sourceTree = "<group>"; };
+		109D5CD190741FBEAA22AA3C /* NotiDetailViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailViewOutput.swift; sourceTree = "<group>"; };
+		14DA8272AAB4CDE54189BDDB /* NotiWeekConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekConfigurator.swift; sourceTree = "<group>"; };
+		15D8D36D92EDAA80FBAA5445 /* NotiWeekViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekViewInput.swift; sourceTree = "<group>"; };
+		17F3DBCF41834E8802FDB9A4 /* NotiTimePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimePresenter.swift; sourceTree = "<group>"; };
+		19DC483C522ABF4250D84079 /* NotiDetailConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailConfiguratorTests.swift; sourceTree = "<group>"; };
+		19F433008E4F92AF3B261F8C /* NotiDetailRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailRouter.swift; sourceTree = "<group>"; };
+		1ECAA0B0D7130AEADF3EA125 /* NotiDetailRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailRouterInput.swift; sourceTree = "<group>"; };
+		1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
+		1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
+		20957C3A24D54EF500AED580 /* CloudReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudReminder.entitlements; sourceTree = "<group>"; };
+		20957C3B24D54F0A00AED580 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		20E1A70524D5266C002020B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		20E1A70724D53014002020B0 /* NotiTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableCell.swift; sourceTree = "<group>"; };
+		20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotiManager.swift; sourceTree = "<group>"; };
+		20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotiManagerProtocol.swift; sourceTree = "<group>"; };
+		20E1A70F24D534A5002020B0 /* NotiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiModel.swift; sourceTree = "<group>"; };
+		20E1A71124D537E9002020B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
+		20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOServiceTests.swift; sourceTree = "<group>"; };
+		20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupMOServiceTests.swift; sourceTree = "<group>"; };
+		20E1A71B24D54153002020B0 /* NotiMOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOService.swift; sourceTree = "<group>"; };
+		20E1A71D24D5415C002020B0 /* NotiMOServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOServiceProtocol.swift; sourceTree = "<group>"; };
+		20E1A71F24D54167002020B0 /* NotiGroupMOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupMOService.swift; sourceTree = "<group>"; };
+		20E1A72124D54171002020B0 /* NotiGroupMOServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupMOServiceProtocol.swift; sourceTree = "<group>"; };
+		20E1A72324D541B9002020B0 /* NotiGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupViewModel.swift; sourceTree = "<group>"; };
+		20E1A72524D5424E002020B0 /* UIColor+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		20E1A72724D54271002020B0 /* UIView+LayerHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayerHelpers.swift"; sourceTree = "<group>"; };
+		20E1A72924D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotiGroupMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20E1A72A24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotiGroupMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20E1A72B24D54331002020B0 /* NotiMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotiMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20E1A72C24D54331002020B0 /* NotiMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotiMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		21A15580C6E79FC45F5665F4 /* HomeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2246BFC5387BFA0A69699BC9 /* NotiBodyInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyInteractorOutput.swift; sourceTree = "<group>"; };
+		2498C26BA76A8BE53C13B265 /* NotiBodyPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyPresenterTests.swift; sourceTree = "<group>"; };
+		2559DAEB7FEF3C713CA61E24 /* HomeModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeModuleInput.swift; sourceTree = "<group>"; };
+		29F6BE4FC4B9400F7D67904C /* NotiWeekInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekInteractorTests.swift; sourceTree = "<group>"; };
+		2A673EF70AE6EC18372A025A /* NotiWeekInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekInteractorOutput.swift; sourceTree = "<group>"; };
+		2B8A79255B12E8CFAFE3023E /* NotiWeekInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekInteractorInput.swift; sourceTree = "<group>"; };
+		2B9C9CA793F2540944125ADE /* Pods-EasyNoti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNoti.debug.xcconfig"; path = "Target Support Files/Pods-EasyNoti/Pods-EasyNoti.debug.xcconfig"; sourceTree = "<group>"; };
+		2D94849E6AB2B21707AC31EB /* NotiDetailViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailViewTests.swift; sourceTree = "<group>"; };
+		363A5D9C72249CD883DF3352 /* NotiBodyInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyInteractor.swift; sourceTree = "<group>"; };
+		38FD3F1E67C054961EF450D1 /* NotiTimeConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeConfigurator.swift; sourceTree = "<group>"; };
+		3B7DDAFDFEBBFE85B4EF2A3D /* NotiWeekViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekViewTests.swift; sourceTree = "<group>"; };
+		3CF9DF8845D23C330C405A6B /* NotiBodyRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyRouter.swift; sourceTree = "<group>"; };
+		3EBFA3E86239EA3B51942115 /* Pods-CloudReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudReminder.debug.xcconfig"; path = "Target Support Files/Pods-CloudReminder/Pods-CloudReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		4A839B2C2E552368E4B7A6B5 /* NotiWeekPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekPresenter.swift; sourceTree = "<group>"; };
+		501D490102880C42565A940F /* HomeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
+		521CEEE962055CBFBDF6D53F /* NotiTimeModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeModuleInput.swift; sourceTree = "<group>"; };
+		569074B846CA648C86DE961C /* NotiBodyConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyConfigurator.swift; sourceTree = "<group>"; };
+		663B4A4DA0E2DE232FDD0BD8 /* NotiBodyConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyConfiguratorTests.swift; sourceTree = "<group>"; };
+		68BA7D2F8E4CF4F378B93BD2 /* NotiWeekRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekRouterTests.swift; sourceTree = "<group>"; };
+		6DE4E6D0D1E2271D083A9E3B /* HomeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		7B4C860363C199BF4EB6292C /* NotiDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailViewController.swift; sourceTree = "<group>"; };
+		7C8B0A2361AD245CC2AFCA0E /* NotiBodyInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyInteractorTests.swift; sourceTree = "<group>"; };
+		813EA9C5201E44DC4CCE8593 /* NotiTimeRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeRouterInput.swift; sourceTree = "<group>"; };
+		84FDB04D032B9CA076BF96D5 /* NotiBodyViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyViewOutput.swift; sourceTree = "<group>"; };
+		868B56FFF745451CC51CF6B0 /* NotiWeekInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekInteractor.swift; sourceTree = "<group>"; };
+		8695697387979B6E325F10E9 /* NotiBodyModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyModuleInput.swift; sourceTree = "<group>"; };
+		876F4C31482C5E1411AABC28 /* HomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewInput.swift; sourceTree = "<group>"; };
+		878315972FCF44C6C9E07AC5 /* NotiBodyRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyRouterTests.swift; sourceTree = "<group>"; };
+		8830106D5E157B9DEB0B1725 /* Pods-CloudReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudReminder.release.xcconfig"; path = "Target Support Files/Pods-CloudReminder/Pods-CloudReminder.release.xcconfig"; sourceTree = "<group>"; };
+		8C76D4B8F85E86AAB0D395C9 /* NotiBodyViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyViewInput.swift; sourceTree = "<group>"; };
+		8D1B8C8F0C0CAAD09344B2ED /* NotiDetailConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailConfigurator.swift; sourceTree = "<group>"; };
+		8E81D58392C5961D511B7A53 /* NotiTimeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeRouter.swift; sourceTree = "<group>"; };
+		90421B6B6E09EADC147134CD /* NotiDetailRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailRouterTests.swift; sourceTree = "<group>"; };
+		942623058921022AB9CDE4FD /* Pods_CloudReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9715DA74A4D9A5E2D647B2AE /* NotiDetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailPresenter.swift; sourceTree = "<group>"; };
+		9973989DC8C5777892CC2F3D /* NotiBodyPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyPresenter.swift; sourceTree = "<group>"; };
+		A40C67BF4C16C62ADA3FB17E /* NotiTimeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeInteractor.swift; sourceTree = "<group>"; };
+		A510AC86032E8D44E327A2CA /* NotiTimeConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeConfiguratorTests.swift; sourceTree = "<group>"; };
+		A68401CE486AD8C5AE74D96C /* HomeConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		A84AAF747248E2816F4A546F /* NotiWeekViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekViewController.swift; sourceTree = "<group>"; };
+		ACDC44D9760EE822D3869E88 /* HomeRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterInput.swift; sourceTree = "<group>"; };
+		AD3EA6412157B4F451851624 /* HomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		B2A3E8B2B9EDF4004577C8DC /* Pods-EasyNoti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNoti.release.xcconfig"; path = "Target Support Files/Pods-EasyNoti/Pods-EasyNoti.release.xcconfig"; sourceTree = "<group>"; };
+		B313EAE6291D258DF194471B /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B4C14BD1389E964E9ACA124F /* NotiTimeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeViewInput.swift; sourceTree = "<group>"; };
+		C21A1A59FE595E74F77E49E9 /* NotiTimeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeViewController.swift; sourceTree = "<group>"; };
+		C27B76333F4136054ED3E058 /* NotiTimePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimePresenterTests.swift; sourceTree = "<group>"; };
+		C57F035E7F5B4EF933767D24 /* NotiBodyRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyRouterInput.swift; sourceTree = "<group>"; };
+		C7007B9D5FFAF598459CA4AF /* NotiTimeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeInteractorOutput.swift; sourceTree = "<group>"; };
+		C7A022594F09B6EE5BA9D19D /* HomePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		C85AF5BE05D5B71236E3D23A /* NotiWeekModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekModuleInput.swift; sourceTree = "<group>"; };
+		CD27C2C52A38F03C043AC081 /* NotiDetailModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailModuleInput.swift; sourceTree = "<group>"; };
+		D5900DF6DB97570434B2ADD5 /* NotiWeekRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekRouterInput.swift; sourceTree = "<group>"; };
+		D9C8C33F45243D3B862D97A3 /* NotiBodyInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyInteractorInput.swift; sourceTree = "<group>"; };
+		DB084CEFF87ECEC8FFF166AE /* HomeConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeConfiguratorTests.swift; sourceTree = "<group>"; };
+		DD51A6FC8715A98B0F739661 /* NotiBodyViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyViewTests.swift; sourceTree = "<group>"; };
+		E07A544E16E37E78E94B8432 /* NotiTimeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeViewTests.swift; sourceTree = "<group>"; };
+		E3472FE6E6F9EE49DA48CD39 /* NotiDetailViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailViewInput.swift; sourceTree = "<group>"; };
+		E4D7D47AE4CE57F7D18B0E79 /* NotiBodyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiBodyViewController.swift; sourceTree = "<group>"; };
+		E5BCB248CE187FA499477B8A /* NotiWeekPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekPresenterTests.swift; sourceTree = "<group>"; };
+		E7D6D19845AA06F6DADAA3B7 /* NotiDetailInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailInteractorOutput.swift; sourceTree = "<group>"; };
+		EAB0EEF521F801305F953B6C /* NotiTimeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeInteractorTests.swift; sourceTree = "<group>"; };
+		EC880DB04C3881735A181379 /* NotiWeekViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekViewOutput.swift; sourceTree = "<group>"; };
+		F0BDAE55C07CB7185F8925CF /* NotiTimeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiTimeViewOutput.swift; sourceTree = "<group>"; };
+		F56B7B6924D0AB6D00C4F946 /* CloudReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyNoti.xcdatamodel; sourceTree = "<group>"; };
+		F56B7B7824D0AB7000C4F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F56B7B7B24D0AB7000C4F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F56B7B7D24D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56B7B8224D0AB7000C4F946 /* CloudReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B7B8824D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56B7B8D24D0AB7000C4F946 /* CloudReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B7B9124D0AB7000C4F946 /* CloudReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudReminderUITests.swift; sourceTree = "<group>"; };
+		F56B7B9324D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56F376B1666B250DD3DA59A /* NotiWeekRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiWeekRouter.swift; sourceTree = "<group>"; };
+		F852496133F6FE709129BC13 /* HomeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
+		F9CD2D690D9B48109B263F44 /* NotiDetailInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailInteractorInput.swift; sourceTree = "<group>"; };
+		FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		FE862E607B47F7A4F96A9562 /* NotiDetailInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailInteractorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F56B7B6624D0AB6D00C4F946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20957C3C24D54F0A00AED580 /* CloudKit.framework in Frameworks */,
+				E3AC06F14B5134240065151E /* Pods_CloudReminder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B7B7F24D0AB7000C4F946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B7B8A24D0AB7000C4F946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2D5E4E02EA44D9A796D29C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0F25A7EDF1F6C6340586500C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				022C3DECF63A9C520C3D20F4 /* NotiDetailPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1318E1121B9449E83338F17B /* NotiWeek */ = {
+			isa = PBXGroup;
+			children = (
+				5D4647BAE6794D9B767B422D /* Configurator */,
+				DADCAE06C012A8C8055502AA /* View */,
+				75C72C93E451C7B85C215969 /* Interactor */,
+				9FD972667FFB3A5ADFD79FA5 /* Presenter */,
+				ED21FA1EDDBFEBFBD4AAFF64 /* Router */,
+			);
+			path = NotiWeek;
+			sourceTree = "<group>";
+		};
+		156B5B51DBEE1B82759CE9C5 /* NotiTime */ = {
+			isa = PBXGroup;
+			children = (
+				486F28F3FC6451E38C8F5E0E /* Configurator */,
+				F4AC8EE31236693A1899C6B6 /* View */,
+				CB34881A4248C5CBACA1934B /* Interactor */,
+				52634B7A3A46115663CFB235 /* Presenter */,
+				6FFB9F53D127BF199AFB8418 /* Router */,
+			);
+			path = NotiTime;
+			sourceTree = "<group>";
+		};
+		1791B49EDC3C7CB592E56A85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B9C9CA793F2540944125ADE /* Pods-EasyNoti.debug.xcconfig */,
+				B2A3E8B2B9EDF4004577C8DC /* Pods-EasyNoti.release.xcconfig */,
+				3EBFA3E86239EA3B51942115 /* Pods-CloudReminder.debug.xcconfig */,
+				8830106D5E157B9DEB0B1725 /* Pods-CloudReminder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1D86A97D85BEBD814EBFC8FC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2498C26BA76A8BE53C13B265 /* NotiBodyPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1F688E91B52517C5668E40B2 /* NotiBody */ = {
+			isa = PBXGroup;
+			children = (
+				5EEFF4B6BD27FB603A60A08C /* View */,
+				608BF0898B091390800AF9E9 /* Presenter */,
+				94EC03330E31081F41ACA3CC /* Interactor */,
+				88D188237C9BAD4BE3455B50 /* Router */,
+				7410212C40007B318C6598B3 /* Configurator */,
+			);
+			path = NotiBody;
+			sourceTree = "<group>";
+		};
+		20E1A6FF24D523D6002020B0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A70524D5266C002020B0 /* CustomTabBarController.swift */,
+				20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */,
+				20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */,
+				20E1A71124D537E9002020B0 /* CoreDataStack.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		20E1A70024D52439002020B0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A72324D541B9002020B0 /* NotiGroupViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20E1A70124D52446002020B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A72524D5424E002020B0 /* UIColor+Helpers.swift */,
+				20E1A72724D54271002020B0 /* UIView+LayerHelpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20E1A70224D52453002020B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F56B7B7824D0AB7000C4F946 /* Assets.xcassets */,
+				F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */,
+				F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		20E1A70324D5251B002020B0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		20E1A70424D5252D002020B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A70724D53014002020B0 /* NotiTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		20E1A70924D53319002020B0 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A72A24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift */,
+				20E1A72924D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift */,
+				20E1A72B24D54331002020B0 /* NotiMO+CoreDataClass.swift */,
+				20E1A72C24D54331002020B0 /* NotiMO+CoreDataProperties.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		20E1A70A24D53321002020B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A70F24D534A5002020B0 /* NotiModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20E1A71324D53B98002020B0 /* MOServices */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */,
+				20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */,
+				20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */,
+			);
+			path = MOServices;
+			sourceTree = "<group>";
+		};
+		20E1A71A24D5413F002020B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A71B24D54153002020B0 /* NotiMOService.swift */,
+				20E1A71D24D5415C002020B0 /* NotiMOServiceProtocol.swift */,
+				20E1A71F24D54167002020B0 /* NotiGroupMOService.swift */,
+				20E1A72124D54171002020B0 /* NotiGroupMOServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		23D662077332CD91EB624911 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D5900DF6DB97570434B2ADD5 /* NotiWeekRouterInput.swift */,
+				F56F376B1666B250DD3DA59A /* NotiWeekRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		264301717B7534C2AC2ED5F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				501D490102880C42565A940F /* HomeViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28B324E4DE3E2B115BA9616C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4E6D0D1E2271D083A9E3B /* HomeInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		28E5CCB292F8822B4EA44740 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7C8B0A2361AD245CC2AFCA0E /* NotiBodyInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2B671833AE74B594ECC92B3C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CD27C2C52A38F03C043AC081 /* NotiDetailModuleInput.swift */,
+				9715DA74A4D9A5E2D647B2AE /* NotiDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2D4C5C12F7BDA0401671B500 /* NotiDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8DC497DE1DA83DF1BED56B65 /* Configurator */,
+				8FC66D35A00C8B8F8FD373C6 /* View */,
+				549776827437FF1CD011230E /* Interactor */,
+				0F25A7EDF1F6C6340586500C /* Presenter */,
+				9B2153BDF14BADA84FFA2A04 /* Router */,
+			);
+			path = NotiDetail;
+			sourceTree = "<group>";
+		};
+		3723116ECEA4D239F386463C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				521CEEE962055CBFBDF6D53F /* NotiTimeModuleInput.swift */,
+				17F3DBCF41834E8802FDB9A4 /* NotiTimePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		39165B78DDE95B41A43B3C22 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F852496133F6FE709129BC13 /* HomeInteractorInput.swift */,
+				1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */,
+				FA0A53F433E6A7850B72A62E /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3C0566B0CBE0C7E7F7A2E461 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F9CD2D690D9B48109B263F44 /* NotiDetailInteractorInput.swift */,
+				E7D6D19845AA06F6DADAA3B7 /* NotiDetailInteractorOutput.swift */,
+				07711C6B06EDC95C46DCA9E6 /* NotiDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3C0706A28B349FE3661CDE64 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C85AF5BE05D5B71236E3D23A /* NotiWeekModuleInput.swift */,
+				4A839B2C2E552368E4B7A6B5 /* NotiWeekPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3FA81BB24335E39721908130 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4C14BD1389E964E9ACA124F /* NotiTimeViewInput.swift */,
+				F0BDAE55C07CB7185F8925CF /* NotiTimeViewOutput.swift */,
+				C21A1A59FE595E74F77E49E9 /* NotiTimeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FDB2B36D4D88E8C234098BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC5C484245CCE659D6BD32 /* View */,
+				BA3D938AED9FD4B778891854 /* Presenter */,
+				39165B78DDE95B41A43B3C22 /* Interactor */,
+				7778B66FA8F98E6834DE6D1C /* Router */,
+				88E7F377612DFA2062A34A68 /* Configurator */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		43C0DAF883FD7955F2DBF239 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				92DBB9DC13D85F4B541BBC7F /* Configurator */,
+				264301717B7534C2AC2ED5F9 /* View */,
+				28B324E4DE3E2B115BA9616C /* Interactor */,
+				F629D173043C6F2FFCDE3EDA /* Presenter */,
+				0A2D5E4E02EA44D9A796D29C /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		486F28F3FC6451E38C8F5E0E /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A510AC86032E8D44E327A2CA /* NotiTimeConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		51175DF1A90E75D71E0EB86E /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				38FD3F1E67C054961EF450D1 /* NotiTimeConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		52634B7A3A46115663CFB235 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C27B76333F4136054ED3E058 /* NotiTimePresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		54414C14C81A3C4BCDD2CFE2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAA0B0D7130AEADF3EA125 /* NotiDetailRouterInput.swift */,
+				19F433008E4F92AF3B261F8C /* NotiDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		549776827437FF1CD011230E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FE862E607B47F7A4F96A9562 /* NotiDetailInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5D4647BAE6794D9B767B422D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0428CBE47F926D6340329F80 /* NotiWeekConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		5EEFF4B6BD27FB603A60A08C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C76D4B8F85E86AAB0D395C9 /* NotiBodyViewInput.swift */,
+				84FDB04D032B9CA076BF96D5 /* NotiBodyViewOutput.swift */,
+				E4D7D47AE4CE57F7D18B0E79 /* NotiBodyViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		608BF0898B091390800AF9E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8695697387979B6E325F10E9 /* NotiBodyModuleInput.swift */,
+				9973989DC8C5777892CC2F3D /* NotiBodyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6FFB9F53D127BF199AFB8418 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BD6A8ED612D53384C94EB /* NotiTimeRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		71A251F4F178213D68EB3ED9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0B834BFCC185678E2B011A72 /* NotiTimeInteractorInput.swift */,
+				C7007B9D5FFAF598459CA4AF /* NotiTimeInteractorOutput.swift */,
+				A40C67BF4C16C62ADA3FB17E /* NotiTimeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7410212C40007B318C6598B3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				569074B846CA648C86DE961C /* NotiBodyConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		75C72C93E451C7B85C215969 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				29F6BE4FC4B9400F7D67904C /* NotiWeekInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7778B66FA8F98E6834DE6D1C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC44D9760EE822D3869E88 /* HomeRouterInput.swift */,
+				21A15580C6E79FC45F5665F4 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88D188237C9BAD4BE3455B50 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C57F035E7F5B4EF933767D24 /* NotiBodyRouterInput.swift */,
+				3CF9DF8845D23C330C405A6B /* NotiBodyRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88E7F377612DFA2062A34A68 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A68401CE486AD8C5AE74D96C /* HomeConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8DC497DE1DA83DF1BED56B65 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				19DC483C522ABF4250D84079 /* NotiDetailConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8FC66D35A00C8B8F8FD373C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D94849E6AB2B21707AC31EB /* NotiDetailViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92DBB9DC13D85F4B541BBC7F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DB084CEFF87ECEC8FFF166AE /* HomeConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		934B2F9DFD1DC0F2EADCF1E4 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				663B4A4DA0E2DE232FDD0BD8 /* NotiBodyConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		94EC03330E31081F41ACA3CC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8C33F45243D3B862D97A3 /* NotiBodyInteractorInput.swift */,
+				2246BFC5387BFA0A69699BC9 /* NotiBodyInteractorOutput.swift */,
+				363A5D9C72249CD883DF3352 /* NotiBodyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		97C8BA13D3A8ED672195F456 /* NotiBody */ = {
+			isa = PBXGroup;
+			children = (
+				934B2F9DFD1DC0F2EADCF1E4 /* Configurator */,
+				A291F72DB77C2775D9978733 /* View */,
+				28E5CCB292F8822B4EA44740 /* Interactor */,
+				1D86A97D85BEBD814EBFC8FC /* Presenter */,
+				F0A12A2E43A4787F2DC3E3E7 /* Router */,
+			);
+			path = NotiBody;
+			sourceTree = "<group>";
+		};
+		9B2153BDF14BADA84FFA2A04 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				90421B6B6E09EADC147134CD /* NotiDetailRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9FD972667FFB3A5ADFD79FA5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5BCB248CE187FA499477B8A /* NotiWeekPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A291F72DB77C2775D9978733 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD51A6FC8715A98B0F739661 /* NotiBodyViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF386371431586380E933283 /* NotiWeek */ = {
+			isa = PBXGroup;
+			children = (
+				F4CF55EDFE8188E27F21645B /* View */,
+				3C0706A28B349FE3661CDE64 /* Presenter */,
+				CB4AB6A696630F9314879740 /* Interactor */,
+				23D662077332CD91EB624911 /* Router */,
+				CABDD3BB851868450263BB76 /* Configurator */,
+			);
+			path = NotiWeek;
+			sourceTree = "<group>";
+		};
+		B4687889F156F9F7158628AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3472FE6E6F9EE49DA48CD39 /* NotiDetailViewInput.swift */,
+				109D5CD190741FBEAA22AA3C /* NotiDetailViewOutput.swift */,
+				7B4C860363C199BF4EB6292C /* NotiDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9DC2C11C5102EE4498B8452 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				813EA9C5201E44DC4CCE8593 /* NotiTimeRouterInput.swift */,
+				8E81D58392C5961D511B7A53 /* NotiTimeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BA3D938AED9FD4B778891854 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2559DAEB7FEF3C713CA61E24 /* HomeModuleInput.swift */,
+				AD3EA6412157B4F451851624 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BFCAF0CF73059A39B83F4619 /* NotiTime */ = {
+			isa = PBXGroup;
+			children = (
+				3FA81BB24335E39721908130 /* View */,
+				3723116ECEA4D239F386463C /* Presenter */,
+				71A251F4F178213D68EB3ED9 /* Interactor */,
+				B9DC2C11C5102EE4498B8452 /* Router */,
+				51175DF1A90E75D71E0EB86E /* Configurator */,
+			);
+			path = NotiTime;
+			sourceTree = "<group>";
+		};
+		CABDD3BB851868450263BB76 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				14DA8272AAB4CDE54189BDDB /* NotiWeekConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CB34881A4248C5CBACA1934B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EAB0EEF521F801305F953B6C /* NotiTimeInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CB4AB6A696630F9314879740 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2B8A79255B12E8CFAFE3023E /* NotiWeekInteractorInput.swift */,
+				2A673EF70AE6EC18372A025A /* NotiWeekInteractorOutput.swift */,
+				868B56FFF745451CC51CF6B0 /* NotiWeekInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0F91569447E9ACA76FA31BC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				8D1B8C8F0C0CAAD09344B2ED /* NotiDetailConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		D4EC5C484245CCE659D6BD32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				876F4C31482C5E1411AABC28 /* HomeViewInput.swift */,
+				1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */,
+				B313EAE6291D258DF194471B /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DADCAE06C012A8C8055502AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B7DDAFDFEBBFE85B4EF2A3D /* NotiWeekViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED21FA1EDDBFEBFBD4AAFF64 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				68BA7D2F8E4CF4F378B93BD2 /* NotiWeekRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F0A12A2E43A4787F2DC3E3E7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				878315972FCF44C6C9E07AC5 /* NotiBodyRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F42C07DA2FB5CAD80BCCC65F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20957C3B24D54F0A00AED580 /* CloudKit.framework */,
+				942623058921022AB9CDE4FD /* Pods_CloudReminder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4AC8EE31236693A1899C6B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E07A544E16E37E78E94B8432 /* NotiTimeViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4CF55EDFE8188E27F21645B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15D8D36D92EDAA80FBAA5445 /* NotiWeekViewInput.swift */,
+				EC880DB04C3881735A181379 /* NotiWeekViewOutput.swift */,
+				A84AAF747248E2816F4A546F /* NotiWeekViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F56B7B6024D0AB6D00C4F946 = {
+			isa = PBXGroup;
+			children = (
+				F56B7B6B24D0AB6D00C4F946 /* CloudReminder */,
+				F56B7B8524D0AB7000C4F946 /* CloudReminderTests */,
+				F56B7B9024D0AB7000C4F946 /* CloudReminderUITests */,
+				F56B7B6A24D0AB6D00C4F946 /* Products */,
+				1791B49EDC3C7CB592E56A85 /* Pods */,
+				F42C07DA2FB5CAD80BCCC65F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F56B7B6A24D0AB6D00C4F946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F56B7B6924D0AB6D00C4F946 /* CloudReminder.app */,
+				F56B7B8224D0AB7000C4F946 /* CloudReminderTests.xctest */,
+				F56B7B8D24D0AB7000C4F946 /* CloudReminderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F56B7B6B24D0AB6D00C4F946 /* CloudReminder */ = {
+			isa = PBXGroup;
+			children = (
+				20957C3A24D54EF500AED580 /* CloudReminder.entitlements */,
+				F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */,
+				F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */,
+				F56B7B7D24D0AB7000C4F946 /* Info.plist */,
+				20E1A70224D52453002020B0 /* Resources */,
+				20E1A70A24D53321002020B0 /* Models */,
+				20E1A70924D53319002020B0 /* ManagedObjects */,
+				20E1A70424D5252D002020B0 /* Cells */,
+				20E1A70324D5251B002020B0 /* Constants */,
+				20E1A70124D52446002020B0 /* Extensions */,
+				20E1A70024D52439002020B0 /* ViewModels */,
+				20E1A71A24D5413F002020B0 /* Services */,
+				20E1A6FF24D523D6002020B0 /* Utilities */,
+				F583730424D37BFB00C00A98 /* Modules */,
+			);
+			path = CloudReminder;
+			sourceTree = "<group>";
+		};
+		F56B7B8524D0AB7000C4F946 /* CloudReminderTests */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A71324D53B98002020B0 /* MOServices */,
+				F583730524D37C0700C00A98 /* Cases */,
+				F56B7B8824D0AB7000C4F946 /* Info.plist */,
+			);
+			path = CloudReminderTests;
+			sourceTree = "<group>";
+		};
+		F56B7B9024D0AB7000C4F946 /* CloudReminderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F56B7B9124D0AB7000C4F946 /* CloudReminderUITests.swift */,
+				F56B7B9324D0AB7000C4F946 /* Info.plist */,
+			);
+			path = CloudReminderUITests;
+			sourceTree = "<group>";
+		};
+		F583730424D37BFB00C00A98 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3FDB2B36D4D88E8C234098BE /* Home */,
+				F75EB1DE2638F6507405BEAE /* NotiDetail */,
+				BFCAF0CF73059A39B83F4619 /* NotiTime */,
+				1F688E91B52517C5668E40B2 /* NotiBody */,
+				AF386371431586380E933283 /* NotiWeek */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F583730524D37C0700C00A98 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				43C0DAF883FD7955F2DBF239 /* Home */,
+				2D4C5C12F7BDA0401671B500 /* NotiDetail */,
+				156B5B51DBEE1B82759CE9C5 /* NotiTime */,
+				97C8BA13D3A8ED672195F456 /* NotiBody */,
+				1318E1121B9449E83338F17B /* NotiWeek */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		F629D173043C6F2FFCDE3EDA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C7A022594F09B6EE5BA9D19D /* HomePresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F75EB1DE2638F6507405BEAE /* NotiDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B4687889F156F9F7158628AB /* View */,
+				2B671833AE74B594ECC92B3C /* Presenter */,
+				3C0566B0CBE0C7E7F7A2E461 /* Interactor */,
+				54414C14C81A3C4BCDD2CFE2 /* Router */,
+				D0F91569447E9ACA76FA31BC /* Configurator */,
+			);
+			path = NotiDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F56B7B6824D0AB6D00C4F946 /* CloudReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56B7B9624D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminder" */;
+			buildPhases = (
+				7FC417CF71B69EAC24C37159 /* [CP] Check Pods Manifest.lock */,
+				F56B7B6524D0AB6D00C4F946 /* Sources */,
+				F56B7B6624D0AB6D00C4F946 /* Frameworks */,
+				F56B7B6724D0AB6D00C4F946 /* Resources */,
+				A9F0631168C81C3954468321 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudReminder;
+			productName = EasyNoti;
+			productReference = F56B7B6924D0AB6D00C4F946 /* CloudReminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F56B7B8124D0AB7000C4F946 /* CloudReminderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56B7B9924D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminderTests" */;
+			buildPhases = (
+				F56B7B7E24D0AB7000C4F946 /* Sources */,
+				F56B7B7F24D0AB7000C4F946 /* Frameworks */,
+				F56B7B8024D0AB7000C4F946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F56B7B8424D0AB7000C4F946 /* PBXTargetDependency */,
+			);
+			name = CloudReminderTests;
+			productName = EasyNotiTests;
+			productReference = F56B7B8224D0AB7000C4F946 /* CloudReminderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F56B7B8C24D0AB7000C4F946 /* CloudReminderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56B7B9C24D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminderUITests" */;
+			buildPhases = (
+				F56B7B8924D0AB7000C4F946 /* Sources */,
+				F56B7B8A24D0AB7000C4F946 /* Frameworks */,
+				F56B7B8B24D0AB7000C4F946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F56B7B8F24D0AB7000C4F946 /* PBXTargetDependency */,
+			);
+			name = CloudReminderUITests;
+			productName = EasyNotiUITests;
+			productReference = F56B7B8D24D0AB7000C4F946 /* CloudReminderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F56B7B6124D0AB6D00C4F946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Dymm;
+				TargetAttributes = {
+					F56B7B6824D0AB6D00C4F946 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					F56B7B8124D0AB7000C4F946 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = F56B7B6824D0AB6D00C4F946;
+					};
+					F56B7B8C24D0AB7000C4F946 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = F56B7B6824D0AB6D00C4F946;
+					};
+				};
+			};
+			buildConfigurationList = F56B7B6424D0AB6D00C4F946 /* Build configuration list for PBXProject "CloudReminder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F56B7B6024D0AB6D00C4F946;
+			productRefGroup = F56B7B6A24D0AB6D00C4F946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F56B7B6824D0AB6D00C4F946 /* CloudReminder */,
+				F56B7B8124D0AB7000C4F946 /* CloudReminderTests */,
+				F56B7B8C24D0AB7000C4F946 /* CloudReminderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F56B7B6724D0AB6D00C4F946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56B7B7C24D0AB7000C4F946 /* LaunchScreen.storyboard in Resources */,
+				F56B7B7924D0AB7000C4F946 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B7B8024D0AB7000C4F946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B7B8B24D0AB7000C4F946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FC417CF71B69EAC24C37159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudReminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9F0631168C81C3954468321 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudReminder/Pods-CloudReminder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudReminder/Pods-CloudReminder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloudReminder/Pods-CloudReminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F56B7B6524D0AB6D00C4F946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E1A73024D54331002020B0 /* NotiMO+CoreDataProperties.swift in Sources */,
+				F56B7B7724D0AB6D00C4F946 /* CloudReminder.xcdatamodeld in Sources */,
+				20E1A72F24D54331002020B0 /* NotiMO+CoreDataClass.swift in Sources */,
+				20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */,
+				20E1A70C24D533ED002020B0 /* LocalNotiManager.swift in Sources */,
+				20E1A71C24D54153002020B0 /* NotiMOService.swift in Sources */,
+				20E1A70624D5266C002020B0 /* CustomTabBarController.swift in Sources */,
+				20E1A70824D53014002020B0 /* NotiTableCell.swift in Sources */,
+				20E1A72424D541B9002020B0 /* NotiGroupViewModel.swift in Sources */,
+				F56B7B6D24D0AB6D00C4F946 /* AppDelegate.swift in Sources */,
+				20E1A72824D54271002020B0 /* UIView+LayerHelpers.swift in Sources */,
+				F56B7B6F24D0AB6D00C4F946 /* SceneDelegate.swift in Sources */,
+				598AEF46648A329D339E8831 /* HomeViewInput.swift in Sources */,
+				20E1A72024D54167002020B0 /* NotiGroupMOService.swift in Sources */,
+				20E1A72224D54171002020B0 /* NotiGroupMOServiceProtocol.swift in Sources */,
+				39C951C3981C1EC8768692A2 /* HomeViewOutput.swift in Sources */,
+				BC9B3A53F5C207459F33EE44 /* HomeViewController.swift in Sources */,
+				20E1A70E24D533F7002020B0 /* LocalNotiManagerProtocol.swift in Sources */,
+				0755A5C74355ED2E7D34BB94 /* HomeModuleInput.swift in Sources */,
+				20E1A71E24D5415C002020B0 /* NotiMOServiceProtocol.swift in Sources */,
+				82CF0019283B524080C8F295 /* HomePresenter.swift in Sources */,
+				9CD090010FF3A9D7265DB994 /* HomeInteractorInput.swift in Sources */,
+				20E1A72E24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift in Sources */,
+				90E270B5D8BE34A3B97F66E9 /* HomeInteractorOutput.swift in Sources */,
+				20E1A71224D537E9002020B0 /* CoreDataStack.swift in Sources */,
+				E70E8068CB082C472FB3A56E /* HomeInteractor.swift in Sources */,
+				9E967EB7DCE2557E221A0D7A /* HomeRouterInput.swift in Sources */,
+				B1BB9A8F4EE15E6534576B63 /* HomeRouter.swift in Sources */,
+				20E1A72D24D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift in Sources */,
+				42A41DD78F4428088193AC8F /* HomeConfigurator.swift in Sources */,
+				20E1A72624D5424E002020B0 /* UIColor+Helpers.swift in Sources */,
+				EAE26EB5D1FF2F8367F5C124 /* NotiDetailViewInput.swift in Sources */,
+				AA1BDAEEB88B58B8534EF758 /* NotiDetailViewOutput.swift in Sources */,
+				52394344D8839C10210521AE /* NotiDetailViewController.swift in Sources */,
+				1117B2DE6CA435D316AA1912 /* NotiDetailModuleInput.swift in Sources */,
+				C47C02852E8A7FCADD063B95 /* NotiDetailPresenter.swift in Sources */,
+				28DAB6D99C6EAC22AEB87A21 /* NotiDetailInteractorInput.swift in Sources */,
+				1D20FCFD0D8D855E5AE2FED2 /* NotiDetailInteractorOutput.swift in Sources */,
+				78BAC6C52D392AB2F5869618 /* NotiDetailInteractor.swift in Sources */,
+				BB1E4FA38813DA18A180E31A /* NotiDetailRouterInput.swift in Sources */,
+				04E2EE30B9B8D60B15D008A3 /* NotiDetailRouter.swift in Sources */,
+				010DD116243D435D5E75A155 /* NotiDetailConfigurator.swift in Sources */,
+				821BB6967B7429BDF68DC237 /* NotiTimeViewInput.swift in Sources */,
+				633409CCC569B1BC81041048 /* NotiTimeViewOutput.swift in Sources */,
+				882E4E4D65A83149A4C3308B /* NotiTimeViewController.swift in Sources */,
+				2DB8B992E6B807170CB255A1 /* NotiTimeModuleInput.swift in Sources */,
+				B8D3029CC5AEBAA821097457 /* NotiTimePresenter.swift in Sources */,
+				E7B12B2BC377CAC7E93C7EE6 /* NotiTimeInteractorInput.swift in Sources */,
+				2B50C119559C8A3EB9898ACA /* NotiTimeInteractorOutput.swift in Sources */,
+				00B4E0FC1B2CC4A96F6046F7 /* NotiTimeInteractor.swift in Sources */,
+				0BC9A04F187F0554DBE400F4 /* NotiTimeRouterInput.swift in Sources */,
+				C0763B41EFD4C61AED13C432 /* NotiTimeRouter.swift in Sources */,
+				36C8E255140848C53D6D373A /* NotiTimeConfigurator.swift in Sources */,
+				46E405E73F9A5BB8EE1E6CFE /* NotiBodyViewInput.swift in Sources */,
+				F6E741D18E6463809001C544 /* NotiBodyViewOutput.swift in Sources */,
+				686376A0F33F6ECBBA02D54B /* NotiBodyViewController.swift in Sources */,
+				6FEB0C214CF42845C29C5EEF /* NotiBodyModuleInput.swift in Sources */,
+				5444B858814086BC58DE6655 /* NotiBodyPresenter.swift in Sources */,
+				139F40879D2783CAD42B4262 /* NotiBodyInteractorInput.swift in Sources */,
+				257CC68925D311CC050761E7 /* NotiBodyInteractorOutput.swift in Sources */,
+				D6B371893E06AF0490EFA18D /* NotiBodyInteractor.swift in Sources */,
+				6656083E9D836D8F0E365BEB /* NotiBodyRouterInput.swift in Sources */,
+				B5AF30ADEA101FA95D2A321C /* NotiBodyRouter.swift in Sources */,
+				777EA8D9FF7FF431AF269B61 /* NotiBodyConfigurator.swift in Sources */,
+				E0A340F897482C3BF7600CD4 /* NotiWeekViewInput.swift in Sources */,
+				6D78E0E1F1EE31A78BD8BE09 /* NotiWeekViewOutput.swift in Sources */,
+				ED2B93E1D37210C13238812D /* NotiWeekViewController.swift in Sources */,
+				D6DDCD4C047A4557FA4F90B5 /* NotiWeekModuleInput.swift in Sources */,
+				DAB1744A4E1A0B93B38E4589 /* NotiWeekPresenter.swift in Sources */,
+				C5310B87158DA16E0CEABFB9 /* NotiWeekInteractorInput.swift in Sources */,
+				59F04C673FC2CCC56F4312D0 /* NotiWeekInteractorOutput.swift in Sources */,
+				A440671B1A26C580EB5D2605 /* NotiWeekInteractor.swift in Sources */,
+				3EFF7D5A6EDC88A19FC80E9E /* NotiWeekRouterInput.swift in Sources */,
+				A43A87E10A4E0D7407D69363 /* NotiWeekRouter.swift in Sources */,
+				D23D2DA64C0CA8EB7A3947E1 /* NotiWeekConfigurator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B7B7E24D0AB7000C4F946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E1A71524D53BB6002020B0 /* TestCoreDataStack.swift in Sources */,
+				153231A1A07B6E2BAD82E1FC /* HomeConfiguratorTests.swift in Sources */,
+				20E1A71924D53CAC002020B0 /* NotiGroupMOServiceTests.swift in Sources */,
+				3DD69D853ACC3A73452B8241 /* HomeViewTests.swift in Sources */,
+				FD0C1062244075DBEF709E49 /* HomeInteractorTests.swift in Sources */,
+				20E1A71724D53C9B002020B0 /* NotiMOServiceTests.swift in Sources */,
+				DA942183AB84A8E20D08903C /* HomePresenterTests.swift in Sources */,
+				F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */,
+				C94072541777927BBD80E642 /* NotiDetailConfiguratorTests.swift in Sources */,
+				9AEC0AD83016F14001592E3E /* NotiDetailViewTests.swift in Sources */,
+				41FA11AC1A11E76193E0A203 /* NotiDetailInteractorTests.swift in Sources */,
+				39B9F9925D62834813C54BA0 /* NotiDetailPresenterTests.swift in Sources */,
+				987CEC52369EAA31DE1BD490 /* NotiDetailRouterTests.swift in Sources */,
+				699F1238FD95CFC6590FEBB4 /* NotiTimeConfiguratorTests.swift in Sources */,
+				9BBD620BB3B820017E99E2C0 /* NotiTimeViewTests.swift in Sources */,
+				F2B75EC2D7BABD2B0CD834F4 /* NotiTimeInteractorTests.swift in Sources */,
+				EE9430FC1B711EC56439C65C /* NotiTimePresenterTests.swift in Sources */,
+				55E6C2648A001EFD8183F646 /* NotiTimeRouterTests.swift in Sources */,
+				711D673BAEB477C6E6028CE8 /* NotiBodyConfiguratorTests.swift in Sources */,
+				197627A20832169240173310 /* NotiBodyViewTests.swift in Sources */,
+				A0A3811C3DE056C311EA48C4 /* NotiBodyInteractorTests.swift in Sources */,
+				44A0A7A5E8F2DBF4AB522D66 /* NotiBodyPresenterTests.swift in Sources */,
+				66C21A367E9E6CBE15875DC6 /* NotiBodyRouterTests.swift in Sources */,
+				734DC6E87E49202EB0FD517B /* NotiWeekConfiguratorTests.swift in Sources */,
+				4738A89F3B56C42762EEDFF0 /* NotiWeekViewTests.swift in Sources */,
+				1B0BC0529FF6E28F67887184 /* NotiWeekInteractorTests.swift in Sources */,
+				6B12C34A8138361B92D2B12B /* NotiWeekPresenterTests.swift in Sources */,
+				7009D39F53D80125199E3AD2 /* NotiWeekRouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B7B8924D0AB7000C4F946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56B7B9224D0AB7000C4F946 /* CloudReminderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F56B7B8424D0AB7000C4F946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56B7B6824D0AB6D00C4F946 /* CloudReminder */;
+			targetProxy = F56B7B8324D0AB7000C4F946 /* PBXContainerItemProxy */;
+		};
+		F56B7B8F24D0AB7000C4F946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56B7B6824D0AB6D00C4F946 /* CloudReminder */;
+			targetProxy = F56B7B8E24D0AB7000C4F946 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56B7B7B24D0AB7000C4F946 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F56B7B9424D0AB7000C4F946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F56B7B9524D0AB7000C4F946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F56B7B9724D0AB7000C4F946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBFA3E86239EA3B51942115 /* Pods-CloudReminder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudReminder/CloudReminder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G99VW8TP32;
+				INFOPLIST_FILE = CloudReminder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.CloudReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F56B7B9824D0AB7000C4F946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8830106D5E157B9DEB0B1725 /* Pods-CloudReminder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudReminder/CloudReminder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G99VW8TP32;
+				INFOPLIST_FILE = CloudReminder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.CloudReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F56B7B9A24D0AB7000C4F946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G99VW8TP32;
+				INFOPLIST_FILE = EasyNotiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dymm.EasyNotiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudReminder.app/CloudReminder";
+			};
+			name = Debug;
+		};
+		F56B7B9B24D0AB7000C4F946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G99VW8TP32;
+				INFOPLIST_FILE = EasyNotiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dymm.EasyNotiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudReminder.app/CloudReminder";
+			};
+			name = Release;
+		};
+		F56B7B9D24D0AB7000C4F946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G99VW8TP32;
+				INFOPLIST_FILE = EasyNotiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dymm.EasyNotiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyNoti;
+			};
+			name = Debug;
+		};
+		F56B7B9E24D0AB7000C4F946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G99VW8TP32;
+				INFOPLIST_FILE = EasyNotiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dymm.EasyNotiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyNoti;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F56B7B6424D0AB6D00C4F946 /* Build configuration list for PBXProject "CloudReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56B7B9424D0AB7000C4F946 /* Debug */,
+				F56B7B9524D0AB7000C4F946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56B7B9624D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56B7B9724D0AB7000C4F946 /* Debug */,
+				F56B7B9824D0AB7000C4F946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56B7B9924D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56B7B9A24D0AB7000C4F946 /* Debug */,
+				F56B7B9B24D0AB7000C4F946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56B7B9C24D0AB7000C4F946 /* Build configuration list for PBXNativeTarget "CloudReminderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56B7B9D24D0AB7000C4F946 /* Debug */,
+				F56B7B9E24D0AB7000C4F946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */,
+			);
+			currentVersion = F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */;
+			path = CloudReminder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F56B7B6124D0AB6D00C4F946 /* Project object */;
+}

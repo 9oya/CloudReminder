@@ -1519,14 +1519,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G99VW8TP32;
-				INFOPLIST_FILE = EasyNotiTests/Info.plist;
+				INFOPLIST_FILE = CloudReminderTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.dymm.EasyNotiTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.CloudReminderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1541,14 +1541,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G99VW8TP32;
-				INFOPLIST_FILE = EasyNotiTests/Info.plist;
+				INFOPLIST_FILE = CloudReminderTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.dymm.EasyNotiTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.CloudReminderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1562,17 +1562,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G99VW8TP32;
-				INFOPLIST_FILE = EasyNotiUITests/Info.plist;
+				INFOPLIST_FILE = CloudReminderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.dymm.EasyNotiUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.CloudReminderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EasyNoti;
+				TEST_TARGET_NAME = CloudReminder;
 			};
 			name = Debug;
 		};
@@ -1582,17 +1582,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G99VW8TP32;
-				INFOPLIST_FILE = EasyNotiUITests/Info.plist;
+				INFOPLIST_FILE = CloudReminderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.dymm.EasyNotiUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dymm.CloudReminderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EasyNoti;
+				TEST_TARGET_NAME = CloudReminder;
 			};
 			name = Release;
 		};

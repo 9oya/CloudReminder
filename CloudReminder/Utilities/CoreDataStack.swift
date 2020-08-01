@@ -1,6 +1,6 @@
 //
 //  CoreDataStack.swift
-//  EasyNoti
+//  CloudReminder
 //
 //  Created by 9oya on 2020/08/01.
 //  Copyright © 2020 Dymm. All rights reserved.
@@ -9,7 +9,7 @@
 import CoreData
 
 open class CoreDataStack {
-    public static let managedModelName = "EasyNoti"
+    public static let managedModelName = "CloudReminder"
     public static let managedModel: NSManagedObjectModel = {
         let modelURL = Bundle.main.url(forResource: managedModelName, withExtension: "momd")!
         return NSManagedObjectModel(contentsOf: modelURL)!

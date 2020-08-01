@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  EasyNoti
+//  CloudReminder
 //
 //  Created by Eido Goya on 2020/07/29.
 //  Copyright © 2020 Dymm. All rights reserved.

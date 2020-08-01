@@ -1,12 +1,12 @@
 //
 //  NotiGroupMOServiceTests.swift
-//  EasyNotiTests
+//  CloudReminderTests
 //
 //  Created by 9oya on 2020/08/01.
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-@testable import EasyNoti
+@testable import CloudReminder
 import XCTest
 import CoreData
 

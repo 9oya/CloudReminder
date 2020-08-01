@@ -7,4 +7,6 @@ target 'EasyNoti' do
   pod 'RxAlamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'ColorCompatibility'
+  pod 'KeychainAccess'
 end

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="NotiGroupMO" representedClassName="NotiGroupMO" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="hour" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isOn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="minute" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="notiMOs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NotiMO" inverseName="notiGroupMO" inverseEntity="NotiMO"/>
+    </entity>
+    <entity name="NotiMO" representedClassName="NotiMO" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isOn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="weekCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="notiGroupMO" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NotiGroupMO" inverseName="notiMOs" inverseEntity="NotiGroupMO"/>
+    </entity>
+    <elements>
+        <element name="NotiGroupMO" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="NotiMO" positionX="-54" positionY="-9" width="128" height="118"/>
+    </elements>
+</model>

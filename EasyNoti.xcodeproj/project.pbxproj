@@ -9,6 +9,26 @@
 /* Begin PBXBuildFile section */
 		0755A5C74355ED2E7D34BB94 /* HomeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559DAEB7FEF3C713CA61E24 /* HomeModuleInput.swift */; };
 		153231A1A07B6E2BAD82E1FC /* HomeConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB084CEFF87ECEC8FFF166AE /* HomeConfiguratorTests.swift */; };
+		20E1A70624D5266C002020B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70524D5266C002020B0 /* CustomTabBarController.swift */; };
+		20E1A70824D53014002020B0 /* NotiTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70724D53014002020B0 /* NotiTableCell.swift */; };
+		20E1A70C24D533ED002020B0 /* LocalNotiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */; };
+		20E1A70E24D533F7002020B0 /* LocalNotiManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */; };
+		20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70F24D534A5002020B0 /* NotiModel.swift */; };
+		20E1A71224D537E9002020B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71124D537E9002020B0 /* CoreDataStack.swift */; };
+		20E1A71524D53BB6002020B0 /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */; };
+		20E1A71724D53C9B002020B0 /* NotiMOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */; };
+		20E1A71924D53CAC002020B0 /* NotiGroupMOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */; };
+		20E1A71C24D54153002020B0 /* NotiMOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71B24D54153002020B0 /* NotiMOService.swift */; };
+		20E1A71E24D5415C002020B0 /* NotiMOServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71D24D5415C002020B0 /* NotiMOServiceProtocol.swift */; };
+		20E1A72024D54167002020B0 /* NotiGroupMOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71F24D54167002020B0 /* NotiGroupMOService.swift */; };
+		20E1A72224D54171002020B0 /* NotiGroupMOServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72124D54171002020B0 /* NotiGroupMOServiceProtocol.swift */; };
+		20E1A72424D541B9002020B0 /* NotiGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72324D541B9002020B0 /* NotiGroupViewModel.swift */; };
+		20E1A72624D5424E002020B0 /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72524D5424E002020B0 /* UIColor+Helpers.swift */; };
+		20E1A72824D54271002020B0 /* UIView+LayerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72724D54271002020B0 /* UIView+LayerHelpers.swift */; };
+		20E1A72D24D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72924D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift */; };
+		20E1A72E24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72A24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift */; };
+		20E1A72F24D54331002020B0 /* NotiMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72B24D54331002020B0 /* NotiMO+CoreDataClass.swift */; };
+		20E1A73024D54331002020B0 /* NotiMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A72C24D54331002020B0 /* NotiMO+CoreDataProperties.swift */; };
 		39C951C3981C1EC8768692A2 /* HomeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */; };
 		3DD69D853ACC3A73452B8241 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D490102880C42565A940F /* HomeViewTests.swift */; };
 		42A41DD78F4428088193AC8F /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68401CE486AD8C5AE74D96C /* HomeConfigurator.swift */; };
@@ -25,7 +45,6 @@
 		F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */; };
 		F56B7B6D24D0AB6D00C4F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */; };
 		F56B7B6F24D0AB6D00C4F946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */; };
-		F56B7B7124D0AB6D00C4F946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B7024D0AB6D00C4F946 /* ViewController.swift */; };
 		F56B7B7724D0AB6D00C4F946 /* EasyNoti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B7524D0AB6D00C4F946 /* EasyNoti.xcdatamodeld */; };
 		F56B7B7924D0AB7000C4F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7824D0AB7000C4F946 /* Assets.xcassets */; };
 		F56B7B7C24D0AB7000C4F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */; };
@@ -55,6 +74,26 @@
 		035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
 		1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
 		1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
+		20E1A70524D5266C002020B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		20E1A70724D53014002020B0 /* NotiTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableCell.swift; sourceTree = "<group>"; };
+		20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotiManager.swift; sourceTree = "<group>"; };
+		20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotiManagerProtocol.swift; sourceTree = "<group>"; };
+		20E1A70F24D534A5002020B0 /* NotiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiModel.swift; sourceTree = "<group>"; };
+		20E1A71124D537E9002020B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
+		20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOServiceTests.swift; sourceTree = "<group>"; };
+		20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupMOServiceTests.swift; sourceTree = "<group>"; };
+		20E1A71B24D54153002020B0 /* NotiMOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOService.swift; sourceTree = "<group>"; };
+		20E1A71D24D5415C002020B0 /* NotiMOServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOServiceProtocol.swift; sourceTree = "<group>"; };
+		20E1A71F24D54167002020B0 /* NotiGroupMOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupMOService.swift; sourceTree = "<group>"; };
+		20E1A72124D54171002020B0 /* NotiGroupMOServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupMOServiceProtocol.swift; sourceTree = "<group>"; };
+		20E1A72324D541B9002020B0 /* NotiGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupViewModel.swift; sourceTree = "<group>"; };
+		20E1A72524D5424E002020B0 /* UIColor+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		20E1A72724D54271002020B0 /* UIView+LayerHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayerHelpers.swift"; sourceTree = "<group>"; };
+		20E1A72924D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotiGroupMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20E1A72A24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotiGroupMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20E1A72B24D54331002020B0 /* NotiMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotiMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20E1A72C24D54331002020B0 /* NotiMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotiMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		21A15580C6E79FC45F5665F4 /* HomeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		2559DAEB7FEF3C713CA61E24 /* HomeModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeModuleInput.swift; sourceTree = "<group>"; };
 		2B9C9CA793F2540944125ADE /* Pods-EasyNoti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNoti.debug.xcconfig"; path = "Target Support Files/Pods-EasyNoti/Pods-EasyNoti.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +110,6 @@
 		F56B7B6924D0AB6D00C4F946 /* EasyNoti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNoti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F56B7B7024D0AB6D00C4F946 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyNoti.xcdatamodel; sourceTree = "<group>"; };
 		F56B7B7824D0AB7000C4F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56B7B7B24D0AB7000C4F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +166,99 @@
 				B2A3E8B2B9EDF4004577C8DC /* Pods-EasyNoti.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		20E1A6FF24D523D6002020B0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A70524D5266C002020B0 /* CustomTabBarController.swift */,
+				20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */,
+				20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */,
+				20E1A71124D537E9002020B0 /* CoreDataStack.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		20E1A70024D52439002020B0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A72324D541B9002020B0 /* NotiGroupViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20E1A70124D52446002020B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A72524D5424E002020B0 /* UIColor+Helpers.swift */,
+				20E1A72724D54271002020B0 /* UIView+LayerHelpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20E1A70224D52453002020B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F56B7B7824D0AB7000C4F946 /* Assets.xcassets */,
+				F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */,
+				F56B7B7524D0AB6D00C4F946 /* EasyNoti.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		20E1A70324D5251B002020B0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		20E1A70424D5252D002020B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A70724D53014002020B0 /* NotiTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		20E1A70924D53319002020B0 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A72A24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift */,
+				20E1A72924D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift */,
+				20E1A72B24D54331002020B0 /* NotiMO+CoreDataClass.swift */,
+				20E1A72C24D54331002020B0 /* NotiMO+CoreDataProperties.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		20E1A70A24D53321002020B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A70F24D534A5002020B0 /* NotiModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20E1A71324D53B98002020B0 /* MOServices */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */,
+				20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */,
+				20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */,
+			);
+			path = MOServices;
+			sourceTree = "<group>";
+		};
+		20E1A71A24D5413F002020B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A71B24D54153002020B0 /* NotiMOService.swift */,
+				20E1A71D24D5415C002020B0 /* NotiMOServiceProtocol.swift */,
+				20E1A71F24D54167002020B0 /* NotiGroupMOService.swift */,
+				20E1A72124D54171002020B0 /* NotiGroupMOServiceProtocol.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		264301717B7534C2AC2ED5F9 /* View */ = {
@@ -257,14 +388,19 @@
 		F56B7B6B24D0AB6D00C4F946 /* EasyNoti */ = {
 			isa = PBXGroup;
 			children = (
-				F583730424D37BFB00C00A98 /* Modules */,
 				F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */,
 				F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */,
-				F56B7B7024D0AB6D00C4F946 /* ViewController.swift */,
-				F56B7B7824D0AB7000C4F946 /* Assets.xcassets */,
-				F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */,
 				F56B7B7D24D0AB7000C4F946 /* Info.plist */,
-				F56B7B7524D0AB6D00C4F946 /* EasyNoti.xcdatamodeld */,
+				20E1A70224D52453002020B0 /* Resources */,
+				20E1A70A24D53321002020B0 /* Models */,
+				20E1A70924D53319002020B0 /* ManagedObjects */,
+				20E1A70424D5252D002020B0 /* Cells */,
+				20E1A70324D5251B002020B0 /* Constants */,
+				20E1A70124D52446002020B0 /* Extensions */,
+				20E1A70024D52439002020B0 /* ViewModels */,
+				20E1A71A24D5413F002020B0 /* Services */,
+				20E1A6FF24D523D6002020B0 /* Utilities */,
+				F583730424D37BFB00C00A98 /* Modules */,
 			);
 			path = EasyNoti;
 			sourceTree = "<group>";
@@ -272,6 +408,7 @@
 		F56B7B8524D0AB7000C4F946 /* EasyNotiTests */ = {
 			isa = PBXGroup;
 			children = (
+				20E1A71324D53B98002020B0 /* MOServices */,
 				F583730524D37C0700C00A98 /* Cases */,
 				F56B7B8624D0AB7000C4F946 /* EasyNotiTests.swift */,
 				F56B7B8824D0AB7000C4F946 /* Info.plist */,
@@ -486,21 +623,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56B7B7124D0AB6D00C4F946 /* ViewController.swift in Sources */,
+				20E1A73024D54331002020B0 /* NotiMO+CoreDataProperties.swift in Sources */,
 				F56B7B7724D0AB6D00C4F946 /* EasyNoti.xcdatamodeld in Sources */,
+				20E1A72F24D54331002020B0 /* NotiMO+CoreDataClass.swift in Sources */,
+				20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */,
+				20E1A70C24D533ED002020B0 /* LocalNotiManager.swift in Sources */,
+				20E1A71C24D54153002020B0 /* NotiMOService.swift in Sources */,
+				20E1A70624D5266C002020B0 /* CustomTabBarController.swift in Sources */,
+				20E1A70824D53014002020B0 /* NotiTableCell.swift in Sources */,
+				20E1A72424D541B9002020B0 /* NotiGroupViewModel.swift in Sources */,
 				F56B7B6D24D0AB6D00C4F946 /* AppDelegate.swift in Sources */,
+				20E1A72824D54271002020B0 /* UIView+LayerHelpers.swift in Sources */,
 				F56B7B6F24D0AB6D00C4F946 /* SceneDelegate.swift in Sources */,
 				598AEF46648A329D339E8831 /* HomeViewInput.swift in Sources */,
+				20E1A72024D54167002020B0 /* NotiGroupMOService.swift in Sources */,
+				20E1A72224D54171002020B0 /* NotiGroupMOServiceProtocol.swift in Sources */,
 				39C951C3981C1EC8768692A2 /* HomeViewOutput.swift in Sources */,
 				BC9B3A53F5C207459F33EE44 /* HomeViewController.swift in Sources */,
+				20E1A70E24D533F7002020B0 /* LocalNotiManagerProtocol.swift in Sources */,
 				0755A5C74355ED2E7D34BB94 /* HomeModuleInput.swift in Sources */,
+				20E1A71E24D5415C002020B0 /* NotiMOServiceProtocol.swift in Sources */,
 				82CF0019283B524080C8F295 /* HomePresenter.swift in Sources */,
 				9CD090010FF3A9D7265DB994 /* HomeInteractorInput.swift in Sources */,
+				20E1A72E24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift in Sources */,
 				90E270B5D8BE34A3B97F66E9 /* HomeInteractorOutput.swift in Sources */,
+				20E1A71224D537E9002020B0 /* CoreDataStack.swift in Sources */,
 				E70E8068CB082C472FB3A56E /* HomeInteractor.swift in Sources */,
 				9E967EB7DCE2557E221A0D7A /* HomeRouterInput.swift in Sources */,
 				B1BB9A8F4EE15E6534576B63 /* HomeRouter.swift in Sources */,
+				20E1A72D24D54331002020B0 /* NotiGroupMO+CoreDataProperties.swift in Sources */,
 				42A41DD78F4428088193AC8F /* HomeConfigurator.swift in Sources */,
+				20E1A72624D5424E002020B0 /* UIColor+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,9 +662,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56B7B8724D0AB7000C4F946 /* EasyNotiTests.swift in Sources */,
+				20E1A71524D53BB6002020B0 /* TestCoreDataStack.swift in Sources */,
 				153231A1A07B6E2BAD82E1FC /* HomeConfiguratorTests.swift in Sources */,
+				20E1A71924D53CAC002020B0 /* NotiGroupMOServiceTests.swift in Sources */,
 				3DD69D853ACC3A73452B8241 /* HomeViewTests.swift in Sources */,
 				FD0C1062244075DBEF709E49 /* HomeInteractorTests.swift in Sources */,
+				20E1A71724D53C9B002020B0 /* NotiMOServiceTests.swift in Sources */,
 				DA942183AB84A8E20D08903C /* HomePresenterTests.swift in Sources */,
 				F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */,
 			);
@@ -672,8 +828,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G99VW8TP32;
+				DEVELOPMENT_TEAM = 4FX9WHAGRM;
 				INFOPLIST_FILE = EasyNoti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,8 +849,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G99VW8TP32;
+				DEVELOPMENT_TEAM = 4FX9WHAGRM;
 				INFOPLIST_FILE = EasyNoti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

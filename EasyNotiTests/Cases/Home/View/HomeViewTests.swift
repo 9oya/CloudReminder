@@ -6,6 +6,7 @@
 //  Copyright © 2020 dymm. All rights reserved.
 //
 
+@testable import EasyNoti
 import XCTest
 
 class HomeViewTests: XCTestCase {

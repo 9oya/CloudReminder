@@ -8,7 +8,7 @@
       location = "group:Rambafile">
    </FileRef>
    <FileRef
-      location = "group:EasyNoti.xcodeproj">
+      location = "group:/Users/eunsang/Workplace/XcodeProjects/CloudReminder/CloudReminder.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

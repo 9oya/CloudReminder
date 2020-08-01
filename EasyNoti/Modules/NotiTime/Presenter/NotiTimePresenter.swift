@@ -6,13 +6,19 @@
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-class NotiTimePresenter: NotiTimeModuleInput, NotiTimeViewOutput, NotiTimeInteractorOutput {
-
+class NotiTimePresenter: NotiTimeModuleInput {
     weak var view: NotiTimeViewInput!
     var interactor: NotiTimeInteractorInput!
     var router: NotiTimeRouterInput!
+}
 
+extension NotiTimePresenter: NotiTimeViewOutput {
+    // MARK: NotiTimeViewOutput
     func viewIsReady() {
-
+        view.setupInitialState()
     }
+}
+
+extension NotiTimePresenter: NotiTimeInteractorOutput {
+    // MARK: NotiTimeInteractorOutput
 }

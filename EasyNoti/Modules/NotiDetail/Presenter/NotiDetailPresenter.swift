@@ -6,13 +6,19 @@
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-class NotiDetailPresenter: NotiDetailModuleInput, NotiDetailViewOutput, NotiDetailInteractorOutput {
-
+class NotiDetailPresenter: NotiDetailModuleInput {
     weak var view: NotiDetailViewInput!
     var interactor: NotiDetailInteractorInput!
     var router: NotiDetailRouterInput!
+}
 
+extension NotiDetailPresenter: NotiDetailViewOutput {
+    // MARK: NotiDetailViewOutput
     func viewIsReady() {
-
+        view.setupInitialState()
     }
+}
+
+extension NotiDetailPresenter: NotiDetailInteractorOutput {
+    // MARK: NotiDetailInteractorOutput
 }

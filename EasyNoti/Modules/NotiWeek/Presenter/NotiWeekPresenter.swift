@@ -6,13 +6,19 @@
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-class NotiWeekPresenter: NotiWeekModuleInput, NotiWeekViewOutput, NotiWeekInteractorOutput {
-
+class NotiWeekPresenter: NotiWeekModuleInput {
     weak var view: NotiWeekViewInput!
     var interactor: NotiWeekInteractorInput!
     var router: NotiWeekRouterInput!
+}
 
+extension NotiWeekPresenter: NotiWeekViewOutput {
+    // MARK: NotiWeekViewOutput
     func viewIsReady() {
-
+        view.setupInitialState()
     }
+}
+
+extension NotiWeekPresenter: NotiWeekInteractorOutput {
+    // MARK: NotiWeekInteractorOutput
 }

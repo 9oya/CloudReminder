@@ -6,4 +6,16 @@
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-import Foundation
+import CoreData
+
+protocol NotiGroupMOServiceProtocol {
+    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, content: String) -> NotiGroupMO
+    
+    func getNotifGroupMOById(id: UUID) -> NotiGroupMO?
+    
+    func getNotiGroupMOFRC() -> NSFetchedResultsController<NotiGroupMO>
+    
+    func deleteNotifGroupMOById(id: UUID) -> Bool
+    
+    func updateNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, content: String) -> NotiGroupMO?
+}

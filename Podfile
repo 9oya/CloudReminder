@@ -1,7 +1,7 @@
 platform :ios, '11.3'
 use_frameworks!
 
-target 'EasyNoti' do
+target 'CloudReminder' do
   use_frameworks!
 
   pod 'RxAlamofire'

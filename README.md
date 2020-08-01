@@ -17,6 +17,10 @@ The reminder application.
   - Core Data (SQLite)
   - Key Chain
   - UserDefaults
+### Remote Data Persistence:
+  - CloudKit
+### Source Control
+  - Gitflow workflow
 ### Features:
   - Local Notification
   - Push Notification

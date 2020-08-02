@@ -9,5 +9,12 @@
 import CoreData
 
 class NotiMOService: NotiMOServiceProtocol {
+    static let shared = NotiMOService(coreDataStack: CoreDataStack())
+    var managedObjContext: NSManagedObjectContext
+    var coreDataStack: CoreDataStack
     
+    init(coreDataStack: CoreDataStack) {
+        self.managedObjContext = coreDataStack.mainContext
+        self.coreDataStack = coreDataStack
+    }
 }

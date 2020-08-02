@@ -13,16 +13,16 @@ import CoreData
 class NotiGroupMOServiceTests: XCTestCase {
     
     var mockNotiGroupMOService: MockNotiGroupMOService!
-    var testCoreDateStack: CoreDataStack!
+    var testCoreDataStack: CoreDataStack!
 
     override func setUpWithError() throws {
-        testCoreDateStack = TestCoreDataStack()
-        mockNotiGroupMOService = MockNotiGroupMOService(coreDataStack: testCoreDateStack)
+        testCoreDataStack = TestCoreDataStack()
+        mockNotiGroupMOService = MockNotiGroupMOService(coreDataStack: testCoreDataStack)
     }
 
     override func tearDownWithError() throws {
         mockNotiGroupMOService = nil
-        testCoreDateStack = nil
+        testCoreDataStack = nil
     }
     
     func testNotiGroupMO_create_isResultValueMatch() {
@@ -44,7 +44,7 @@ class NotiGroupMOServiceTests: XCTestCase {
         XCTAssertTrue(newNotiGroupMO.content == content)
     }
     
-    func testNotiGrouMO_get_isResultObjRight() {
+    func testNotiGrouMO_get_isResultRight() {
         // given
         let id = UUID()
         let content = "It's lunch time~!!"

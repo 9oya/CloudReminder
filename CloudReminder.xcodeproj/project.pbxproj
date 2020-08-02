@@ -18,6 +18,9 @@
 		197627A20832169240173310 /* NotiBodyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51A6FC8715A98B0F739661 /* NotiBodyViewTests.swift */; };
 		1B0BC0529FF6E28F67887184 /* NotiWeekInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F6BE4FC4B9400F7D67904C /* NotiWeekInteractorTests.swift */; };
 		1D20FCFD0D8D855E5AE2FED2 /* NotiDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D6D19845AA06F6DADAA3B7 /* NotiDetailInteractorOutput.swift */; };
+		2041CC6A24D6261200CA4D61 /* CloudReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2041CC6824D6261200CA4D61 /* CloudReminder.xcdatamodeld */; };
+		2041CC6C24D6266800CA4D61 /* NotiMOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041CC6B24D6266800CA4D61 /* NotiMOServiceTests.swift */; };
+		2041CC6E24D6674100CA4D61 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041CC6D24D6674100CA4D61 /* AppConstants.swift */; };
 		20957C3C24D54F0A00AED580 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20957C3B24D54F0A00AED580 /* CloudKit.framework */; };
 		20E1A70624D5266C002020B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70524D5266C002020B0 /* CustomTabBarController.swift */; };
 		20E1A70824D53014002020B0 /* NotiTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70724D53014002020B0 /* NotiTableCell.swift */; };
@@ -26,7 +29,6 @@
 		20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70F24D534A5002020B0 /* NotiModel.swift */; };
 		20E1A71224D537E9002020B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71124D537E9002020B0 /* CoreDataStack.swift */; };
 		20E1A71524D53BB6002020B0 /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */; };
-		20E1A71724D53C9B002020B0 /* NotiMOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */; };
 		20E1A71924D53CAC002020B0 /* NotiGroupMOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */; };
 		20E1A71C24D54153002020B0 /* NotiMOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71B24D54153002020B0 /* NotiMOService.swift */; };
 		20E1A71E24D5415C002020B0 /* NotiMOServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71D24D5415C002020B0 /* NotiMOServiceProtocol.swift */; };
@@ -109,7 +111,6 @@
 		F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EF1638A170308CD2A4FEC /* HomeRouterTests.swift */; };
 		F56B7B6D24D0AB6D00C4F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */; };
 		F56B7B6F24D0AB6D00C4F946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */; };
-		F56B7B7724D0AB6D00C4F946 /* CloudReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */; };
 		F56B7B7924D0AB7000C4F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7824D0AB7000C4F946 /* Assets.xcassets */; };
 		F56B7B7C24D0AB7000C4F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */; };
 		F56B7B9224D0AB7000C4F946 /* CloudReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B7B9124D0AB7000C4F946 /* CloudReminderUITests.swift */; };
@@ -150,6 +151,9 @@
 		1ECAA0B0D7130AEADF3EA125 /* NotiDetailRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotiDetailRouterInput.swift; sourceTree = "<group>"; };
 		1EF015C9E4D9EAA201B271A6 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
 		1F4ECFC07BEEE8796070AC9C /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
+		2041CC6924D6261200CA4D61 /* CloudReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudReminder.xcdatamodel; sourceTree = "<group>"; };
+		2041CC6B24D6266800CA4D61 /* NotiMOServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiMOServiceTests.swift; sourceTree = "<group>"; };
+		2041CC6D24D6674100CA4D61 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = CloudReminderTests/MOServices/AppConstants.swift; sourceTree = SOURCE_ROOT; };
 		20957C3A24D54EF500AED580 /* CloudReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudReminder.entitlements; sourceTree = "<group>"; };
 		20957C3B24D54F0A00AED580 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		20E1A70524D5266C002020B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -159,7 +163,6 @@
 		20E1A70F24D534A5002020B0 /* NotiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiModel.swift; sourceTree = "<group>"; };
 		20E1A71124D537E9002020B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
-		20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOServiceTests.swift; sourceTree = "<group>"; };
 		20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiGroupMOServiceTests.swift; sourceTree = "<group>"; };
 		20E1A71B24D54153002020B0 /* NotiMOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOService.swift; sourceTree = "<group>"; };
 		20E1A71D24D5415C002020B0 /* NotiMOServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiMOServiceProtocol.swift; sourceTree = "<group>"; };
@@ -240,7 +243,6 @@
 		F56B7B6924D0AB6D00C4F946 /* CloudReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56B7B6C24D0AB6D00C4F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56B7B6E24D0AB6D00C4F946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyNoti.xcdatamodel; sourceTree = "<group>"; };
 		F56B7B7824D0AB7000C4F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56B7B7B24D0AB7000C4F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56B7B7D24D0AB7000C4F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -387,7 +389,7 @@
 			children = (
 				F56B7B7824D0AB7000C4F946 /* Assets.xcassets */,
 				F56B7B7A24D0AB7000C4F946 /* LaunchScreen.storyboard */,
-				F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */,
+				2041CC6824D6261200CA4D61 /* CloudReminder.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -395,6 +397,7 @@
 		20E1A70324D5251B002020B0 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				2041CC6D24D6674100CA4D61 /* AppConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -430,7 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */,
-				20E1A71624D53C9B002020B0 /* NotiMOServiceTests.swift */,
+				2041CC6B24D6266800CA4D61 /* NotiMOServiceTests.swift */,
 				20E1A71824D53CAC002020B0 /* NotiGroupMOServiceTests.swift */,
 			);
 			path = MOServices;
@@ -1207,7 +1210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E1A73024D54331002020B0 /* NotiMO+CoreDataProperties.swift in Sources */,
-				F56B7B7724D0AB6D00C4F946 /* CloudReminder.xcdatamodeld in Sources */,
 				20E1A72F24D54331002020B0 /* NotiMO+CoreDataClass.swift in Sources */,
 				20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */,
 				20E1A70C24D533ED002020B0 /* LocalNotiManager.swift in Sources */,
@@ -1226,6 +1228,7 @@
 				20E1A70E24D533F7002020B0 /* LocalNotiManagerProtocol.swift in Sources */,
 				0755A5C74355ED2E7D34BB94 /* HomeModuleInput.swift in Sources */,
 				20E1A71E24D5415C002020B0 /* NotiMOServiceProtocol.swift in Sources */,
+				2041CC6E24D6674100CA4D61 /* AppConstants.swift in Sources */,
 				82CF0019283B524080C8F295 /* HomePresenter.swift in Sources */,
 				9CD090010FF3A9D7265DB994 /* HomeInteractorInput.swift in Sources */,
 				20E1A72E24D54331002020B0 /* NotiGroupMO+CoreDataClass.swift in Sources */,
@@ -1245,6 +1248,7 @@
 				28DAB6D99C6EAC22AEB87A21 /* NotiDetailInteractorInput.swift in Sources */,
 				1D20FCFD0D8D855E5AE2FED2 /* NotiDetailInteractorOutput.swift in Sources */,
 				78BAC6C52D392AB2F5869618 /* NotiDetailInteractor.swift in Sources */,
+				2041CC6A24D6261200CA4D61 /* CloudReminder.xcdatamodeld in Sources */,
 				BB1E4FA38813DA18A180E31A /* NotiDetailRouterInput.swift in Sources */,
 				04E2EE30B9B8D60B15D008A3 /* NotiDetailRouter.swift in Sources */,
 				010DD116243D435D5E75A155 /* NotiDetailConfigurator.swift in Sources */,
@@ -1289,11 +1293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E1A71524D53BB6002020B0 /* TestCoreDataStack.swift in Sources */,
+				2041CC6C24D6266800CA4D61 /* NotiMOServiceTests.swift in Sources */,
 				153231A1A07B6E2BAD82E1FC /* HomeConfiguratorTests.swift in Sources */,
 				20E1A71924D53CAC002020B0 /* NotiGroupMOServiceTests.swift in Sources */,
 				3DD69D853ACC3A73452B8241 /* HomeViewTests.swift in Sources */,
 				FD0C1062244075DBEF709E49 /* HomeInteractorTests.swift in Sources */,
-				20E1A71724D53C9B002020B0 /* NotiMOServiceTests.swift in Sources */,
 				DA942183AB84A8E20D08903C /* HomePresenterTests.swift in Sources */,
 				F31FBCA3756464A7F244FD8E /* HomeRouterTests.swift in Sources */,
 				C94072541777927BBD80E642 /* NotiDetailConfiguratorTests.swift in Sources */,
@@ -1638,12 +1642,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F56B7B7524D0AB6D00C4F946 /* CloudReminder.xcdatamodeld */ = {
+		2041CC6824D6261200CA4D61 /* CloudReminder.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */,
+				2041CC6924D6261200CA4D61 /* CloudReminder.xcdatamodel */,
 			);
-			currentVersion = F56B7B7624D0AB6D00C4F946 /* EasyNoti.xcdatamodel */;
+			currentVersion = 2041CC6924D6261200CA4D61 /* CloudReminder.xcdatamodel */;
 			path = CloudReminder.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

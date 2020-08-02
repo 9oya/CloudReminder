@@ -26,4 +26,4 @@ A simple reminder app that syncs user data through Apple ID to iCloud without re
   - Push Notification
   - Localization
   - Dark Mode (iOS 13 and upper)
-  - iOS 12 and lower version compatibility
+  - iOS 12 compatibility

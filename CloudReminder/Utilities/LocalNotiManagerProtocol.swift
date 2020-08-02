@@ -6,4 +6,12 @@
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-import Foundation
+import UserNotifications
+
+protocol LocalNotiManagerProtocol {
+    func fetchScheduledNotiRquests(completion: @escaping ([UNNotificationRequest]) -> Void)
+    
+    func removeNotification(id: String)
+    
+    func schedule()
+}

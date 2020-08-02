@@ -9,6 +9,7 @@
 import CoreData
 
 class NotiMOService: NotiMOServiceProtocol {
+    // MARK: Properties
     static let shared = NotiMOService(coreDataStack: CoreDataStack())
     var managedObjContext: NSManagedObjectContext
     var coreDataStack: CoreDataStack
@@ -16,5 +17,56 @@ class NotiMOService: NotiMOServiceProtocol {
     init(coreDataStack: CoreDataStack) {
         self.managedObjContext = coreDataStack.mainContext
         self.coreDataStack = coreDataStack
+    }
+    
+    // MARK: CREATE Services
+    func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, body: String, isOn: Bool) -> NotiMO {
+        let newNotiMO = NotiMO(context: managedObjContext)
+        newNotiMO.notiGroupMO = notiGroupMO
+        newNotiMO.id = id
+        newNotiMO.weekCode = Int16(weekCode.rawValue)
+        newNotiMO.body = body
+        newNotiMO.isOn = isOn
+        
+        notiGroupMO.addToNotiMOs(newNotiMO)
+        
+        managedObjContext.perform {
+            self.coreDataStack.saveContext(self.managedObjContext)
+        }
+        return newNotiMO
+    }
+    
+    // MARK: GET Services
+    func getNotiMOById(id: UUID) -> NotiMO? {
+        let fetchRequest: NSFetchRequest<NotiMO> = NotiMO.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "%K = %@", argumentArray: [#keyPath(NotiMO.id), id])
+        
+        let notiMOArr: [NotiMO]?
+        do {
+            notiMOArr = try managedObjContext.fetch(fetchRequest)
+        } catch {
+            return nil
+        }
+        return notiMOArr?.first ?? nil
+    }
+    
+    // MARK: DELETE Services
+    func deleteNotiMOById(id: UUID) -> Bool {
+        guard let notiMO = getNotiMOById(id: id) else {
+            return false
+        }
+        managedObjContext.delete(notiMO)
+        coreDataStack.saveContext(managedObjContext)
+        return true
+    }
+    
+    // MARK: UPDATE Services
+    func updateNotiMO(id: UUID, isOn: Bool) -> NotiMO? {
+        guard let notiMO = getNotiMOById(id: id) else {
+            return nil
+        }
+        notiMO.isOn = isOn
+        coreDataStack.saveContext(managedObjContext)
+        return notiMO
     }
 }

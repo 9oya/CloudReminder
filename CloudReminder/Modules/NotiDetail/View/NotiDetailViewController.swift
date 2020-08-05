@@ -10,6 +10,7 @@ import UIKit
 
 class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     // MARK: Properties
+    
     // Delegates
     var output: NotiDetailViewOutput!
     
@@ -32,6 +33,10 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     // MARK: NotiDetailViewInput
     func setupInitialState() {
         setupLayout()
+    }
+    
+    func setupData(data: NotiGroupMO) {
+        
     }
 }
 

@@ -1,5 +1,5 @@
 //
-//  LocalNotiManager.swift
+//  LocalNotiScheduler.swift
 //  CloudReminder
 //
 //  Created by 9oya on 2020/08/01.
@@ -8,7 +8,7 @@
 
 import UserNotifications
 
-class LocalNotiManager: LocalNotiManagerProtocol {
+class LocalNotiScheduler: LocalNotiSchedulerProtocol {
     var notiMOArr = [NotiMO]()
     
     private func collapseLocalNotifications() -> [NotiModel] {

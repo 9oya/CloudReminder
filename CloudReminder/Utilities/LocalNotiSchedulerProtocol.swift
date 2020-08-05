@@ -1,5 +1,5 @@
 //
-//  LocalNotiManagerProtocol.swift
+//  LocalNotiSchedulerProtocol.swift
 //  CloudReminder
 //
 //  Created by 9oya on 2020/08/01.
@@ -8,7 +8,7 @@
 
 import UserNotifications
 
-protocol LocalNotiManagerProtocol {
+protocol LocalNotiSchedulerProtocol {
     func fetchScheduledNotiRquests(completion: @escaping ([UNNotificationRequest]) -> Void)
     
     func removeNotification(id: String)

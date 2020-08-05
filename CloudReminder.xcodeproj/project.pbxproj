@@ -24,8 +24,8 @@
 		20957C3C24D54F0A00AED580 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20957C3B24D54F0A00AED580 /* CloudKit.framework */; };
 		20E1A70624D5266C002020B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70524D5266C002020B0 /* CustomTabBarController.swift */; };
 		20E1A70824D53014002020B0 /* NotiTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70724D53014002020B0 /* NotiTableCell.swift */; };
-		20E1A70C24D533ED002020B0 /* LocalNotiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */; };
-		20E1A70E24D533F7002020B0 /* LocalNotiManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */; };
+		20E1A70C24D533ED002020B0 /* LocalNotiScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70B24D533ED002020B0 /* LocalNotiScheduler.swift */; };
+		20E1A70E24D533F7002020B0 /* LocalNotiSchedulerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70D24D533F7002020B0 /* LocalNotiSchedulerProtocol.swift */; };
 		20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70F24D534A5002020B0 /* NotiModel.swift */; };
 		20E1A71224D537E9002020B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71124D537E9002020B0 /* CoreDataStack.swift */; };
 		20E1A71524D53BB6002020B0 /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */; };
@@ -158,8 +158,8 @@
 		20957C3B24D54F0A00AED580 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		20E1A70524D5266C002020B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		20E1A70724D53014002020B0 /* NotiTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableCell.swift; sourceTree = "<group>"; };
-		20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotiManager.swift; sourceTree = "<group>"; };
-		20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotiManagerProtocol.swift; sourceTree = "<group>"; };
+		20E1A70B24D533ED002020B0 /* LocalNotiScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotiScheduler.swift; sourceTree = "<group>"; };
+		20E1A70D24D533F7002020B0 /* LocalNotiSchedulerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotiSchedulerProtocol.swift; sourceTree = "<group>"; };
 		20E1A70F24D534A5002020B0 /* NotiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiModel.swift; sourceTree = "<group>"; };
 		20E1A71124D537E9002020B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		20E1A71424D53BB6002020B0 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
@@ -360,8 +360,8 @@
 			isa = PBXGroup;
 			children = (
 				20E1A70524D5266C002020B0 /* CustomTabBarController.swift */,
-				20E1A70B24D533ED002020B0 /* LocalNotiManager.swift */,
-				20E1A70D24D533F7002020B0 /* LocalNotiManagerProtocol.swift */,
+				20E1A70B24D533ED002020B0 /* LocalNotiScheduler.swift */,
+				20E1A70D24D533F7002020B0 /* LocalNotiSchedulerProtocol.swift */,
 				20E1A71124D537E9002020B0 /* CoreDataStack.swift */,
 			);
 			path = Utilities;
@@ -1212,7 +1212,7 @@
 				20E1A73024D54331002020B0 /* NotiMO+CoreDataProperties.swift in Sources */,
 				20E1A72F24D54331002020B0 /* NotiMO+CoreDataClass.swift in Sources */,
 				20E1A71024D534A5002020B0 /* NotiModel.swift in Sources */,
-				20E1A70C24D533ED002020B0 /* LocalNotiManager.swift in Sources */,
+				20E1A70C24D533ED002020B0 /* LocalNotiScheduler.swift in Sources */,
 				20E1A71C24D54153002020B0 /* NotiMOService.swift in Sources */,
 				20E1A70624D5266C002020B0 /* CustomTabBarController.swift in Sources */,
 				20E1A70824D53014002020B0 /* NotiTableCell.swift in Sources */,
@@ -1225,7 +1225,7 @@
 				20E1A72224D54171002020B0 /* NotiGroupMOServiceProtocol.swift in Sources */,
 				39C951C3981C1EC8768692A2 /* HomeViewOutput.swift in Sources */,
 				BC9B3A53F5C207459F33EE44 /* HomeViewController.swift in Sources */,
-				20E1A70E24D533F7002020B0 /* LocalNotiManagerProtocol.swift in Sources */,
+				20E1A70E24D533F7002020B0 /* LocalNotiSchedulerProtocol.swift in Sources */,
 				0755A5C74355ED2E7D34BB94 /* HomeModuleInput.swift in Sources */,
 				20E1A71E24D5415C002020B0 /* NotiMOServiceProtocol.swift in Sources */,
 				2041CC6E24D6674100CA4D61 /* AppConstants.swift in Sources */,

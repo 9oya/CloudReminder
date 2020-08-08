@@ -20,12 +20,13 @@ class NotiGroupMOService: NotiGroupMOServiceProtocol {
     }
     
     // MARK: CREATE Services
-    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, content: String) -> NotiGroupMO {
+    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, title: String, content: String) -> NotiGroupMO {
         let newNotiGroupMO = NotiGroupMO(context: managedObjContext)
         newNotiGroupMO.id = id
         newNotiGroupMO.hour = Int16(hour)
         newNotiGroupMO.minute = Int16(minute)
         newNotiGroupMO.isOn = isOn
+        newNotiGroupMO.title = title
         newNotiGroupMO.content = content
         
         managedObjContext.perform {

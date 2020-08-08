@@ -9,7 +9,7 @@
 import CoreData
 
 protocol NotiGroupMOServiceProtocol {
-    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, content: String) -> NotiGroupMO
+    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, title: String, content: String) -> NotiGroupMO
     
     func getNotifGroupMOById(id: UUID) -> NotiGroupMO?
     

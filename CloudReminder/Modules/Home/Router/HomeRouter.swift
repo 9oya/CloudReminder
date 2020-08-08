@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeRouter: HomeRouterInput {
-    func pushToNotiDetailViewController(with data: NotiGroupMO ,from view: UIViewController) {
+    func pushToNotiDetailViewController(with data: NotiGroupMO? = nil, from view: UIViewController) {
         let vc = NotiDetailViewController()
         vc.setupData(data: data)
         view.navigationController?.pushViewController(vc, animated: true)

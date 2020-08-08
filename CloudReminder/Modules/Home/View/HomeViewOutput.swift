@@ -6,6 +6,8 @@
 //  Copyright © 2020 dymm. All rights reserved.
 //
 
+import UIKit
+
 protocol HomeViewOutput {
 
     /**
@@ -14,4 +16,6 @@ protocol HomeViewOutput {
     */
 
     func viewIsReady()
+    
+    func pushToNotiDetailViewController(with data: NotiGroupMO?, from view: UIViewController)
 }

@@ -32,17 +32,15 @@ class NotiMOServiceTests: XCTestCase {
         // given
         let id = UUID()
         let weekCode = WeekCode.Sun
-        let body = "It's time for breakfast"
         let isOn = true
-        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, content: body)
+        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, title: "TestTitle", content: "It's time for breakfast")
         
         // when
-        let newNotiMO = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: weekCode, body: body, isOn: isOn)
+        let newNotiMO = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: weekCode, isOn: isOn)
         
         // than
         XCTAssertTrue(newNotiMO.id == id)
         XCTAssertTrue(newNotiMO.weekCode == weekCode.rawValue)
-        XCTAssertTrue(newNotiMO.body == body)
         XCTAssertTrue(newNotiMO.isOn == isOn)
         XCTAssertTrue(newNotiMO.notiGroupMO == notiGroupMO)
     }
@@ -51,10 +49,9 @@ class NotiMOServiceTests: XCTestCase {
         // given
         let id = UUID()
         let weekCode = WeekCode.Sun
-        let body = "It's time for breakfast"
         let isOn = true
-        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, content: body)
-        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: weekCode, body: body, isOn: isOn)
+        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, title: "TestTitle", content: "It's time for breakfast")
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: weekCode, isOn: isOn)
         
         // when
         let notiMO = mockNotiMOService.getNotiMOById(id: id)
@@ -63,20 +60,35 @@ class NotiMOServiceTests: XCTestCase {
         XCTAssertNotNil(notiMO)
         XCTAssertEqual(notiMO?.id, id)
         XCTAssertEqual(notiMO?.weekCode, Int16(weekCode.rawValue))
-        XCTAssertEqual(notiMO?.body, body)
         XCTAssertEqual(notiMO?.isOn, isOn)
+    }
+    
+    func testNotiMO_getAll_count() {
+        // given
+        let id = UUID()
+        let isOn = true
+        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, title: "TestTitle", content: "It's time for breakfast")
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: WeekCode.Sun, isOn: isOn)
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: WeekCode.Mon, isOn: isOn)
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: WeekCode.Tue, isOn: isOn)
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: WeekCode.Wed, isOn: isOn)
+        
+        // when
+        let notiMOArr = mockNotiMOService.getAllNotiMOs()
+        
+        // than
+        XCTAssertEqual(4, notiMOArr?.count)
     }
     
     func testNotiMO_delete_isGivenIdObjDeleted() {
         // given
         let id = UUID()
         let weekCode = WeekCode.Sun
-        let body = "It's time for breakfast"
         let isOn = true
-        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, content: body)
-        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: weekCode, body: body, isOn: isOn)
-        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: UUID(), weekCode: WeekCode.Mon, body: "It's time for lunch", isOn: false)
-        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: UUID(), weekCode: WeekCode.Thu, body: "It's time for lunch", isOn: false)
+        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, title: "TestTitle", content: "It's time for breakfast")
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: weekCode, isOn: isOn)
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: UUID(), weekCode: WeekCode.Mon, isOn: false)
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: UUID(), weekCode: WeekCode.Thu, isOn: false)
         
         // when
         if !mockNotiMOService.deleteNotiMOById(id: id) {
@@ -91,9 +103,8 @@ class NotiMOServiceTests: XCTestCase {
         // given
         let id = UUID()
         let weekCode = WeekCode.Sun
-        let body = "It's time for breakfast"
-        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, content: body)
-        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: weekCode, body: body, isOn: true)
+        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, title: "TestTitle", content: "It's time for breakfast")
+        _ = mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: id, weekCode: weekCode, isOn: true)
         
         // when
         let isOn = false
@@ -116,12 +127,11 @@ class MockNotiMOService: NotiMOServiceProtocol {
     }
     
     // MARK: CREATE Services
-    func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, body: String, isOn: Bool) -> NotiMO {
+    func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, isOn: Bool) -> NotiMO {
         let newNotiMO = NotiMO(context: managedObjContext)
         newNotiMO.notiGroupMO = notiGroupMO
         newNotiMO.id = id
         newNotiMO.weekCode = Int16(weekCode.rawValue)
-        newNotiMO.body = body
         newNotiMO.isOn = isOn
         
         notiGroupMO.addToNotiMOs(newNotiMO)
@@ -144,6 +154,18 @@ class MockNotiMOService: NotiMOServiceProtocol {
             return nil
         }
         return notiMOArr?.first ?? nil
+    }
+    
+    func getAllNotiMOs() -> [NotiMO]? {
+        let fetchRequest: NSFetchRequest<NotiMO> = NotiMO.fetchRequest()
+        
+        let notiMOArr: [NotiMO]?
+        do {
+            notiMOArr = try managedObjContext.fetch(fetchRequest)
+        } catch {
+            return nil
+        }
+        return notiMOArr ?? nil
     }
     
     // MARK: DELETE Services

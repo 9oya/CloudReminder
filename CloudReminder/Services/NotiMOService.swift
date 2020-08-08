@@ -20,12 +20,11 @@ class NotiMOService: NotiMOServiceProtocol {
     }
     
     // MARK: CREATE Services
-    func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, body: String, isOn: Bool) -> NotiMO {
+    func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, isOn: Bool) -> NotiMO {
         let newNotiMO = NotiMO(context: managedObjContext)
         newNotiMO.notiGroupMO = notiGroupMO
         newNotiMO.id = id
         newNotiMO.weekCode = Int16(weekCode.rawValue)
-        newNotiMO.body = body
         newNotiMO.isOn = isOn
         
         notiGroupMO.addToNotiMOs(newNotiMO)
@@ -48,6 +47,18 @@ class NotiMOService: NotiMOServiceProtocol {
             return nil
         }
         return notiMOArr?.first ?? nil
+    }
+    
+    func getAllNotiMOs() -> [NotiMO]? {
+        let fetchRequest: NSFetchRequest<NotiMO> = NotiMO.fetchRequest()
+        
+        let notiMOArr: [NotiMO]?
+        do {
+            notiMOArr = try managedObjContext.fetch(fetchRequest)
+        } catch {
+            return nil
+        }
+        return notiMOArr ?? nil
     }
     
     // MARK: DELETE Services

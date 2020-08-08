@@ -6,8 +6,8 @@
 //  Copyright © 2020 dymm. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol HomeRouterInput {
-
+    func pushToNotiDetailViewController(with data: NotiGroupMO?, from view: UIViewController)
 }

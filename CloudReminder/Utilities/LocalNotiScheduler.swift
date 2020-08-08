@@ -26,7 +26,7 @@ class LocalNotiScheduler: LocalNotiSchedulerProtocol {
             if sameDateNotiModels.isEmpty {
                 
                 // Create a new notifiaction.
-                let newNotiModel = NotiModel(id: notiMO.id!.uuidString, title: "", body: notiMO.body!, hour: Int(notiMO.notiGroupMO!.hour), minute: Int(notiMO.notiGroupMO!.minute), weekCode: Int(notiMO.weekCode))
+                let newNotiModel = NotiModel(id: notiMO.id!.uuidString, title: notiMO.notiGroupMO!.title!, body: notiMO.notiGroupMO!.content!, hour: Int(notiMO.notiGroupMO!.hour), minute: Int(notiMO.notiGroupMO!.minute), weekCode: Int(notiMO.weekCode))
                 notiModels.append(newNotiModel)
             } else {
                 

@@ -2,7 +2,7 @@
 //  NotiGroupMO+CoreDataProperties.swift
 //  
 //
-//  Created by 9oya on 2020/08/02.
+//  Created by 9oya on 2020/08/08.
 //
 //
 
@@ -21,6 +21,7 @@ extension NotiGroupMO {
     @NSManaged public var id: UUID?
     @NSManaged public var isOn: Bool
     @NSManaged public var minute: Int16
+    @NSManaged public var title: String?
     @NSManaged public var notiMOs: NSSet?
 
 }

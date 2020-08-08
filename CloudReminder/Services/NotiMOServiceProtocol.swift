@@ -9,9 +9,11 @@
 import UIKit
 
 protocol NotiMOServiceProtocol {
-    func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, body: String, isOn: Bool) -> NotiMO
+    func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, isOn: Bool) -> NotiMO
     
     func getNotiMOById(id: UUID) -> NotiMO?
+    
+    func getAllNotiMOs() -> [NotiMO]?
     
     func deleteNotiMOById(id: UUID) -> Bool
     

@@ -40,7 +40,7 @@ class HomeViewController: UIViewController, HomeViewInput {
     
     // MARK: Actions
     @objc func addButtonTapped() {
-        
+        output.pushToNotiDetailViewController(with: nil, from: self)
     }
 
     // MARK: HomeViewInput
@@ -122,7 +122,7 @@ extension HomeViewController {
         
         addButton = {
             let button = UIButton()
-            button.setTitle("+알림추가", for: .normal)
+            button.setTitle("+Add", for: .normal)
             button.setTitleColor(.systemTeal, for: .normal)
             button.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
             button.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)

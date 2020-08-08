@@ -1,20 +1,20 @@
 //
-//  NotiTableCell.swift
+//  NotiDetailTableCell.swift
 //  CloudReminder
 //
-//  Created by 9oya on 2020/08/06.
+//  Created by 9oya on 2020/08/01.
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
 import UIKit
 import ColorCompatibility
 
-let notiTalbeCellId = "NotiTableCellId"
+let notiDetailTalbeCellId = "NotiDetailTableCellId"
 
-class NotiTableCell: UITableViewCell {
+class NotiDetailTableCell: UITableViewCell {
     // MARK: Properties
-    var titleLabel: UILabel!
-    var subTitleLabel: UILabel!
+    var guideLabel: UILabel!
+    var contentLabel: UILabel!
     var underLineView: UIView!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -27,25 +27,24 @@ class NotiTableCell: UITableViewCell {
     }
 }
 
-extension NotiTableCell {
+extension NotiDetailTableCell {
     private func setupLayout() {
         // MARK: Setup super-view
         selectionStyle = .none
         backgroundColor = ColorCompatibility.systemBackground
         
         // MARK: Setup sub-view properties
-        titleLabel = {
+        guideLabel = {
             let label = UILabel()
-            label.font = .systemFont(ofSize: 22, weight: .bold)
+            label.font = .systemFont(ofSize: 14, weight: .bold)
             label.textAlignment = .left
             label.textColor = ColorCompatibility.label
-            label.numberOfLines = 2
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
-        subTitleLabel = {
+        contentLabel = {
             let label = UILabel()
-            label.font = .systemFont(ofSize: 14, weight: .regular)
+            label.font = .systemFont(ofSize: 22, weight: .light)
             label.textAlignment = .left
             label.textColor = ColorCompatibility.label
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -59,16 +58,16 @@ extension NotiTableCell {
         }()
         
         // MARK: Setup UI Hierarchy
-        addSubview(subTitleLabel)
-        addSubview(titleLabel)
+        addSubview(guideLabel)
+        addSubview(contentLabel)
         addSubview(underLineView)
         
         // MARK: Setup constraints
-        subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 2).isActive = true
-        subTitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
-            
-        titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
+        guideLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
+        guideLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
+        
+        contentLabel.topAnchor.constraint(equalTo: guideLabel.bottomAnchor, constant: 10).isActive = true
+        contentLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
         
         underLineView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
         underLineView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true

@@ -1,12 +1,12 @@
 //
 //  HomeHomeInteractorTests.swift
-//  EasyNoti
+//  CloudReminder
 //
 //  Created by 9oya on 31/07/2020.
 //  Copyright © 2020 dymm. All rights reserved.
 //
 
-@testable import EasyNoti
+@testable import CloudReminder
 import XCTest
 
 class HomeInteractorTests: XCTestCase {
@@ -22,6 +22,24 @@ class HomeInteractorTests: XCTestCase {
     }
 
     class MockPresenter: HomeInteractorOutput {
-
+        func insertATableRow(indexPath: IndexPath) {
+            
+        }
+        
+        func deleteATableRow(indexPath: IndexPath) {
+            
+        }
+        
+        func reloadTableView() {
+            
+        }
+        
+        func beginUpdateTalbeView() {
+            
+        }
+        
+        func endUpdateTableView() {
+            
+        }
     }
 }

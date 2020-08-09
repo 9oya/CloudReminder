@@ -1,28 +1,28 @@
 //
 //  NotiGroupMOServiceTests.swift
-//  EasyNotiTests
+//  CloudReminderTests
 //
 //  Created by 9oya on 2020/08/01.
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-@testable import EasyNoti
+@testable import CloudReminder
 import XCTest
 import CoreData
 
 class NotiGroupMOServiceTests: XCTestCase {
     
     var mockNotiGroupMOService: MockNotiGroupMOService!
-    var testCoreDateStack: CoreDataStack!
+    var testCoreDataStack: CoreDataStack!
 
     override func setUpWithError() throws {
-        testCoreDateStack = TestCoreDataStack()
-        mockNotiGroupMOService = MockNotiGroupMOService(coreDataStack: testCoreDateStack)
+        testCoreDataStack = TestCoreDataStack()
+        mockNotiGroupMOService = MockNotiGroupMOService(coreDataStack: testCoreDataStack)
     }
 
     override func tearDownWithError() throws {
         mockNotiGroupMOService = nil
-        testCoreDateStack = nil
+        testCoreDataStack = nil
     }
     
     func testNotiGroupMO_create_isResultValueMatch() {
@@ -31,24 +31,27 @@ class NotiGroupMOServiceTests: XCTestCase {
         let hour = 7
         let minute = 30
         let isOn = true
+        let title = "TestTitle"
         let content = "It's lunch time~!!"
         
         // when
-        let newNotiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: id, hour: hour, minute: minute, isOn: isOn, content: content)
+        let newNotiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: id, hour: hour, minute: minute, isOn: isOn, title: title, content: content)
         
         // than
         XCTAssertTrue(newNotiGroupMO.id == id)
         XCTAssertTrue(newNotiGroupMO.hour == hour)
         XCTAssertTrue(newNotiGroupMO.minute == minute)
         XCTAssertTrue(newNotiGroupMO.isOn == isOn)
+        XCTAssertTrue(newNotiGroupMO.title == title)
         XCTAssertTrue(newNotiGroupMO.content == content)
     }
     
-    func testNotiGrouMO_get_isResultObjRight() {
+    func testNotiGrouMO_get_isResultRight() {
         // given
         let id = UUID()
+        let title = "TestTitle"
         let content = "It's lunch time~!!"
-        _ = mockNotiGroupMOService.createNotiGroupMO(id: id, hour: 7, minute: 30, isOn: true, content: content)
+        _ = mockNotiGroupMOService.createNotiGroupMO(id: id, hour: 7, minute: 30, isOn: true, title: title, content: content)
         
         // when
         let notiGroupMO = mockNotiGroupMOService.getNotifGroupMOById(id: id)
@@ -56,17 +59,19 @@ class NotiGroupMOServiceTests: XCTestCase {
         // than
         XCTAssertNotNil(notiGroupMO)
         XCTAssertEqual(notiGroupMO?.id, id)
+        XCTAssertTrue(notiGroupMO?.title == title)
         XCTAssertEqual(notiGroupMO?.content, content)
     }
     
     func testNotiGroupMO_getFRC_isPerformResultSorted() {
         // given
+        let title = "TestTitle"
         let content1 = "It's time for breakfast"
         let content2 = "It's time for lunch"
         let content3 = "It's time for dinner"
-        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, content: content1)
-        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 12, minute: 30, isOn: true, content: content2)
-        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 18, minute: 25, isOn: true, content: content3)
+        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, title: title, content: content1)
+        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 12, minute: 30, isOn: true, title: title, content: content2)
+        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 18, minute: 25, isOn: true, title: title, content: content3)
         
         let frc: NSFetchedResultsController<NotiGroupMO> = mockNotiGroupMOService.getNotiGroupMOFRC()
         
@@ -89,10 +94,11 @@ class NotiGroupMOServiceTests: XCTestCase {
     func testNotiGroupMO_delete_isGivenIdObjDeleted() {
         // given
         let id = UUID()
+        let title = "TestTitle"
         let content = "It's lunch time~!!"
-        _ = mockNotiGroupMOService.createNotiGroupMO(id: id, hour: 7, minute: 30, isOn: true, content: content)
-        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 12, minute: 30, isOn: true, content: content)
-        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 18, minute: 25, isOn: true, content: content)
+        _ = mockNotiGroupMOService.createNotiGroupMO(id: id, hour: 7, minute: 30, isOn: true, title: title, content: content)
+        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 12, minute: 30, isOn: true, title: title, content: content)
+        _ = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 18, minute: 25, isOn: true, title: title, content: content)
         
         // when
         if !mockNotiGroupMOService.deleteNotifGroupMOById(id: id) {
@@ -106,8 +112,9 @@ class NotiGroupMOServiceTests: XCTestCase {
     func testNotiGroupMO_update_isGivenIdObjUpdated() {
         // given
         let id = UUID()
+        let title = "TestTitle"
         let content = "It's time for breakfast"
-        _ = mockNotiGroupMOService.createNotiGroupMO(id: id, hour: 7, minute: 30, isOn: true, content: content)
+        _ = mockNotiGroupMOService.createNotiGroupMO(id: id, hour: 7, minute: 30, isOn: true, title: title, content: content)
         
         // when
         let newHour = 12
@@ -136,12 +143,13 @@ class MockNotiGroupMOService: NotiGroupMOServiceProtocol {
     }
     
     // MARK: CREATE Services
-    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, content: String) -> NotiGroupMO {
+    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, title: String, content: String) -> NotiGroupMO {
         let newNotiGroupMO = NotiGroupMO(context: managedObjContext)
         newNotiGroupMO.id = id
         newNotiGroupMO.hour = Int16(hour)
         newNotiGroupMO.minute = Int16(minute)
         newNotiGroupMO.isOn = isOn
+        newNotiGroupMO.title = title
         newNotiGroupMO.content = content
         
         managedObjContext.perform {

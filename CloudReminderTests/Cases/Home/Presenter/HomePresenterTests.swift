@@ -1,12 +1,12 @@
 //
 //  HomeHomePresenterTests.swift
-//  EasyNoti
+//  CloudReminder
 //
 //  Created by 9oya on 31/07/2020.
 //  Copyright © 2020 dymm. All rights reserved.
 //
 
-@testable import EasyNoti
+@testable import CloudReminder
 import XCTest
 
 class HomePresenterTest: XCTestCase {
@@ -22,17 +22,52 @@ class HomePresenterTest: XCTestCase {
     }
 
     class MockInteractor: HomeInteractorInput {
-
+        func performFRC() {
+            
+        }
+        
+        func numberOfNotiGroups(section: Int) -> Int {
+            return 0
+        }
+        
+        func notiGroupAt(indexPath: IndexPath) -> NotiGroupMO? {
+            return NotiGroupMO()
+        }
+        
+        func configureNotiTableCell(cell: NotiTableCell, indexPath: IndexPath) {
+            
+        }
     }
 
     class MockRouter: HomeRouterInput {
-
+        func pushToNotiDetailViewController(with data: NotiGroupMO?, from view: UIViewController) {
+            
+        }
     }
 
     class MockViewController: HomeViewInput {
-
         func setupInitialState() {
 
+        }
+        
+        func insertATableRow(indexPath: IndexPath) {
+            
+        }
+        
+        func deleteATableRow(indexPath: IndexPath) {
+            
+        }
+        
+        func reloadTableView() {
+            
+        }
+        
+        func beginUpdateTalbeView() {
+            
+        }
+        
+        func endUpdateTableView() {
+            
         }
     }
 }

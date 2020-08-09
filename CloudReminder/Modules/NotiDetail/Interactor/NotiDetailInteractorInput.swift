@@ -9,5 +9,17 @@
 import Foundation
 
 protocol NotiDetailInteractorInput {
-
+    var getData: (() -> NotiGroupMO?)! { get set }
+    
+    var getContent: (() -> String?)! { get set }
+    
+    func configureNotiDetailTableFooter(view: NotiDetailTableFooter)
+    
+    func configureNotiDetailTableCell(cell: NotiDetailTableCell, indexPath: IndexPath)
+    
+    func numberOfSections() -> Int
+    
+    func numberOfRows() -> Int
+    
+    func createNotification(title: String, content: String, hour: Int, minute: Int, daysOfWeekDict: [Int: Bool], isOn: Bool) -> NotiGroupMO
 }

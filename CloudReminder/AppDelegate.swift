@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  EasyNoti
+//  CloudReminder
 //
 //  Created by Eido Goya on 2020/07/29.
 //  Copyright © 2020 Dymm. All rights reserved.
@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // setupRootViewController() in SceneDelegate
         } else {
             setupRootViewController()
+        }
+        
+        registerForNotifications(application: application) {
+            // do nothing...
         }
         
         return true
@@ -45,6 +49,18 @@ extension AppDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = CustomTabBarController()
         window?.makeKeyAndVisible()
+    }
+    
+    func registerForNotifications(application: UIApplication, completion: @escaping () -> Void) {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.badge, .sound, .alert]) { (granted, error) in
+            guard granted else { return }
+            center.delegate = self
+            DispatchQueue.main.async {
+                application.registerForRemoteNotifications()
+                completion()
+            }
+        }
     }
 }
 

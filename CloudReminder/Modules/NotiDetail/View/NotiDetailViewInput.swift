@@ -6,12 +6,21 @@
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
+import Foundation
+import RxSwift
+
 protocol NotiDetailViewInput: class {
 
     /**
         @author 9oya
         Setup initial state of the view
     */
-
+    
+    var notiDetailViewModel: NotiDetailViewModel { get set }
+    
     func setupInitialState()
+    
+    func setupData(data: NotiGroupMO?)
+    
+    func reloadTableView()
 }

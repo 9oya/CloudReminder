@@ -6,6 +6,19 @@
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-class NotiDetailRouter: NotiDetailRouterInput {
+import UIKit
+import ColorCompatibility
 
+class NotiDetailRouter: NotiDetailRouterInput {
+    func backToWhereCameFrom(from view: UIViewController) {
+        _ = view.navigationController?.popViewController(animated: true)
+    }
+    
+    func pushToNotiBodyViewController(from view: UIViewController) {
+        let vc = NotiBodyViewController()
+        vc.notiDetailVC = (view as! NotiDetailViewInput)
+        view.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        view.navigationItem.backBarButtonItem?.tintColor = ColorCompatibility.label
+        view.navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -1,6 +1,6 @@
 //
 //  UIView+LayerHelpers.swift
-//  EasyNoti
+//  CloudReminder
 //
 //  Created by 9oya on 2020/08/01.
 //  Copyright © 2020 Dymm. All rights reserved.
@@ -45,7 +45,7 @@ extension UIView {
             if #available(iOS 13, *) {
                 indicator.style = UIActivityIndicatorView.Style.large
             }
-            indicator.color = .red
+            indicator.color = .systemTeal
             indicator.layer.cornerRadius = 10.0
             indicator.startAnimating()
             indicator.tag = 475647

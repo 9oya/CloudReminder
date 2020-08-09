@@ -1,6 +1,6 @@
 //
 //  HomeHomeConfigurator.swift
-//  EasyNoti
+//  CloudReminder
 //
 //  Created by 9oya on 31/07/2020.
 //  Copyright © 2020 dymm. All rights reserved.
@@ -27,6 +27,7 @@ class HomeModuleConfigurator {
 
         let interactor = HomeInteractor()
         interactor.output = presenter
+        interactor.initializeFRC()
 
         presenter.interactor = interactor
         viewController.output = presenter

@@ -6,17 +6,17 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="isOn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="minute" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="notiMOs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NotiMO" inverseName="notiGroupMO" inverseEntity="NotiMO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="notiMOs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NotiMO" inverseName="notiGroupMO" inverseEntity="NotiMO"/>
     </entity>
     <entity name="NotiMO" representedClassName="NotiMO" syncable="YES">
-        <attribute name="body" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="isOn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="weekCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="notiGroupMO" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NotiGroupMO" inverseName="notiMOs" inverseEntity="NotiGroupMO"/>
+        <relationship name="notiGroupMO" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NotiGroupMO" inverseName="notiMOs" inverseEntity="NotiGroupMO"/>
     </entity>
     <elements>
-        <element name="NotiGroupMO" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="NotiMO" positionX="-54" positionY="-9" width="128" height="118"/>
+        <element name="NotiGroupMO" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="NotiMO" positionX="204.04296875" positionY="-2.5078125" width="128" height="103"/>
     </elements>
 </model>

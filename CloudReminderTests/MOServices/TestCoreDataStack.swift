@@ -1,12 +1,12 @@
 //
 //  TestCoreDataStack.swift
-//  EasyNotiTests
+//  CloudReminderTests
 //
 //  Created by 9oya on 2020/08/01.
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-import EasyNoti
+import CloudReminder
 import CoreData
 
 class TestCoreDataStack: CoreDataStack {

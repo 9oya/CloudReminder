@@ -1,6 +1,6 @@
 //
 //  NotiGroupMOServiceProtocol.swift
-//  EasyNoti
+//  CloudReminder
 //
 //  Created by 9oya on 2020/08/01.
 //  Copyright © 2020 Dymm. All rights reserved.
@@ -9,7 +9,7 @@
 import CoreData
 
 protocol NotiGroupMOServiceProtocol {
-    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, content: String) -> NotiGroupMO
+    func createNotiGroupMO(id: UUID, hour: Int, minute: Int, isOn: Bool, title: String, content: String) -> NotiGroupMO
     
     func getNotifGroupMOById(id: UUID) -> NotiGroupMO?
     

@@ -21,4 +21,6 @@ protocol NotiDetailViewInput: class {
     func setupInitialState()
     
     func setupData(data: NotiGroupMO?)
+    
+    func reloadTableView()
 }

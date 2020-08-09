@@ -28,6 +28,13 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        notiDetailViewModel.contentInputText
+            .subscribe(onNext: { (content) in
+                self.output.setupContent {
+                    return content
+                }
+            }).disposed(by: disposeBag)
     }
     
     // MARK: Actions
@@ -47,6 +54,10 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
         output.setupData {
             return data
         }
+    }
+    
+    func reloadTableView() {
+        notiDetailTableView.reloadData()
     }
 }
 
@@ -77,7 +88,18 @@ extension NotiDetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     // MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        switch indexPath.row {
+        case 0:
+            print()
+        case 1:
+            output.pushToNotiBodyViewController(from: self)
+        case 2:
+            print()
+        case 3:
+            print()
+        default:
+            break
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

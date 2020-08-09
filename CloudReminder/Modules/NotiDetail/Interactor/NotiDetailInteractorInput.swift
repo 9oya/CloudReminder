@@ -11,6 +11,8 @@ import Foundation
 protocol NotiDetailInteractorInput {
     var getData: (() -> NotiGroupMO?)! { get set }
     
+    var getContent: (() -> String?)! { get set }
+    
     func configureNotiDetailTableFooter(view: NotiDetailTableFooter)
     
     func configureNotiDetailTableCell(cell: NotiDetailTableCell, indexPath: IndexPath)

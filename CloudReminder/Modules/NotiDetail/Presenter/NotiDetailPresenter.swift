@@ -24,6 +24,10 @@ extension NotiDetailPresenter: NotiDetailViewOutput {
         interactor.getData = getData
     }
     
+    func setupContent(getContent: (() -> String?)?) {
+        interactor.getContent = getContent
+    }
+    
     func configureNotiDetailTableFooter(view: NotiDetailTableFooter) {
         interactor.configureNotiDetailTableFooter(view: view)
     }
@@ -42,6 +46,10 @@ extension NotiDetailPresenter: NotiDetailViewOutput {
     
     func createNotification(title: String, content: String, hour: Int, minute: Int, daysOfWeekDict: [Int : Bool], isOn: Bool) {
         _ = interactor.createNotification(title: title, content: content, hour: hour, minute: minute, daysOfWeekDict: daysOfWeekDict, isOn: isOn)
+    }
+    
+    func pushToNotiBodyViewController(from view: UIViewController) {
+        router.pushToNotiBodyViewController(from: view)
     }
 }
 

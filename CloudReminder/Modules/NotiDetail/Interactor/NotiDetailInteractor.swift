@@ -12,6 +12,7 @@ import UIKit
 class NotiDetailInteractor: NotiDetailInteractorInput {
     
     var getData: (() -> NotiGroupMO?)!
+    var getContent: (() -> String?)!
     
     weak var output: NotiDetailInteractorOutput!
     
@@ -96,7 +97,7 @@ extension NotiDetailInteractor {
         ])
         detailDictArr.append([
             "guide": "Content",
-            "content": ""
+            "content": getContent() ?? ""
         ])
         detailDictArr.append([
             "guide": "Time",

@@ -25,6 +25,7 @@
 		208E5F1224DE6A720013B5E7 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E5F1124DE6A720013B5E7 /* DateHelperTests.swift */; };
 		208E5F1424DE8E310013B5E7 /* NotiDetailTableFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E5F1324DE8E310013B5E7 /* NotiDetailTableFooter.swift */; };
 		208E5F1624DF9ADD0013B5E7 /* NotiDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E5F1524DF9ADD0013B5E7 /* NotiDetailViewModel.swift */; };
+		208E5F1824DFE0E70013B5E7 /* UITextField+AddLeftPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E5F1724DFE0E70013B5E7 /* UITextField+AddLeftPadding.swift */; };
 		20957C3C24D54F0A00AED580 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20957C3B24D54F0A00AED580 /* CloudKit.framework */; };
 		20E1A70624D5266C002020B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70524D5266C002020B0 /* CustomTabBarController.swift */; };
 		20E1A70824D53014002020B0 /* NotiDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A70724D53014002020B0 /* NotiDetailTableCell.swift */; };
@@ -163,6 +164,7 @@
 		208E5F1124DE6A720013B5E7 /* DateHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
 		208E5F1324DE8E310013B5E7 /* NotiDetailTableFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiDetailTableFooter.swift; sourceTree = "<group>"; };
 		208E5F1524DF9ADD0013B5E7 /* NotiDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiDetailViewModel.swift; sourceTree = "<group>"; };
+		208E5F1724DFE0E70013B5E7 /* UITextField+AddLeftPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+AddLeftPadding.swift"; sourceTree = "<group>"; };
 		20957C3A24D54EF500AED580 /* CloudReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudReminder.entitlements; sourceTree = "<group>"; };
 		20957C3B24D54F0A00AED580 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		20E1A70524D5266C002020B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 			children = (
 				20E1A72524D5424E002020B0 /* UIColor+Helpers.swift */,
 				20E1A72724D54271002020B0 /* UIView+LayerHelpers.swift */,
+				208E5F1724DFE0E70013B5E7 /* UITextField+AddLeftPadding.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1264,6 +1267,7 @@
 				208E5F1624DF9ADD0013B5E7 /* NotiDetailViewModel.swift in Sources */,
 				42A41DD78F4428088193AC8F /* HomeConfigurator.swift in Sources */,
 				20E1A72624D5424E002020B0 /* UIColor+Helpers.swift in Sources */,
+				208E5F1824DFE0E70013B5E7 /* UITextField+AddLeftPadding.swift in Sources */,
 				EAE26EB5D1FF2F8367F5C124 /* NotiDetailViewInput.swift in Sources */,
 				AA1BDAEEB88B58B8534EF758 /* NotiDetailViewOutput.swift in Sources */,
 				52394344D8839C10210521AE /* NotiDetailViewController.swift in Sources */,

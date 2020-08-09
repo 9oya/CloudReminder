@@ -6,8 +6,8 @@
 //  Copyright © 2020 Dymm. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol NotiDetailRouterInput {
-
+    func pushToNotiBodyViewController(from view: UIViewController)
 }

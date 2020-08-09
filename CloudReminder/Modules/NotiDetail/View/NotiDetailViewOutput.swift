@@ -31,5 +31,7 @@ protocol NotiDetailViewOutput {
     
     func createNotification(title: String, content: String, hour: Int, minute: Int, daysOfWeekDict: [Int: Bool], isOn: Bool)
     
+    func backToWhereCameFrom(from view: UIViewController)
+    
     func pushToNotiBodyViewController(from view: UIViewController)
 }

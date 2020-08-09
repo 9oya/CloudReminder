@@ -36,7 +36,6 @@ class NotiBodyViewController: UIViewController, NotiBodyViewInput {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
         notiDetailVC.reloadTableView()
     }
     

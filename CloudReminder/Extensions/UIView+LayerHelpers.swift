@@ -45,7 +45,7 @@ extension UIView {
             if #available(iOS 13, *) {
                 indicator.style = UIActivityIndicatorView.Style.large
             }
-            indicator.color = .red
+            indicator.color = .systemTeal
             indicator.layer.cornerRadius = 10.0
             indicator.startAnimating()
             indicator.tag = 475647

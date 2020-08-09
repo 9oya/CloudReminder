@@ -19,7 +19,7 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     var output: NotiDetailViewOutput!
     var configurator = NotiDetailModuleConfigurator()
     var disposeBag = DisposeBag()
-
+    
     // MARK: Life cycle
     override func loadView() {
         super.loadView()
@@ -28,18 +28,7 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        notiDetailViewModel.contentInputText
-            .subscribe(onNext: { (content) in
-                self.output.setupContent {
-                    return content
-                }
-            }).disposed(by: disposeBag)
-    }
-    
-    // MARK: Actions
-    @objc func saveButtonTapped() {
-        output.createNotification(title: notiDetailViewModel.title, content: notiDetailViewModel.content, hour: notiDetailViewModel.hour, minute: notiDetailViewModel.minute, daysOfWeekDict: notiDetailViewModel.daysOfWeekDict, isOn: notiDetailViewModel.isOn)
+        bind()
     }
     
     // MARK: NotiDetailViewInput
@@ -61,6 +50,36 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     }
 }
 
+extension NotiDetailViewController {
+    private func bind() {
+        notiDetailViewModel.contentInputText
+            .subscribe(onNext: { (content) in
+                self.output.setupContent {
+                    return content
+                }
+            }).disposed(by: disposeBag)
+        
+        saveButton.rx.tap
+            .do(onNext: {
+                self.view.showSpinner()
+                self.output.createNotification(
+                    title: self.notiDetailViewModel.title,
+                    content: self.notiDetailViewModel.content,
+                    hour: self.notiDetailViewModel.hour,
+                    minute: self.notiDetailViewModel.minute,
+                    daysOfWeekDict: self.notiDetailViewModel.daysOfWeekDict,
+                    isOn: self.notiDetailViewModel.isOn
+                )
+            })
+            .subscribe(onNext: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.view.hideSpinner()
+                    self.output.backToWhereCameFrom(from: self)
+                }
+            }).disposed(by: disposeBag)
+    }
+}
+
 extension NotiDetailViewController: UITableViewDataSource, UITableViewDelegate {
     // MARK: UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -77,6 +96,9 @@ extension NotiDetailViewController: UITableViewDataSource, UITableViewDelegate {
         view.switchChangedAction = { isOn in
             self.notiDetailViewModel.isOnInput.onNext(isOn)
         }
+        view.deleteButtonTappedAction = {
+            // TODO
+        }
         return view
     }
     
@@ -90,12 +112,15 @@ extension NotiDetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
+            // TODO
             print()
         case 1:
             output.pushToNotiBodyViewController(from: self)
         case 2:
+            // TODO
             print()
         case 3:
+            // TODO
             print()
         default:
             break
@@ -115,7 +140,6 @@ extension NotiDetailViewController {
     private func setupLayout() {
         // MARK: Setup super-view
         view.backgroundColor = ColorCompatibility.systemBackground
-        
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Add Notification"
         
@@ -134,7 +158,6 @@ extension NotiDetailViewController {
             button.setTitle("Save", for: .normal)
             button.titleLabel?.font = .systemFont(ofSize: 16, weight: .regular)
             button.setTitleColor(.systemTeal, for: .normal)
-            button.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
             return button
         }()
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: saveButton)]

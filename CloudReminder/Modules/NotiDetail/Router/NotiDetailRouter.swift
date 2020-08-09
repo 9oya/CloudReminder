@@ -10,6 +10,10 @@ import UIKit
 import ColorCompatibility
 
 class NotiDetailRouter: NotiDetailRouterInput {
+    func backToWhereCameFrom(from view: UIViewController) {
+        _ = view.navigationController?.popViewController(animated: true)
+    }
+    
     func pushToNotiBodyViewController(from view: UIViewController) {
         let vc = NotiBodyViewController()
         vc.notiDetailVC = (view as! NotiDetailViewInput)

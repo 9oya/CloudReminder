@@ -9,5 +9,7 @@
 import UIKit
 
 protocol NotiDetailRouterInput {
+    func backToWhereCameFrom(from view: UIViewController)
+    
     func pushToNotiBodyViewController(from view: UIViewController)
 }

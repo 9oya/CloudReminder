@@ -48,6 +48,10 @@ extension NotiDetailPresenter: NotiDetailViewOutput {
         _ = interactor.createNotification(title: title, content: content, hour: hour, minute: minute, daysOfWeekDict: daysOfWeekDict, isOn: isOn)
     }
     
+    func backToWhereCameFrom(from view: UIViewController) {
+        router.backToWhereCameFrom(from: view)
+    }
+    
     func pushToNotiBodyViewController(from view: UIViewController) {
         router.pushToNotiBodyViewController(from: view)
     }

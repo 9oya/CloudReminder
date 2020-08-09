@@ -9,6 +9,8 @@
 import UIKit
 
 protocol NotiMOServiceProtocol {
+    func convertNotiMOArrToDaysOfWeekDict(notiMOArr: [NotiMO]) -> [Int: Bool]
+    
     func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, isOn: Bool) -> NotiMO
     
     func getNotiMOById(id: UUID) -> NotiMO?

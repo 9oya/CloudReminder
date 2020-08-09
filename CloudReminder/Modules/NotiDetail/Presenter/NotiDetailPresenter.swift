@@ -20,8 +20,8 @@ extension NotiDetailPresenter: NotiDetailViewOutput {
         view.setupInitialState()
     }
     
-    func setupData(notiGroupMO: NotiGroupMO) {
-        interactor.setupData(notiGroupMO: notiGroupMO)
+    func setupData(getData: (() -> NotiGroupMO?)?) {
+        interactor.getData = getData
     }
     
     func configureNotiDetailTableFooter(view: NotiDetailTableFooter) {
@@ -32,24 +32,12 @@ extension NotiDetailPresenter: NotiDetailViewOutput {
         interactor.configureNotiDetailTableCell(cell: cell, indexPath: indexPath)
     }
     
-    func configureEmptyNotiDetail() -> [[String: String]] {
-        return interactor.configureEmptyNotiDetail()
-    }
-    
-    func configureSelectedNotiDetail(notiGroupMO: NotiGroupMO) -> [[String: String]] {
-        return interactor.configureSelectedNotiDetail(notiGroupMO: notiGroupMO)
-    }
-    
     func numberOfSections() -> Int {
         return interactor.numberOfSections()
     }
     
     func numberOfRows() -> Int {
         return interactor.numberOfRows()
-    }
-    
-    func detailDictArrAt(notiGroupMO: NotiGroupMO, indexPath: IndexPath) -> [String: String] {
-        return interactor.detailDictArrAt(notiGroupMO: notiGroupMO, indexPath: indexPath)
     }
     
     func createNotification(title: String, content: String, hour: Int, minute: Int, daysOfWeekDict: [Int : Bool], isOn: Bool) {

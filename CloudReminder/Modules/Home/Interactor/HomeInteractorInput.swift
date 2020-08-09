@@ -9,5 +9,11 @@
 import Foundation
 
 protocol HomeInteractorInput {
-
+    func performFRC()
+    
+    func numberOfNotiGroups(section: Int) -> Int
+    
+    func notiGroupAt(indexPath: IndexPath) -> NotiGroupMO?
+    
+    func configureNotiTableCell(cell: NotiTableCell, indexPath: IndexPath)
 }

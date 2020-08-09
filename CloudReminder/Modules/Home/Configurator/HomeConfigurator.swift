@@ -27,6 +27,7 @@ class HomeModuleConfigurator {
 
         let interactor = HomeInteractor()
         interactor.output = presenter
+        interactor.initializeFRC()
 
         presenter.interactor = interactor
         viewController.output = presenter

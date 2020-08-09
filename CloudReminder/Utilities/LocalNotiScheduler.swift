@@ -11,6 +11,32 @@ import UserNotifications
 class LocalNotiScheduler: LocalNotiSchedulerProtocol {
     var notiMOArr = [NotiMO]()
     
+    func fetchScheduledNotiRquests(completion: @escaping ([UNNotificationRequest]) -> Void) {
+        UNUserNotificationCenter.current().getPendingNotificationRequests { (notiRequests) in
+            completion(notiRequests)
+        }
+    }
+    
+    func removeNotification(id: String) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [id])
+        print("Notification removed! --- ID = \(id)")
+    }
+    
+    func schedule() {
+        UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+            switch settings.authorizationStatus {
+            case .notDetermined:
+                break
+            case .authorized, .provisional:
+                self.scheduleNotifications()
+            default:
+                break
+            }
+        }
+    }
+}
+
+extension LocalNotiScheduler {
     private func collapseLocalNotifications() -> [NotiModel] {
         var notiModels = [NotiModel]()
         
@@ -71,30 +97,6 @@ class LocalNotiScheduler: LocalNotiSchedulerProtocol {
                 }
                 print("Notification scheduled! --- ID = \(notiModel.id) - \(idx + 1)")
                 print("Hour: \(notiModel.hour), Minute: \(notiModel.minute), WeekCode: \(notiModel.weekCode)")
-            }
-        }
-    }
-    
-    func fetchScheduledNotiRquests(completion: @escaping ([UNNotificationRequest]) -> Void) {
-        UNUserNotificationCenter.current().getPendingNotificationRequests { (notiRequests) in
-            completion(notiRequests)
-        }
-    }
-    
-    func removeNotification(id: String) {
-        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [id])
-        print("Notification removed! --- ID = \(id)")
-    }
-    
-    func schedule() {
-        UNUserNotificationCenter.current().getNotificationSettings { (settings) in
-            switch settings.authorizationStatus {
-            case .notDetermined:
-                break
-            case .authorized, .provisional:
-                self.scheduleNotifications()
-            default:
-                break
             }
         }
     }

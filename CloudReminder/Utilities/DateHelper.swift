@@ -52,4 +52,50 @@ final class DateHelper {
         let minute = Calendar.current.component(.minute, from: date)
         return (hour, minute)
     }
+    
+    func convertDaysOfWeekDictToText(daysOfWeekDict: [Int: Bool]) -> String {
+        var daysOfWeekTxt = ""
+        if daysOfWeekDict[1]! {
+            daysOfWeekTxt += "Sun/"
+        }
+        if daysOfWeekDict[2]! {
+            daysOfWeekTxt += "Mon/"
+        }
+        if daysOfWeekDict[3]! {
+            daysOfWeekTxt += "Tue/"
+        }
+        if daysOfWeekDict[4]! {
+            daysOfWeekTxt += "Wed/"
+        }
+        if daysOfWeekDict[5]! {
+            daysOfWeekTxt += "Thu/"
+        }
+        if daysOfWeekDict[6]! {
+            daysOfWeekTxt += "Fri/"
+        }
+        if daysOfWeekDict[7]! {
+            daysOfWeekTxt += "Sat"
+        }
+        
+        var result = ""
+        let daysOfWeekTxtArr = daysOfWeekTxt.split(separator: "/")
+        for (idx, dayOfWeek) in daysOfWeekTxtArr.enumerated() {
+            if idx + 1 >= daysOfWeekTxtArr.count {
+                result += "\(dayOfWeek)"
+            } else {
+                result += "\(dayOfWeek)·"
+            }
+        }
+        
+        if result == "Sun·Mon·Tue·Wed·Thu·Fri·Sat" {
+            result = "Everyday"
+        } else if result == "Mon·Tue·Wed·Thu·Fri" {
+            result = "Weekdays"
+        } else if result == "Sun·Sat" {
+            result = "Weekend"
+        } else {
+            return result
+        }
+        return result
+    }
 }

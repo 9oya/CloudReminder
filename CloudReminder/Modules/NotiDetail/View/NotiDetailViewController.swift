@@ -8,25 +8,21 @@
 
 import UIKit
 import ColorCompatibility
+import RxSwift
+import RxCocoa
 
 class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     // MARK: Properties
-    // UITableView
     var notiDetailTableView: UITableView!
-    
-    // UIButton
     var saveButton: UIButton!
     
-    // Delegates
     var output: NotiDetailViewOutput!
-    
-    // Dependency injection
     var configurator = NotiDetailModuleConfigurator()
+    var disposeBag = DisposeBag()
 
     // MARK: Life cycle
     override func loadView() {
         super.loadView()
-        configurator.configureModuleForViewInput(viewInput: self)
         output.viewIsReady()
     }
     
@@ -36,24 +32,20 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     
     // MARK: Actions
     @objc func saveButtonTapped() {
-        let (hour, minute) = DateHelper.shared.convertDateToHourAndMinute(date: customTime)
-        output.createNotification(title: customTitle, content: customContent, hour: hour, minute: minute, daysOfWeekDict: daysOfWeekDict, isOn: isOn)
+        output.createNotification(title: notiDetailViewModel.title, content: notiDetailViewModel.content, hour: notiDetailViewModel.hour, minute: notiDetailViewModel.minute, daysOfWeekDict: notiDetailViewModel.daysOfWeekDict, isOn: notiDetailViewModel.isOn)
     }
-
+    
     // MARK: NotiDetailViewInput
-    var customTitle = "CloudReminder"
-    var customContent = "TestTestTestTestTestTestTestTestTestTestTestTest"
-    var customTime: Date = Date()
-    var isOn: Bool = true
-    var daysOfWeekDict: [Int : Bool] = [1: true, 2: true, 3: true, 4: true, 5: true, 6: true, 7: true]
+    var notiDetailViewModel = NotiDetailViewModel()
     
     func setupInitialState() {
         setupLayout()
     }
     
     func setupData(data: NotiGroupMO?) {
-        if data != nil {
-            output.setupData(notiGroupMO: data!)
+        configurator.configureModuleForViewInput(viewInput: self)
+        output.setupData {
+            return data
         }
     }
 }
@@ -72,7 +64,7 @@ extension NotiDetailViewController: UITableViewDataSource, UITableViewDelegate {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: notiDetailTableFooterId) as! NotiDetailTableFooter
         output.configureNotiDetailTableFooter(view: view)
         view.switchChangedAction = { isOn in
-            self.isOn = isOn
+            self.notiDetailViewModel.isOnInput.onNext(isOn)
         }
         return view
     }

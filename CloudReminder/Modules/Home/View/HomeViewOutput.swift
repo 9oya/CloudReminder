@@ -17,5 +17,13 @@ protocol HomeViewOutput {
 
     func viewIsReady()
     
+    func performFRC()
+    
+    func numberOfNotiGroups(section: Int) -> Int
+    
+    func notiGroupAt(indexPath: IndexPath) -> NotiGroupMO?
+    
+    func configureNotiTableCell(cell: NotiTableCell, indexPath: IndexPath)
+    
     func pushToNotiDetailViewController(with data: NotiGroupMO?, from view: UIViewController)
 }

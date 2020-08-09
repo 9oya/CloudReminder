@@ -24,6 +24,11 @@ class NotiGroupViewModel {
         return DateHelper.shared.convertDateToTimeTxt(date: nil, hour: Int(notiGroupMO.hour), minute: Int(notiGroupMO.minute))
     }
     
+    var daysOfWeek: String {
+        let daysOfWeekDict = NotiMOService.shared.convertNotiMOArrToDaysOfWeekDict(notiMOArr: notiGroupMO.notiMOs?.allObjects as! [NotiMO])
+        return DateHelper.shared.convertDaysOfWeekDictToText(daysOfWeekDict: daysOfWeekDict)
+    }
+    
     init(notiGroupMO: NotiGroupMO) {
         self.notiGroupMO = notiGroupMO
     }

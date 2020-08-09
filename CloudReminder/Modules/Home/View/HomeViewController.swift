@@ -35,7 +35,12 @@ class HomeViewController: UIViewController, HomeViewInput {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        output.viewIsReady()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = false
+        output.performFRC()
     }
     
     // MARK: Actions
@@ -46,6 +51,26 @@ class HomeViewController: UIViewController, HomeViewInput {
     // MARK: HomeViewInput
     func setupInitialState() {
         setupLayout()
+    }
+    
+    func insertATableRow(indexPath: IndexPath) {
+        notiTableView.insertRows(at: [indexPath], with: .automatic)
+    }
+    
+    func deleteATableRow(indexPath: IndexPath) {
+        notiTableView.deleteRows(at: [indexPath], with: .fade)
+    }
+    
+    func reloadTableView() {
+        notiTableView.reloadData()
+    }
+    
+    func beginUpdateTalbeView() {
+        notiTableView.beginUpdates()
+    }
+    
+    func endUpdateTableView() {
+        notiTableView.endUpdates()
     }
 }
 
@@ -75,13 +100,14 @@ extension HomeViewController: UISearchResultsUpdating, UISearchBarDelegate {
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return output.numberOfNotiGroups(section: section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: notiTalbeCellId, for: indexPath) as? NotiTableCell else {
             fatalError()
         }
+        output.configureNotiTableCell(cell: cell, indexPath: indexPath)
         return cell
     }
     
@@ -90,7 +116,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 120
     }
 }
 
@@ -98,7 +124,7 @@ extension HomeViewController {
     private func setupLayout() {
         // MARK: Setup super-view
         view.backgroundColor = ColorCompatibility.systemBackground
-        navigationItem.title = ""
+        navigationItem.title = "CloudReminder"
         
         // MARK: Setup sub-view properties
         // UISearchController

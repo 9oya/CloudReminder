@@ -22,6 +22,24 @@ class HomeInteractorTests: XCTestCase {
     }
 
     class MockPresenter: HomeInteractorOutput {
-
+        func insertATableRow(indexPath: IndexPath) {
+            
+        }
+        
+        func deleteATableRow(indexPath: IndexPath) {
+            
+        }
+        
+        func reloadTableView() {
+            
+        }
+        
+        func beginUpdateTalbeView() {
+            
+        }
+        
+        func endUpdateTableView() {
+            
+        }
     }
 }

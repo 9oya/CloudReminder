@@ -20,6 +20,22 @@ extension HomePresenter: HomeViewOutput {
         view.setupInitialState()
     }
     
+    func performFRC() {
+        interactor.performFRC()
+    }
+    
+    func numberOfNotiGroups(section: Int) -> Int {
+        interactor.numberOfNotiGroups(section: section)
+    }
+    
+    func notiGroupAt(indexPath: IndexPath) -> NotiGroupMO? {
+        return interactor.notiGroupAt(indexPath: indexPath)
+    }
+    
+    func configureNotiTableCell(cell: NotiTableCell, indexPath: IndexPath) {
+        interactor.configureNotiTableCell(cell: cell, indexPath: indexPath)
+    }
+    
     func pushToNotiDetailViewController(with data: NotiGroupMO?, from view: UIViewController) {
         router.pushToNotiDetailViewController(with: data, from: view)
     }
@@ -27,4 +43,23 @@ extension HomePresenter: HomeViewOutput {
 
 extension HomePresenter: HomeInteractorOutput {
     // MARK: HomeInteractorOutput
+    func insertATableRow(indexPath: IndexPath) {
+        view.insertATableRow(indexPath: indexPath)
+    }
+    
+    func deleteATableRow(indexPath: IndexPath) {
+        view.deleteATableRow(indexPath: indexPath)
+    }
+    
+    func reloadTableView() {
+        view.reloadTableView()
+    }
+    
+    func beginUpdateTalbeView() {
+        view.beginUpdateTalbeView()
+    }
+    
+    func endUpdateTableView() {
+        view.endUpdateTableView()
+    }
 }

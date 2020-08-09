@@ -13,6 +13,7 @@ let notiTalbeCellId = "NotiTableCellId"
 
 class NotiTableCell: UITableViewCell {
     // MARK: Properties
+    var guideLabel: UILabel!
     var titleLabel: UILabel!
     var subTitleLabel: UILabel!
     var underLineView: UIView!
@@ -34,9 +35,17 @@ extension NotiTableCell {
         backgroundColor = ColorCompatibility.systemBackground
         
         // MARK: Setup sub-view properties
+        guideLabel = {
+            let label = UILabel()
+            label.font = .systemFont(ofSize: 14, weight: .bold)
+            label.textAlignment = .left
+            label.textColor = ColorCompatibility.label
+            label.translatesAutoresizingMaskIntoConstraints = false
+            return label
+        }()
         titleLabel = {
             let label = UILabel()
-            label.font = .systemFont(ofSize: 22, weight: .bold)
+            label.font = .systemFont(ofSize: 18, weight: .regular)
             label.textAlignment = .left
             label.textColor = ColorCompatibility.label
             label.numberOfLines = 2
@@ -59,16 +68,21 @@ extension NotiTableCell {
         }()
         
         // MARK: Setup UI Hierarchy
-        addSubview(subTitleLabel)
+        addSubview(guideLabel)
         addSubview(titleLabel)
+        addSubview(subTitleLabel)
         addSubview(underLineView)
         
         // MARK: Setup constraints
-        subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 2).isActive = true
-        subTitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
+        guideLabel.topAnchor.constraint(equalTo: topAnchor, constant: 7).isActive = true
+        guideLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
             
         titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40).isActive = true
+        
+        subTitleLabel.bottomAnchor.constraint(equalTo: underLineView.topAnchor, constant: -7).isActive = true
+        subTitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
         
         underLineView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
         underLineView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true

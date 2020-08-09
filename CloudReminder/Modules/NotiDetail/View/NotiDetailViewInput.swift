@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol NotiDetailViewInput: class {
 
@@ -15,15 +16,7 @@ protocol NotiDetailViewInput: class {
         Setup initial state of the view
     */
     
-    var customTitle: String { get set }
-    
-    var customContent: String { get set }
-    
-    var customTime: Date { get set }
-    
-    var isOn: Bool { get set }
-    
-    var daysOfWeekDict: [Int: Bool] { get set }
+    var notiDetailViewModel: NotiDetailViewModel { get set }
     
     func setupInitialState()
     

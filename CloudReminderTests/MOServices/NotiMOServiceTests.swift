@@ -126,6 +126,14 @@ class MockNotiMOService: NotiMOServiceProtocol {
         self.coreDataStack = coreDataStack
     }
     
+    func convertNotiMOArrToDaysOfWeekDict(notiMOArr: [NotiMO]) -> [Int: Bool] {
+        var daysOfWeekDict = [1: false, 2: false, 3: false, 4: false, 5: false, 6: false, 7: false]
+        for notiMO in notiMOArr {
+            daysOfWeekDict[Int(notiMO.weekCode)]?.toggle()
+        }
+        return daysOfWeekDict
+    }
+    
     // MARK: CREATE Services
     func createNotiMO(notiGroupMO: NotiGroupMO, id: UUID, weekCode: WeekCode, isOn: Bool) -> NotiMO {
         let newNotiMO = NotiMO(context: managedObjContext)

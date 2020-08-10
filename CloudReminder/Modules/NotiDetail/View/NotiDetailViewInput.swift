@@ -16,8 +16,6 @@ protocol NotiDetailViewInput: class {
         Setup initial state of the view
     */
     
-    var notiDetailViewModel: NotiDetailViewModel { get set }
-    
     func setupInitialState()
     
     func setupData(data: NotiGroupMO?)

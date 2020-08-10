@@ -25,6 +25,29 @@ class NotiGroupMOServiceTests: XCTestCase {
         testCoreDataStack = nil
     }
     
+    func testRootContext_afterAddingNotiGroupMO_isSaved() {
+        // given
+        let derivedContext = testCoreDataStack.newDerivedContext()
+        mockNotiGroupMOService = MockNotiGroupMOService(coreDataStack: testCoreDataStack)
+        
+        expectation(
+            forNotification: .NSManagedObjectContextDidSave,
+            object: testCoreDataStack.mainContext
+        ) { (notification) -> Bool in
+            return true
+        }
+        
+        // when
+        derivedContext.perform {
+            let notiGroupMO = self.mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 12, minute: 30, isOn: true, title: "TestTitle", content: "It's lunch time~!!")
+            XCTAssertNotNil(notiGroupMO)
+        }
+        
+        waitForExpectations(timeout: 2.0) { (error) in
+            XCTAssertNil(error, "Save did not occur")
+        }
+    }
+    
     func testNotiGroupMO_create_isResultValueMatch() {
         // given
         let id = UUID()

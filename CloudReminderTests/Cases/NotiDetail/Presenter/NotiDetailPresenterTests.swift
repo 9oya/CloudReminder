@@ -36,6 +36,11 @@ class NotiDetailPresenterTest: XCTestCase {
         // given
         let guideKey = "guide"
         let contentKey = "content"
+        let content = "CloudReminder"
+        
+        mockInteractor.getContent = {
+            return content
+        }
         
         // when
         let detailDictArr = mockInteractor.configureEmptyNotiDetail()
@@ -43,6 +48,7 @@ class NotiDetailPresenterTest: XCTestCase {
         // than
         XCTAssertTrue((detailDictArr[0][guideKey] != nil), "Title")
         XCTAssertTrue((detailDictArr[1][guideKey] != nil), "Content")
+        XCTAssertTrue((detailDictArr[1][contentKey] != nil), content)
         XCTAssertTrue((detailDictArr[2][guideKey] != nil), "Time")
         XCTAssertNotNil((detailDictArr[2][contentKey]))
         XCTAssertTrue((detailDictArr[3][guideKey] != nil), "Repeat")
@@ -97,8 +103,9 @@ class NotiDetailPresenterTest: XCTestCase {
     }
     
     class MockInteractor: NotiDetailInteractorInput {
-        
+            
         var getData: (() -> NotiGroupMO?)!
+        var getContent: (() -> String?)!
         
         weak var output: NotiDetailInteractorOutput!
         
@@ -181,7 +188,7 @@ class NotiDetailPresenterTest: XCTestCase {
             ])
             detailDictArr.append([
                 "guide": "Content",
-                "content": ""
+                "content": getContent() ?? ""
             ])
             detailDictArr.append([
                 "guide": "Time",
@@ -219,25 +226,25 @@ class NotiDetailPresenterTest: XCTestCase {
     }
     
     class MockRouter: NotiDetailRouterInput {
+        func backToWhereCameFrom(from view: UIViewController) {
+            
+        }
         
+        func pushToNotiBodyViewController(from view: UIViewController, notiDetailViewModel: NotiDetailViewModel) {
+            
+        }
     }
     
     class MockViewController: NotiDetailViewInput {
-        var customTitle: String = ""
-        
-        var customContent: String = ""
-        
-        var customTime: Date = Date()
-        
-        var isOn: Bool = true
-        
-        var daysOfWeekDict: [Int : Bool] = [1: true, 2: true, 3: true, 4: true, 5: true, 6: true, 7: true]
-        
         func setupInitialState() {
             
         }
         
         func setupData(data: NotiGroupMO?) {
+            
+        }
+        
+        func reloadTableView() {
             
         }
     }

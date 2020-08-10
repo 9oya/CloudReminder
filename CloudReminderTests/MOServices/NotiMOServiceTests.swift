@@ -28,6 +28,31 @@ class NotiMOServiceTests: XCTestCase {
         testCoreDataStack = nil
     }
     
+    func testRoocContext_afterAddingNotiMO_isSaved() {
+        // given
+        let derivedContext = testCoreDataStack.newDerivedContext()
+        mockNotiMOService = MockNotiMOService(coreDataStack: testCoreDataStack)
+        let notiGroupMO = mockNotiGroupMOService.createNotiGroupMO(id: UUID(), hour: 7, minute: 30, isOn: true, title: "TestTitle", content: "It's time for breakfast")
+        
+        expectation(
+            forNotification: .NSManagedObjectContextDidSave,
+            object: testCoreDataStack.mainContext
+        ) { (notification) -> Bool in
+            return true
+        }
+        
+        // when
+        derivedContext.perform {
+            let notiMO = self.mockNotiMOService.createNotiMO(notiGroupMO: notiGroupMO, id: UUID(), weekCode: WeekCode.Sun, isOn: true)
+            XCTAssertNotNil(notiMO)
+        }
+        
+        // than
+        waitForExpectations(timeout: 2.0) { (error) in
+            XCTAssertNil(error, "Save did not occur")
+        }
+    }
+    
     func testNotiMO_create_isRestulValueMatch() {
         // given
         let id = UUID()

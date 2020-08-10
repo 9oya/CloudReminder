@@ -20,6 +20,8 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
     var configurator = NotiDetailModuleConfigurator()
     var disposeBag = DisposeBag()
     
+    var notiDetailViewModel = NotiDetailViewModel()
+    
     // MARK: Life cycle
     override func loadView() {
         super.loadView()
@@ -31,9 +33,12 @@ class NotiDetailViewController: UIViewController, NotiDetailViewInput {
         bind()
     }
     
-    // MARK: NotiDetailViewInput
-    var notiDetailViewModel = NotiDetailViewModel()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        notiDetailTableView.reloadData()
+    }
     
+    // MARK: NotiDetailViewInput
     func setupInitialState() {
         setupLayout()
     }
@@ -115,7 +120,7 @@ extension NotiDetailViewController: UITableViewDataSource, UITableViewDelegate {
             // TODO
             print()
         case 1:
-            output.pushToNotiBodyViewController(from: self)
+            output.pushToNotiBodyViewController(from: self, notiDetailViewModel: notiDetailViewModel)
         case 2:
             // TODO
             print()

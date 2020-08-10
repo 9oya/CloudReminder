@@ -52,8 +52,8 @@ extension NotiDetailPresenter: NotiDetailViewOutput {
         router.backToWhereCameFrom(from: view)
     }
     
-    func pushToNotiBodyViewController(from view: UIViewController) {
-        router.pushToNotiBodyViewController(from: view)
+    func pushToNotiBodyViewController(from view: UIViewController, notiDetailViewModel: NotiDetailViewModel) {
+        router.pushToNotiBodyViewController(from: view, notiDetailViewModel: notiDetailViewModel)
     }
 }
 

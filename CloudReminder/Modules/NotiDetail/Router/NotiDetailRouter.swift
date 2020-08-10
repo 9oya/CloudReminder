@@ -14,9 +14,9 @@ class NotiDetailRouter: NotiDetailRouterInput {
         _ = view.navigationController?.popViewController(animated: true)
     }
     
-    func pushToNotiBodyViewController(from view: UIViewController) {
+    func pushToNotiBodyViewController(from view: UIViewController, notiDetailViewModel: NotiDetailViewModel) {
         let vc = NotiBodyViewController()
-        vc.notiDetailVC = (view as! NotiDetailViewInput)
+        vc.notiDetailViewModel = notiDetailViewModel
         view.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         view.navigationItem.backBarButtonItem?.tintColor = ColorCompatibility.label
         view.navigationController?.pushViewController(vc, animated: true)

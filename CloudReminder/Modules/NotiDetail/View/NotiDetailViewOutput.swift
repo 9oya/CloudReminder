@@ -33,5 +33,5 @@ protocol NotiDetailViewOutput {
     
     func backToWhereCameFrom(from view: UIViewController)
     
-    func pushToNotiBodyViewController(from view: UIViewController)
+    func pushToNotiBodyViewController(from view: UIViewController, notiDetailViewModel: NotiDetailViewModel)
 }

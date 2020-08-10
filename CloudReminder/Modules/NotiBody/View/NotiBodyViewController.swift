@@ -17,10 +17,11 @@ class NotiBodyViewController: UIViewController, NotiBodyViewInput {
     var textField: UITextField!
     
     var output: NotiBodyViewOutput!
-    var notiDetailVC: NotiDetailViewInput!
     var configurator = NotiBodyModuleConfigurator()
     
     let disposeBag = DisposeBag()
+    
+    var notiDetailViewModel: NotiDetailViewModel!
     
     // MARK: Life cycle
     override func loadView() {
@@ -34,11 +35,6 @@ class NotiBodyViewController: UIViewController, NotiBodyViewInput {
         bindInput()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        notiDetailVC.reloadTableView()
-    }
-    
     // MARK: Actions
     
     // MARK: NotiBodyViewInput
@@ -50,7 +46,7 @@ class NotiBodyViewController: UIViewController, NotiBodyViewInput {
 extension NotiBodyViewController {
     private func bindInput() {
         textField.rx.text.orEmpty
-            .bind(to: notiDetailVC.notiDetailViewModel.contentInputText)
+            .bind(to: notiDetailViewModel.contentInputText)
             .disposed(by: disposeBag)
     }
 }
